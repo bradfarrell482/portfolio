@@ -1,0 +1,262 @@
+body{
+    background-color: #eee;
+    margin: 0;
+    font-family: Roboto;
+  }
+  
+  nav{
+    background-color: #fff;
+    min-height: 95px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, .3);
+    margin-bottom: 33px;
+    
+  }
+  
+  nav ul{
+    float: right;
+    display: block;
+    list-style-type: none;
+    margin: 40px auto;   
+    text-align: center;
+    padding: 0;
+    max-height: 100%;
+    bottom: 20px;
+  }
+  
+  nav li{
+    display: inline;
+    width:80%;
+    font-size: 24px;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color: #333;
+    margin: 0 30px;
+  }
+  
+  .logo{
+    left: 50px;
+    display: inline;
+    max-width: 200px;
+    height: 90px;
+    margin:auto
+  }
+  
+  .content-card{
+    margin: 33px 0px 0px 0px;
+    height: 650px;
+    overflow: hidden;
+    background: #def;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .5);
+    transition: all .7s ease;
+  }
+  
+  .card-info{
+    color: white;
+    display: grid;
+    grid-template-rows: 1.2fr 2fr;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+    overflow: hidden;
+  }
+
+  .card-info a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .thumbnail{
+    display: block;
+    margin: 40px auto;
+    max-height: 80%;
+    max-width: 100%;
+    transition: all 1s ease;
+    
+  }
+  
+  .text-block{
+    display: block;
+    margin: 0px auto 0px auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .card-button{
+    display: block;
+    margin: 40px auto;
+    border: 1px solid white;
+    border-radius: 0px;
+    max-width: 150px;
+    padding: 15px;
+    transition: all .5s;
+    background-color: rgba(255, 255, 255, .1);
+    cursor: pointer;
+  }
+  
+  .card-button:hover{
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
+   
+  }
+  
+  
+  
+   .content_card h1{
+     font-size: 35px;
+     color: white;
+     letter-spacing: 2px;
+  }
+  
+  p{
+    font-size: 20px;
+  
+    
+  }
+  
+  #scout{
+    background: linear-gradient( 30deg, #00CBFF, #1083B5);
+    
+  }
+  
+  #scout .thumbnail{
+    /* Safari 6.0 - 9.0 */
+      filter: saturate(130%);
+   max-width: 100%;
+    box-shadow: 0px 0px 15px 8px rgba(255, 255, 255, .0);
+  }
+  
+  #red .thumbnail{
+    filter: brightness(0) invert(1);
+  }
+  
+  
+  #play{
+    background: linear-gradient( 280deg, #FA420A, #FFCE09);
+  }
+  
+  #disk-jockey{
+    background: linear-gradient( -45deg, #8600BE, #6B0750);
+  }
+  
+  #miyazaki{
+    background: linear-gradient( 45deg, rgb(34, 34, 34), #000);
+  }
+  
+  #red{
+    background: linear-gradient( -45deg, yellow, green);
+  }
+  
+  .fade-img{
+    margin-right: auto;
+    opacity: .1;
+    display: block;
+    width: 100%;
+    min-width: 1200px;
+    object-fit: contain;
+  }
+  
+  
+  
+  
+  @media (min-width: 1000px) {
+  
+    
+    
+    .card-info{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      max-width: 1200px;
+      margin: auto;
+      transition: all 1s;
+    }
+    
+    .text-block{
+      margin: auto;
+      text-align: left;
+      max-width: 480px;
+    }
+    
+    .thumbnail{
+      margin: auto;
+      transform: scale;
+      bottom: 0px;
+      position: relative; 
+    }
+    
+    .thumbnail:hover{
+      bottom: 30px;
+    }
+    
+    .card-button{
+    display: block;
+    margin: 40px 0;
+    text-align: center;
+  }
+      .left{
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+  
+  #disk-jockey .img{
+    width: 200%;
+  }
+    
+  
+  @media (min-width: 1600px) {
+    .container{
+      display: grid;
+      grid-template-columns: 300px 1fr;
+    }
+    
+    nav{
+      height: 100%;
+      z-index: 3;
+      box-shadow: 10px 0px 12px rgba(0, 0, 0, .3);
+      margin: 0; 
+    }
+    
+    #navcontent{
+      position: fixed;
+      left: 50px;
+      top: 30px;
+    }
+    nav ul{
+      float: none;
+    }
+    
+    nav li{
+    float: none;
+    display: block;
+    margin: 20px auto;    
+  }
+    .logo{
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 20px auto 0px auto;
+      float: none;
+    }
+    
+    .content-card{
+      width: 95%;
+      height: 800px;
+      
+    }
+    
+    .content-card:hover{
+      width: 98%;
+    }
+  }
+  
+  
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+    .container{
+      display: block;
+    }
+  }

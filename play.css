@@ -1,0 +1,28 @@
+nav{
+    background-color: #F15B27;
+}
+
+nav a{
+    color: white;
+}
+
+body{
+    background: linear-gradient(251deg,rgb(255, 255, 255), #c4c4c4)
+}
+
+.splash{
+    background-image: url(/Projects/PLAY/play_background-01.svg)
+}
+
+.article{
+    color: #272260;
+}
+
+hr{
+    color: #272260
+}
+
+.deck {
+    width: 100%;
+    display: block;
+}

@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient(251deg,#EA9C37, #875414)
+}
+
+
+.splash_overlay{
+    background: black;
+}
+
+.splash_content{
+    max-width: 1000px;
+}
+
+.splash_content p{
+    margin: 40px 0px;
+}
+
+splash_img{
+    max-width: 1000px;
+}
+
+.article{
+    background: rgba(255, 255, 255, .2);
+    color: black;
+}
+
+.module{
+    background: black;
+    color: white;
+}
+
+.icon_rotate img{
+display: block;
+width: 90%;
+max-width: 400px;
+margin: auto;
+}
+
+.icon{
+    display: block;
+width: 90%;
+margin: auto;
+
+}
+
+.icon_grid{
+    margin: 70px auto 40px auto;
+}
+
+#miyazaki_demo {
+  width: 90vw;
+  height: 60vw;
+  max-width: 1000px;
+  max-height: 700px;
+  margin: 60px auto;
+  background: gold;
+    background: rgb(0, 0, 0); /** <-- For the demo **/
+  }
+
+  .color_fill{
+      width: 100%;
+      background: black;
+      border: 3px solid white;
+  }
+
+.photo_grid{
+    
+}
+
+.photo_grid_container{
+    margin: 50px 40px 80px;
+}
+  .photo_grid img{
+      width: 100%;
+  }
