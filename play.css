@@ -7,7 +7,7 @@ nav a{
 }
 
 body{
-    background: linear-gradient(251deg,rgb(255, 255, 255), #c4c4c4)
+    background: linear-gradient(251deg,rgb(255, 255, 255), #dbdbdb)
 }
 
 .splash{
@@ -26,3 +26,6 @@ hr{
     width: 100%;
     display: block;
 }
+
+
+/*comment*/
