@@ -1,9 +1,22 @@
 nav{
-    background-color: #F15B27;
+    background-color: rgb(241, 91, 39);
+}
+
+nav ul{
+    background-color: rgba(241, 91, 39, 0.9);
+}
+
+hr.nav_hr{
+     background-color: white;
+     height: 1px;
 }
 
 nav a{
     color: white;
+}
+
+.logo {
+    fill: white;
 }
 
 body{
