@@ -15,27 +15,20 @@ body{
     margin: 0;
     font-family: Roboto;
   }
-
-  /*** show/hide ***/
-  .show {
-    display: block;
-  }
-
-  .hide {
-    display:none;
-  }
   
   /****** Nav ******/
 
   nav{
+    position: relative;
     background-color: #fff;
     min-height: 95px;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, .3);
-    z-index: 3; 
+    z-index: 100; 
     margin: auto; 
     width: 100%;  
   }
-  
+
+  /*
   nav ul{
     width: 100%;
     display: none;
@@ -47,6 +40,20 @@ body{
     top: 95px;
     background-color: rgba(255,255,255, 0.85);
     z-index: 3;
+    overflow: hidden;
+    transform: all 1s;
+  }
+  */
+  
+  nav ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 0px auto;   
+    text-align: center;
+    background-color: rgba(255,255,255, 0.85);
+    z-index: 3;
+    transform: all 1s;
+    padding: 10px 0;
   }
   
   nav li{
@@ -60,6 +67,22 @@ body{
     margin: 0 30px;
   }
 
+  .dropdown{
+    position: absolute;
+    display: block;
+    width: 100%;
+    overflow: hidden;    
+    top: 95px;
+    margin:0;
+    height: 0px;
+    transition: all 0.5s ease;
+  }
+
+  /*slide animation for nav*/
+  .slideDown {
+    height: 223px;
+  }
+
   /* nav hr */
   hr.nav_hr {
     background-color: #000;
@@ -67,6 +90,7 @@ body{
     width: 95%;
     height: 2px;
     opacity: 0.3;
+    margin: 10px;
   }
 
   /* menu button*/
@@ -75,7 +99,7 @@ body{
     float: right;
     position: relative;
     font-size: 30px;
-    right: 30px;
+    right: 10px;
     top: 30px;
     padding: 5px;
   }
@@ -86,10 +110,10 @@ body{
   
   .logo{
     left: 50px;
-    display: inline;
-    max-width: 200px;
+    display: inline-block;
+    width: 70px;
     height: 70px;
-    margin:10px auto
+    margin: 10px;
   }
 
   /****** END NAV ******/
@@ -214,6 +238,15 @@ body{
     min-width: 1200px;
     object-fit: contain;
   }
+
+    /*** show/hide ***/
+    .show {
+      display: block;
+    }
+  
+    .hide {
+      display:none;
+    }
   
   /********************** Responsive design starts here **********************/
   
@@ -224,6 +257,7 @@ body{
       display: block;
       max-width: 250px;
       height: 150px;
+      width: auto;
       margin: 0px auto 30px;
       padding-top: 40px;
     }
@@ -232,11 +266,12 @@ body{
       min-height: 300px;
     }
 
-    nav ul{
+    .dropdown{
       width: 100%;
       margin: auto;
-      display: block;
-      position: unset;  
+      position: unset;
+      transition: all 0s;
+      height: auto;
       background-color: rgba(255,255,255, 0);
       
     }

@@ -3,10 +3,10 @@ $(document).ready(function(){
 });
 
 function toggleNav() {
-    if ($("#navcontent ul").hasClass("show")){
-        $("#navcontent ul").removeClass("show");
+    if ($("#navcontent .dropdown").hasClass("slideDown")){
+        $("#navcontent .dropdown").removeClass("slideDown");
     } else {
-        $("#navcontent ul").addClass("show");
+        $("#navcontent .dropdown").addClass("slideDown");
     }
     return;
 }
