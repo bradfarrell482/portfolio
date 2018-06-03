@@ -28,22 +28,6 @@ body{
     width: 100%;  
   }
 
-  /*
-  nav ul{
-    width: 100%;
-    display: none;
-    position: absolute;
-    list-style-type: none;
-    margin: 0px auto;   
-    text-align: center;
-    padding: 10px 0;
-    top: 95px;
-    background-color: rgba(255,255,255, 0.85);
-    z-index: 3;
-    overflow: hidden;
-    transform: all 1s;
-  }
-  */
   
   nav ul{
     width: 100%;
