@@ -8,8 +8,8 @@ $(document).ready(function() {
         var color2 = $(this).attr("color2"); //BG
 
         //change the gallery img
-        $(".gallery img").attr("src", src);
-        $(".gallery img").attr("alt", alt);
+        $(".gallery svg image").attr("xlink:href", src);
+        //$(".gallery img").attr("alt", alt);
 
         //change the background for all elements
         $("#color1").css("stop-color", "#"+color1); //BG
