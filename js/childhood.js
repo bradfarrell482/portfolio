@@ -16,7 +16,7 @@ $(document).ready(function() {
             changeGallery($(".gallery_thumb")[i]);
             i= (i+1)%3;
         }
-    }, 5000);
+    }, 7000);
 
     $(".gallery_thumb").on("click", function(){
         //when an image is clicked, cancel the gallery autoplay
