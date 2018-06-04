@@ -38,11 +38,11 @@ svg.gallery1 {
 
 #color1 {
     stop-color: #E1C10C;
-    transition: all 1s;
+    transition: all 1.3s;
 }
 #color2 {
     stop-color: #BD5031;
-    transition: all 1s;
+    transition: all 1.3s;
 }
 
 /*** article/ text ***/
