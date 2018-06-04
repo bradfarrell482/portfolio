@@ -130,7 +130,7 @@ hr{
 
 }
 
-.grid-3{
+.grid_3{
     display: grid;
     margin: auto;
     grid-template-columns: 1fr;
@@ -237,7 +237,7 @@ hr{
      
     }
 
-    .grid-3{
+    .grid_3{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
@@ -259,7 +259,7 @@ hr{
         width: 100%;
     }
 
-    section {
+    .module {
         opacity: 0;
         transform: translate(-60px, 0px); 
      
@@ -288,7 +288,7 @@ hr{
         column-count: 2;
     }
 
-    .grid-3{
+    .grid_3{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 15px;
