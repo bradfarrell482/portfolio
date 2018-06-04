@@ -8,14 +8,19 @@ body {
     background-color: #FFF;
 }
 
+
+.pgcontent {
+    color: black;
+}
+
 /***** nav *****/
 
 nav {
-    background-color: #474747;
+    background-color: #B80E36;
 }
 
 nav ul {
-    background-color: rgba(71, 71, 71, 0.8);
+    background-color: rgba(184, 14, 54, .8);
 }
 
 hr.nav_hr{

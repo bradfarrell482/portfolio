@@ -186,6 +186,15 @@ hr{
 
 @media (min-width: 750px) {
 
+    .pgcontent p{
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .pgcontent h1{
+        font-size: 40px;
+    }
+
     .module_text h1{
         font-size: 40px;
         font-weight: bold;
@@ -193,7 +202,7 @@ hr{
     }
     
     .module_text p{
-        font-size: 24px;
+        font-size: 26px;
         margin: 0;
     }
 
