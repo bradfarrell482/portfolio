@@ -1,19 +1,39 @@
 $(document).ready(function() {
 
+    //prepare gallery autoplay
+    var cycle = true;
+    var i = 0;
+
+    //autoplay the gallery images
+    setInterval(function() {
+        if (cycle) {
+            changeGallery($(".gallery_thumb")[i]);
+            i= (i+1)%4;
+        }
+    }, 5000);
+
     $(".gallery_thumb").on("click", function(){
-        //get info
-        var src = $(this).attr("src");
-        var alt = $(this).attr("alt");
-        var color1 = $(this).attr("color1"); //BG
-        var color2 = $(this).attr("color2"); //BG
+        //when an image is clicked, cancel the gallery autoplay
+        cycle = false;
 
-        //change the gallery img
-        $(".gallery svg image").attr("xlink:href", src);
-        //$(".gallery img").attr("alt", alt);
-
-        //change the background for all elements
-        $("#color1").css("stop-color", "#"+color1); //BG
-        $("#color2").css("stop-color", "#"+color2); //BG
+        //pass into function
+        changeGallery($(this));
     });
 
 });
+
+function changeGallery(img) {
+    //get info
+    var src = $(img).attr("src");
+    var alt = $(img).attr("alt");
+    var color1 = $(img).attr("color1"); //BG
+    var color2 = $(img).attr("color2"); //BG
+
+    //change the gallery img
+    $(".gallery svg image").attr("xlink:href", src);
+    //$(".gallery img").attr("alt", alt);
+
+    //change the background for all elements
+    $("#color1").css("stop-color", "#"+color1); //BG
+    $("#color2").css("stop-color", "#"+color2); //BG
+}
