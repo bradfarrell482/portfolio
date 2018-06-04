@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     //prepare gallery autoplay
     var cycle = true;
-    var i = 0;
+    var i = 1;
 
     //autoplay the gallery images
     setInterval(function() {

@@ -267,7 +267,7 @@ hr{
         width: 100%;
     }
 
-    section {
+    .module {
         opacity: 0;
         transform: translate(-60px, 0px); 
      
