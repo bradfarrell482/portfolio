@@ -69,7 +69,9 @@ margin: auto;
 
 .photo_grid_container{
     margin: 50px 40px 80px;
+    display: block;
 }
   .photo_grid img{
       width: 100%;
+      display: block;
   }
