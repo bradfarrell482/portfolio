@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#nav").load("/html/nav.html");
+    $("#nav").load("nav.html");
 });
 
 function toggleNav() {
