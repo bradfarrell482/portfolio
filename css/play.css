@@ -24,7 +24,7 @@ body{
 }
 
 .splash{
-    background-image: url(/Projects/PLAY/play_background-01.svg)
+    background-image: url("../Projects/PLAY/play_background-01.svg")
 }
 
 .article{

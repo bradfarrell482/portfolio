@@ -22,7 +22,7 @@ body{
 /* SPLASH */
 
 .splash{
-    background-image: url("/Projects/Scout/scout_office7.jpg"); 
+    background-image: url("../Projects/Scout/scout_office7.jpg"); 
 }
 
 .splash_overlay{
