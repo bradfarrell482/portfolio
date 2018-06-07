@@ -1,0 +1,85 @@
+/**
+emoji.css
+
+css for the emoji.html project page
+**/
+
+body {
+    background-color: #ECF9FF;
+}
+
+
+.pgcontent {
+    color: black;
+}
+
+/***** nav *****/
+
+nav {
+    background-color: #5ABDFF;
+}
+
+nav ul {
+    background-color: rgba(90, 189, 255, .8);
+}
+
+hr.nav_hr{
+    background-color: #FFF;
+}
+
+.logo {
+    fill: #FFF;
+}
+
+#nav_menu, nav li a {
+    color: #FFF;
+}
+
+/*** splash ***/
+.splash {
+    background-color: #FFF;
+}
+
+.splash_overlay {
+    background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .66), rgba(255, 255, 255, 0));
+}
+.splash_content {
+    color: #000;
+}
+
+/** large emojis */
+.large_emoji_grid {
+    margin: 35px auto;
+    width: 90%;
+    grid-gap: 20px;
+}
+.large_emoji {
+    width: 100%;
+}
+
+/** small emojis */
+.small_emoji_grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 35px auto;
+    width: 95%;
+    grid-gap: 20px;
+}
+.small_emoji {
+    width: 100%;
+}
+
+/*** phone sample ***/
+
+/*** text ***/
+
+/*** video ***/
+.vid {
+    width: 100%;
+}
+video {
+    width: 100%;
+}
+
+/************** responsive! **************/
+
