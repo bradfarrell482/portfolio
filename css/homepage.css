@@ -187,8 +187,8 @@ body{
   
   #scout .thumbnail{
     /* Safari 6.0 - 9.0 */
-      filter: saturate(130%);
-   max-width: 100%;
+    filter: saturate(130%);
+    border-radius: 50px;
     box-shadow: 0px 0px 15px 8px rgba(255, 255, 255, .0);
   }
   
@@ -202,15 +202,15 @@ body{
   }
   
   #disk-jockey{
-    background: linear-gradient( -45deg, #8600BE, #6B0750);
+    background: linear-gradient( -45deg, rgb(123, 18, 133), #2F0944);
   }
   
   #miyazaki{
     background: linear-gradient( 45deg, rgb(34, 34, 34), #000);
   }
   
-  #red{
-    background: linear-gradient( -45deg, yellow, green);
+  #childhood{
+    background: linear-gradient( -45deg, #B80E36, rgb(117, 5, 31));
   }
   
   .fade-img{
@@ -278,7 +278,7 @@ body{
   }
 
   /***** 1000px + *****/
-  @media (min-width: 1000px) {
+  @media (min-width: 750px) {
   
     
     
@@ -298,7 +298,7 @@ body{
     
     .thumbnail{
       margin: auto;
-      transform: scale;
+      max-width: 80%;
       bottom: 0px;
       position: relative; 
     }
