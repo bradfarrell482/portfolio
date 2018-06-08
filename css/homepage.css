@@ -199,8 +199,13 @@ body{
     box-shadow: 0px 0px 15px 8px rgba(255, 255, 255, .0);
   }
   
-  #red .thumbnail{
-    filter: brightness(0) invert(1);
+
+  #emoji{
+    background: linear-gradient(30deg, rgb(0, 118, 148), rgb(65, 55, 207))
+  }
+
+  #emoji .thumbnail{
+    width: 90%;
   }
   
   
