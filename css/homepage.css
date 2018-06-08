@@ -14,7 +14,14 @@ body{
     background-color: #eee;
     margin: 0;
     font-family: Roboto;
+    animation: fade_in 2s ease;
   }
+
+@keyframes fade_in {
+    0% {opacity: 0;}
+    20%{opacity: 0;}
+    100% {opacity: 1;}
+ } 
   
   /****** Nav ******/
 
