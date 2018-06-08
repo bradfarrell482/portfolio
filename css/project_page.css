@@ -175,6 +175,7 @@ hr{
 }
 
 .center_v{
+    display: block;
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
@@ -317,7 +318,7 @@ hr{
         padding: 20px 50px 50px;
     }
 
-    .article p{
+    .article_text_2 p{
         columns: 2;
         column-gap: 30px;
     }

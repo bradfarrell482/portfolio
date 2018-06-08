@@ -1,0 +1,164 @@
+/**
+emoji.css
+
+css for the emoji.html project page
+**/
+
+body {
+    background-color: #ECF9FF;
+}
+
+
+.pgcontent {
+    color: black;
+}
+
+/***** nav *****/
+
+nav {
+    background-color: #5ABDFF;
+}
+
+nav ul {
+    background-color: rgba(90, 189, 255, .8);
+}
+
+hr.nav_hr{
+    background-color: #FFF;
+}
+
+.logo {
+    fill: #FFF;
+}
+
+#nav_menu, nav li a {
+    color: #FFF;
+}
+
+/*** splash ***/
+.splash {
+    background-color: #FFF;
+}
+
+.splash_overlay {
+    /*for browsers that do not support gradients*/
+    background: #FFF;
+
+    background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .66), rgba(255, 255, 255, 0));
+}
+.splash_content {
+    color: #000;
+}
+
+/** large emojis */
+.large_emoji_grid {
+    margin: 35px auto;
+    width: 90%;
+    grid-gap: 35px;
+}
+.large_emoji {
+    width: 100%;
+}
+
+/** small emojis */
+.small_emoji_grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0px auto;
+    width: 100%;
+    grid-row-gap: 40px;
+}
+.small_emoji {
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+/*** phone sample ***/
+.module {
+    /*for browsers that do not support gradients*/
+    background: #FFF;
+
+    background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(239, 251, 255, 1));
+}
+
+.sample {
+    display: block;
+    margin: 40px auto;
+}
+
+/*** video ***/
+.article_text_1 {
+    margin-bottom: 40px;
+}
+.vid {
+    width: 95%;
+    margin: 0px auto;
+}
+video {
+    width: 100%;
+}
+
+.chocolate {
+    display: none;
+    margin: 0 auto;
+}
+
+.video_grid {
+    margin-bottom: 60px;
+}
+/************** responsive! **************/
+
+/*** 750px+ ***/
+@media (min-width: 750px){
+    .video_grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 60px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .chocolate {
+        display: block;
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 20vw;
+    }
+}
+
+/*** 1000px+ ***/
+@media (min-width: 1000px){
+    .video_grid {
+        grid-column-gap: 100px;
+    }
+
+    /* sample phone grid */
+    .sample_grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .sample {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .module_text {
+        grid-column: 2;
+        grid-row: 1;
+        display: block;
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .small_emoji_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row: 2;
+        grid-column: 1 / 3;
+    }
+}
+
