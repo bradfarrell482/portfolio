@@ -8,6 +8,7 @@
 .pgcontent p{
     font-size: 20px;
     margin: 0;
+    line-height: 36px;
 }
 
 .centered{
@@ -31,6 +32,7 @@ hr{
     height: 550px;
     position: relative;
     transition: all .5s;
+    background-attachment: fixed;
 }
 
 .splash_overlay{
@@ -87,8 +89,8 @@ hr{
 /* MODULE CSS */
 .module{
     padding: 20px 20px 40px 20px;
-    margin: 50px 0px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, .4);
+    /*margin: 50px 0px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .4);*/
    
 }
 
@@ -98,7 +100,7 @@ hr{
 
 .module_text{
     display: block;
-    margin: 20px auto 40px auto;
+    margin: 0px auto 40px auto;
     max-width: 1000px;
 }
 
@@ -199,7 +201,7 @@ hr{
      } 
 
     .pgcontent p{
-        font-size: 26px;
+        font-size: 20px;
         margin: 0;
     }
 
@@ -208,15 +210,10 @@ hr{
     }
 
     .module_text h1{
-        font-size: 40px;
-        font-weight: bold;
-        margin: 0 0 .3em 0;
+        
     }
     
-    .module_text p{
-        font-size: 26px;
-        margin: 0;
-    }
+    
 
     .module_text_sm h1{
         font-size: 40px;
@@ -224,31 +221,25 @@ hr{
         margin: 0 0 .3em 0;
     }
     
-    .module_text_sm p{
-        font-size: 22px;
-        line-height: 1.6em;
-        margin: 0;
-    }
+    
     
     .module{
         padding: 30px 50px 50px 50px;
-        margin: 50px 0px;
+       /* margin: 50px 0px;*/
     }
 
     .module_text{
         display: block;
-        margin: 20px auto 60px auto;
-        max-width: 1000px;
-        text-align: justify;
+        margin: 0px auto 60px auto;
+        max-width: 800px;
+        
     }
 
     .centered{
         text-align: center;
     }
 
-    .splash{
-        height: 750px;
-    }
+    
     
     .grid_2{
         display: grid;
@@ -285,6 +276,8 @@ hr{
      
         transition: transform 1.5s ease, opacity 1s;
       }
+
+  
       
     .visible {
         opacity: 1 !important;
@@ -302,6 +295,10 @@ hr{
     .module{
         padding: 75px;
     
+    }
+
+    .splash{
+        height: 750px;
     }
 
     .split p{
