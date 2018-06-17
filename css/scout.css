@@ -22,7 +22,7 @@ body{
 /* SPLASH */
 
 .splash{
-    background-image: url("../Projects/Scout/Office_Photos/scout_office7.jpg"); 
+    background-image: url("../Projects/Scout/office/scout_office7.jpg"); 
 }
 
 .splash_overlay{
@@ -107,7 +107,7 @@ body{
 }
 
 #office{
-    background-image: url("../Projects/Scout/office_photos/scout_office1.jpg");
+    background-image: url("../Projects/Scout/office/scout_office1.jpg");
     background-attachment: fixed;
     color: white;
     padding: 0;
