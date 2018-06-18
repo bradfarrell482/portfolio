@@ -34,6 +34,7 @@ display: block;
 width: 90%;
 max-width: 400px;
 margin: auto;
+transition: opacity 1s;
 }
 
 .icon{
@@ -74,4 +75,8 @@ margin: auto;
   .photo_grid img{
       width: 100%;
       display: block;
+  }
+
+  #demo{
+      max-width: 90vw;
   }
