@@ -100,25 +100,32 @@ hr{
     overflow: hidden;
     display: block;
     margin: auto;
+    transition: all 2s ease;
+    max-height: 1500px;
 }
 
-.toggle_dropdown{
+.drop_arrow{
     position: relative;
     width: 50px;
     display: block;
     margin: auto;
-    bottom: -90px;
+    bottom: 0px;
     opacity: .6;
+}
+
+.toggle_collapse{
+    transform: rotate(180deg);
 }
 
 .collapsed {
     max-height: 200px;
-    transition: all 2s ease;
+    
 }
 
-.collapsed:hover{
+/*.collapsed:hover{
     max-height: 1500px;
 }
+*/
 
 
 /* MODULE CSS */
