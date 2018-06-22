@@ -98,6 +98,14 @@ hr.nav_hr{
 
 
 /** gallery image */
+.gallery > img {
+    transition: opacity 1s;
+    position: relative;
+}
+
+.gallery {
+    /*padding-bottom: 57%;*/
+}
 
 
 /*** gallery thumbs ***/

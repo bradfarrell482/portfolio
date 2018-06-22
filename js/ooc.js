@@ -1,37 +1,32 @@
 /*
-childhood.js
+ooc.js
 
-vrtually a copy of the gallery function from dj.js. Modified
- slightly simply to remove the color change elements
+some similar functionality for the gallery plus a new lightbox feature for this page
 */
 $(document).ready(function() {
 
     //prepare gallery autoplay
-    var cycle = true;
     var i = 1;
 
     //autoplay the gallery images
     setInterval(function() {
-        if (cycle) {
             changeGallery($(".gallery_thumb")[i]);
             i= (i+1)%20;
-        }
     }, 7000);
 
-    $(".gallery_thumb").on("click", function(){
+    /*$(".gallery_thumb").on("click", function(){
         //when an image is clicked, cancel the gallery autoplay
         cycle = false;
 
         //pass into function
         changeGallery($(this));
-    });
+    });*/
 
 });
 
 function changeGallery(img) {
     //get info
     var src = $(img).attr("src");
-    var alt = $(img).attr("alt");
     
     //fadeout
     $(".gallery > img").css("opacity", "0");
@@ -39,7 +34,6 @@ function changeGallery(img) {
     setTimeout(function(){
         //change the gallery img
         $(".gallery > img").attr("src", src);
-        $(".gallery > img").attr("alt", alt);
 
         //fadein
         $(".gallery > img").css("opacity", "1");
