@@ -7,12 +7,17 @@
 
 .pgcontent p{
     font-size: 20px;
-    margin: 0;
-    line-height: 36px;
+    margin: 1em 0;
+    line-height: 1.7em;
+    widows: 3;
 }
 
 .centered{
     text-align: center;
+}
+
+h1{
+    margin-bottom: 0;
 }
 
 hr{
@@ -21,6 +26,8 @@ hr{
    margin-bottom: 20px;
    width: 80%;
 }
+
+
 
 
 /* SPLASH IMAGE CSS */
@@ -73,7 +80,7 @@ hr{
 .article_container{
     margin: 50px 0px;
     display: block;
-    max-width: 1400px;
+    max-width: 1100px;
 }
 
 .article{
@@ -85,10 +92,38 @@ hr{
     font-size: 20px;
 }
 
+.intro_block{
+    padding: 40px 20px;
+}
+
+.intro{
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+.toggle_dropdown{
+    position: relative;
+    width: 50px;
+    display: block;
+    margin: auto;
+    bottom: -90px;
+    opacity: .6;
+}
+
+.collapsed {
+    max-height: 200px;
+    transition: all 2s ease;
+}
+
+.collapsed:hover{
+    max-height: 1500px;
+}
+
 
 /* MODULE CSS */
 .module{
-    padding: 20px 20px 40px 20px;
+    padding: 60px 20px 40px 20px;
     /*margin: 50px 0px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, .4);*/
    
@@ -107,8 +142,8 @@ hr{
 .module_text h1{
     font-size: 32px;
     font-weight: bold;
-    margin: 0 0 .3em 0;
     text-align: center;
+    margin:0;
 }
 
 .module_text_sm{
@@ -187,6 +222,21 @@ hr{
     padding: 0;
 }
 
+.fadeout {
+    position: relative; 
+    top: -4em;
+    height: 4em;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    )
+}
+
+.fade_buffer{
+    display: block;
+    height: 4em;
+}
+
 @media (min-width: 750px) {
 
     body{
@@ -202,12 +252,18 @@ hr{
 
     .pgcontent p{
         font-size: 20px;
-        margin: 0;
+        widows: 3;
     }
 
     .pgcontent h1{
         font-size: 40px;
     }
+
+    .intro_block{
+        padding: 40px 50px;
+    }
+
+   
 
     .module_text h1{
         
@@ -224,14 +280,14 @@ hr{
     
     
     .module{
-        padding: 30px 50px 50px 50px;
+        padding: 60px 50px 50px 50px;
        /* margin: 50px 0px;*/
     }
 
     .module_text{
         display: block;
         margin: 0px auto 60px auto;
-        max-width: 800px;
+        max-width: 950px;
         
     }
 
@@ -313,6 +369,10 @@ hr{
 
     .article{
         padding: 20px 50px 50px;
+    }
+
+    .article_text {
+        max-width: 950px;
     }
 
     .article_text_2 p{

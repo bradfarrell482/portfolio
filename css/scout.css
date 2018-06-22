@@ -14,6 +14,20 @@ body{
     background:linear-gradient(88deg, rgb(206, 206, 206), rgb(255, 255, 255))
 }
 
+.fadeout {
+    position: relative; 
+    top: -4em;
+    height: 4em;
+    background: linear-gradient(
+        rgba(230, 230, 230, 0) 0%,
+        rgb(230, 230, 230) 100%
+    )
+}
+
+.intro_block{
+    background-color: rgb(230, 230, 230);
+}
+
 .module{
     background: white;
 }
@@ -114,7 +128,7 @@ body{
 }
 
 #office_overlay{
-        background-color: rgba(172, 84, 1, 0.9);
+        background: linear-gradient(233deg, rgba(0, 161, 225, .86), rgba(2, 96, 122, .86));
         top: 0;
         height: 100%;
         z-index: 0;
