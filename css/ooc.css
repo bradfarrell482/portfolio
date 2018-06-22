@@ -42,7 +42,7 @@ hr.nav_hr{
 /*** splash ***/
 .splash {
     background-color: #FFF;
-    background-image: url("../Projects/Out\ of\ Context/4.jpg");
+    background-image: url("../Projects/Out\ of\ Context/zoom4.jpg");
 }
 
 .splash_overlay {
@@ -103,17 +103,16 @@ hr.nav_hr{
     position: relative;
 }
 
-.gallery {
-    /*padding-bottom: 57%;*/
-}
-
-
 /*** gallery thumbs ***/
 .gallery_thumbs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 30px;
     margin: 30px;
+}
+
+.gallery_thumbs:hover {
+    cursor: pointer;
 }
 
 .module {
