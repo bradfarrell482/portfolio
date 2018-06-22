@@ -15,6 +15,20 @@
     <script src="js/homepage.js"></script>
     <script src="js/project_page.js"></script>
     <script src="js/ooc.js"></script>
+
+    <!-- 
+        PhotoSwipe Files
+
+        For more info on PhotoSwipe, visit photoswipe.com
+    -->
+
+    <link rel="stylesheet" href="photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="photoswipe/default-skin/default-skin.css">
+    <script src="photoswipe/photoswipe.min.js"></script>
+    <script src="photoswipe/photoswipe-ui-default.min.js"></script>
+
+    <!-- End PhotoSwipe -->
+
 </head>
 
 <body>
@@ -78,64 +92,137 @@
             <div class="gal">
 
                 <!-- More Text -->
-                    <div class="article limit_width">
-                            <h1 class="centered">THIS IS LOREM IPSUM TEXT</h1>
-    
-                            <div class="article_text_2">
-                                <p>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
-                                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-    
-                                </p>
-                            </div>
-    
-                        </div>
+                <div class="article limit_width">
+                    <h1 class="centered">THIS IS LOREM IPSUM TEXT</h1>
 
-                        <!-- Current Gallery Image -->
-                        <div class="gallery">
-                            <img src="Projects/Out of Context/Book_page (1).JPG">
-                        </div>
+                    <div class="article_text_2">
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                            ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                            incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
 
-                        <!-- entire gallery-->
-                        <div class="gallery_thumbs">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (1).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (2).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (3).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (4).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (5).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (6).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (7).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (8).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (9).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (10).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (11).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (12).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (13).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (14).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (15).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (16).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (17).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (18).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (19).JPG">
-                                <img class="gallery_thumb" src="Projects/Out of Context/Book_page (20).JPG">
-                        </div>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Current Gallery Image -->
+                <div class="gallery">
+                    <img src="Projects/Out of Context/Book_page (1).JPG">
+                </div>
+
+                <!-- entire gallery-->
+                <div class="gallery_thumbs">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (1).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (2).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (3).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (4).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (5).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (6).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (7).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (8).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (9).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (10).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (11).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (12).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (13).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (14).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (15).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (16).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (17).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (18).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (19).JPG">
+                    <img class="gallery_thumb" src="Projects/Out of Context/Book_page (20).JPG">
+                </div>
 
 
             </div>
 
             <!-- Actual Lightbox Itself -->
-            <div id="lightbox" class="hidden">
-                    <span class="close cursor" onclick="closeLightBox()">&times;</span>
+            <!-- <div id="lightbox" class="hidden">
+                <span class="close cursor" onclick="closeLightBox()">&times;</span>
                 <div id="target">
                     <img>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Page content end-->
+
+
+            <!-- Photoswipe Elements-->
+
+            <!-- Root element of PhotoSwipe. Must have class pswp. -->
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+                <div class="pswp__bg"></div>
+
+                <!-- Slides wrapper with overflow:hidden. -->
+                <div class="pswp__scroll-wrap">
+
+                    <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+
+                    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                    <div class="pswp__ui pswp__ui--hidden">
+
+                        <div class="pswp__top-bar">
+
+                            <!--  Controls are self-explanatory. Order can be changed. -->
+
+                            <div class="pswp__counter"></div>
+
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                            <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                            <!-- element will get class pswp__preloader--active when preloader is running -->
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                    <div class="pswp__preloader__cut">
+                                        <div class="pswp__preloader__donut"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div>
+                        </div>
+
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                        </button>
+
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                        </button>
+
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- End Photoswipe Elements-->
+
         </div>
 
 
