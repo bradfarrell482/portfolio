@@ -15,20 +15,25 @@ $(document).on("scroll", function () {
 });
 
 $(document).ready(function(){
-  $(".toggle_expand").on("click", function () {
+ $(".drop_arrow").on("click", function(){
+   var target = $(this).attr("target");
+   var fade = $(this).attr("fade_target");
+   if ($(this).hasClass("toggle_expand")){
     console.log("Expanding Box");
-    $(this).addClass("toggle_collapse hidden");
+    $(this).addClass("toggle_collapse");
     $(this).removeClass("toggle_expand");
-    $(".intro").removeClass("collapsed"); 
-    $(".fadeout").addClass("hidden");
-  });
-
-  $(".toggle_collapse").on("click", function () {
+    $(target).removeClass("collapsed"); 
+    $(fade).addClass("invisible");
+   }
+   else {
     console.log("Collapsing Box");
     $(this).addClass("toggle_expand");
     $(this).removeClass("toggle_collapse");
-    $(".intro").addClass("collapsed"); 
-  });
+    $(target).addClass("collapsed");
+    $(fade).removeClass("invisible");
+   }
+
+ }); 
 
 
 

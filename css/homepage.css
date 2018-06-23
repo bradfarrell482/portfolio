@@ -116,7 +116,7 @@ body{
     height: 650px;
     overflow: hidden;
     background: #def;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, .5);
+    /*box-shadow: 0px 5px 15px rgba(0, 0, 0, .5);*/
     transition: all .7s ease;
     align-items: center;
     justify-items: center;

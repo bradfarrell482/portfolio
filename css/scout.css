@@ -15,9 +15,6 @@ body{
 }
 
 .fadeout {
-    position: relative; 
-    top: -4em;
-    height: 4em;
     background: linear-gradient(
         rgba(230, 230, 230, 0) 0%,
         rgb(230, 230, 230) 100%
@@ -47,6 +44,14 @@ body{
 .splash_overlay{
     background: linear-gradient(233deg, rgba(0, 161, 225, .86), rgba(2, 96, 122, .86));
 }
+
+
+
+.intro{
+    max-height: 1300px;
+}
+
+
 
 
 
@@ -201,6 +206,12 @@ body{
 
 @media (min-width: 750px) {
 
+
+    .intro{
+        max-height: 650px;
+    }
+    
+
     /* LANDING PAGE MODULE */
 
     #landing_pages{
@@ -279,6 +290,10 @@ body{
 @media (min-width: 1000px) {
 #office_grid{    
     grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.intro{
+    max-height: 550px;
 }
 
 #office4{
