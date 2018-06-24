@@ -1,3 +1,10 @@
+/*
+dj.js
+
+special case gallery: utilizes the rotating/clickable galleries, but with the addition
+of changing additional page elements for styling
+*/
+
 $(document).ready(function() {
 
     //prepare gallery autoplay

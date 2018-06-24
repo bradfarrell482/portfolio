@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/homepage.js"></script>
     <script src="js/project_page.js"></script>
-    <script src="js/childhood.js"></script>
+    <script src="js/rotatingGallery.js"></script>
 </head>
 
 <body>
@@ -63,13 +63,13 @@
             <div class="gal">
 
                 <div class="gallery">
-                    <img src="Projects/Childhood Is Calling/Camping+Ad+Landscape.jpg" alt="iPad with Child blowing bubbles">
+                    <img class="gallery_rotate" target_imgs=".gallery_thumb" src="Projects/Childhood Is Calling/Camping+Ad+Landscape.jpg" alt="iPad with Child blowing bubbles">
                 </div>
 
                 <div class="thumbs grid_3 limit_width">
-                    <img class="gallery_thumb" src="Projects/Childhood Is Calling/Camping+Ad+Landscape.jpg" alt="iPad with Child blowing bubbles">
-                    <img class="gallery_thumb" src="Projects/Childhood Is Calling/Water+Ad+Landscape.jpg" alt="iPad with child on the beach">
-                    <img class="gallery_thumb" src="Projects/Childhood Is Calling/Basketball+Ad+Landscape.jpg" alt="Shattered iPad with Basketball">
+                    <img class="gallery_thumb gallery_clickable" target_gallery=".gallery > img" src="Projects/Childhood Is Calling/Camping+Ad+Landscape.jpg" alt="iPad with Child blowing bubbles">
+                    <img class="gallery_thumb gallery_clickable" target_gallery=".gallery > img" src="Projects/Childhood Is Calling/Water+Ad+Landscape.jpg" alt="iPad with child on the beach">
+                    <img class="gallery_thumb gallery_clickable" target_gallery=".gallery > img" src="Projects/Childhood Is Calling/Basketball+Ad+Landscape.jpg" alt="Shattered iPad with Basketball">
                 </div>
 
             </div>
