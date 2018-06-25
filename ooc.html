@@ -14,7 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/homepage.js"></script>
     <script src="js/project_page.js"></script>
-    <script src="js/ooc.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/rotatingGallery.js"></script>
 
     <!-- 
         PhotoSwipe Files
@@ -111,48 +112,40 @@
 
                 <!-- Current Gallery Image -->
                 <div class="gallery">
-                    <img src="Projects/Out of Context/ooc1.png">
+                    <img class="gallery_rotate" target_imgs=".gallery_thumb" src="Projects/Out of Context/ooc1.png">
                 </div>
 
                 <!-- entire gallery-->
                 <div class="gallery_thumbs">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc1.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc2.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc3.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc4.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc5.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc6.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc7.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc8.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc9.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc10.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc11.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc12.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc13.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc14.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc15.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc16.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc17.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc18.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc19.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc20.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc21.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc22.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc23.png">
-                    <img class="gallery_thumb" src="Projects/Out of Context/ooc24.png">
-                    <!-- <img class="gallery_thumb" src="Projects/Out of Context/ooc25.png"> -->
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc1.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc2.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc3.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc4.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc5.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc6.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc7.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc8.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc9.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc10.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc11.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc12.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc13.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc14.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc15.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc16.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc17.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc18.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc19.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc20.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc21.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc22.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc23.png">
+                    <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc24.png">
+                    <!-- <img class="gallery_thumb lightbox" lightbox_target=".gallery_thumb" w="1238" h="578" src="Projects/Out of Context/ooc25.png"> -->
                 </div>
 
 
             </div>
-
-            <!-- Actual Lightbox Itself -->
-            <!-- <div id="lightbox" class="hidden">
-                <span class="close cursor" onclick="closeLightBox()">&times;</span>
-                <div id="target">
-                    <img>
-                </div>
-            </div> -->
 
             <!-- Page content end-->
 

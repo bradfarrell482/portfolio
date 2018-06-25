@@ -29,6 +29,24 @@ splash_img{
     color: white;
 }
 
+
+.intro_block{
+    color: black;
+    background-color: rgb(212, 139, 44);
+}
+
+    .fadeout {
+        background: linear-gradient(
+            rgba(212, 139, 44, 0) 0%,
+            rgb(212, 139, 44) 100%
+        )
+}
+
+.drop_arrow{
+        -webkit-filter: brightness(00%); /* Safari 6.0 - 9.0 */
+        filter: brightness(00%);
+}
+
 .icon_rotate img{
 display: block;
 width: 90%;

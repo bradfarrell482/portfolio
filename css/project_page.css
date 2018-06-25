@@ -249,7 +249,7 @@ hr{
     opacity: 0;
 }  
 
-.lightbox{
+.lightbox, .gallery_clickable{
     cursor: pointer;
 }
 
