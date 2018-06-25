@@ -1,0 +1,123 @@
+/*
+Main.css
+
+main CSS file for the entire Miyazaki Film Festival Project
+*/
+
+/****** Custom Font ******/
+@font-face {
+    font-family: TwCen;
+    src: url(../fonts/TwCenMTStd.otf);
+}
+/*@font-face { // unused
+    font-family: TwCenBold;
+    src: url(/fonts/TwCenMTStd-Bold.otf);
+}*/
+
+/****** HTML/Body ******/
+html {
+    color: #FFF;
+    font-family: TwCen;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    transition: all 0.65s;
+}
+
+.fadeOut {
+    opacity: 0;
+}
+
+/*********** Nav ***********/
+nav {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-top: solid 0.5px #FFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1;
+    background-color: #000;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin:auto;
+    padding:0;
+}
+
+nav li {
+    display: inline;
+}
+nav img {
+    width: 50px;
+    margin: 0 8px;
+    opacity: 0.7;
+}
+
+nav img:hover {
+    opacity: 1;
+}
+
+
+
+
+/* NAV Media sizing */
+@media (min-width: 430px){
+    /*purely because any smaller made it kinda weird*/
+    nav img {
+        margin: 0 30px;
+    }
+}
+
+@media (min-width: 1000px) {
+    /* switch to desktop mode*/
+
+    nav {
+        right: 30px;
+        border-top: none;
+        padding-top: 0;
+    }
+    nav ul {
+        text-align: right;
+    }
+
+}
+/*********** End Nav ***********/
+
+/****** Links ******/
+
+a:link { 
+    text-decoration: none;
+    margin:0;
+}
+
+/****** Home Titles ******/
+
+h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+/****** Scollbar ******/
+
+::-webkit-scrollbar { 
+    width: 0px;
+    display: none; 
+    background: transparent;
+
+}
+
+/** Hidden **/
+
+.hide {
+    display: none;
+}
+
+/*@supports (display: grid){}*/

@@ -1,0 +1,12 @@
+/*
+home.css
+
+For items concerning only the home page
+*/
+
+#title {
+    display: block;
+    width: 80%;
+    max-width: 720px;
+    margin: 30vh auto auto auto;
+}

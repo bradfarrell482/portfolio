@@ -1,0 +1,67 @@
+/*
+map.css
+
+css file for formatting map portion of the site
+*/
+
+svg {
+    width: 100%;
+    height:auto;
+}
+
+.map {
+    margin: 50px auto 0 auto;
+    max-width: 700px;
+}
+
+.key {
+    margin: 10px auto auto auto;
+    max-width:250px;
+}
+
+li {
+    padding-left: 3px;
+}
+
+ul {
+    font-size: 22px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+svg .RG,
+svg .A1,
+svg .A2,
+svg .SH,
+svg .CR,
+svg .FC,
+svg .Restrooms {
+    opacity: 0;
+}
+
+/*svg .RG:hover,
+svg .A1:hover,
+svg .A2:hover,
+svg .SH:hover,
+svg .CR:hover,
+svg .FC:hover,
+svg .Restrooms:hover {
+    fill: red; opacity: .5;
+}*/
+
+li a {
+    color:#EA9C37;
+    font-weight: bold;
+}
+
+/* for highlighting */
+
+svg .show {
+    opacity: 0.3;
+}
+
+li.show {
+    background-color: #555;
+    border-radius: 4px;
+}

@@ -1,0 +1,111 @@
+/*
+schedule.css
+
+css for the schedule page of the miyazaki project
+*/
+
+/* titles / text design*/
+
+@font-face {
+    font-family: LetterGothic;
+    src: url(/fonts/LetterGothicStd.otf);
+}
+
+/*title*/
+h1 {
+    font-family: LetterGothic, Arial;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+/* list*/
+li {
+    margin-bottom: 5px;
+}
+
+li.head {
+    color: rgb(240, 162, 61);
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: none;
+    margin-bottom: 10px;
+}
+li a {
+    color: #EA9C37;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*schedule block css*/
+
+li.event {
+    font-size: 18px;
+}
+li.location {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.content {
+    margin: 0 20px;
+    height: calc(100vh - 120px);
+    overflow: auto;
+}
+
+.sched {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+@media(min-width: 700px){
+    /*mid tier display*/
+
+    h1 {
+        margin-top: 40px;
+    }
+    li.head {display: inline;}
+    li.location, li.event, li.time {
+        font-size: 18px;
+    }
+    li.location {
+        margin-bottom: 0;
+    }
+    .sched {
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: 180px auto 220px;
+        grid-auto-flow: column;
+    }
+
+    .time {grid-column: 1;}
+    .event {grid-column: 2;}
+    .location {grid-column: 3;}
+}
+
+@media(min-width: 1000px){
+    /*desktop display*/
+
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    li.location, li.event, li.time {
+        font-size: 20px;
+    }
+    .sched {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 300px auto 250px;
+        grid-auto-flow: column;
+    }
+
+    .time {grid-column: 1;}
+    .event {grid-column: 2;}
+    .location {grid-column: 3;}
+}

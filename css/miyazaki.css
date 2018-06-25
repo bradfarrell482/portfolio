@@ -2,6 +2,25 @@ body{
     background: linear-gradient(251deg,#EA9C37, #875414)
 }
 
+.button{
+    display: block;
+    margin: 60px auto;
+    border-radius: 0px;
+    max-width: 150px;
+    padding: 15px;
+    transition: all .5s;
+    background-color: rgba(0,0,0, 1);
+    cursor: pointer;
+  }
+  
+  a.button{
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+
+  }
+  
 
 .splash_overlay{
     background: black;
@@ -20,8 +39,9 @@ splash_img{
 }
 
 .article{
-    background: rgba(255, 255, 255, .2);
+    /*background: rgba(255, 255, 255, .2);*/
     color: black;
+    margin: 0 auto;
 }
 
 .module{
@@ -71,9 +91,13 @@ margin: auto;
   height: 60vw;
   max-width: 1000px;
   max-height: 700px;
-  margin: 60px auto;
+  margin: 0px auto;
   background: gold;
     background: rgb(0, 0, 0); /** <-- For the demo **/
+  }
+
+  #miyazaki_demo img{
+      max-height: 100%;
   }
 
   .color_fill{

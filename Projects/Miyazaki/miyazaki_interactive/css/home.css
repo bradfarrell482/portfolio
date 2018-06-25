@@ -1,0 +1,70 @@
+/*
+home.css
+
+for any classes specifically exclusive to the home page
+*/
+
+/** Grid Section**/
+.homePage {
+    position: absolute;
+    top: 60px;
+    bottom: 97px;
+    
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    display: grid;
+    grid-row-gap: 40px; 
+    grid-template-rows: 135px;
+
+    overflow: auto;
+
+    /*subject to change based on sizing*/
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    max-width: 400px;
+}
+
+/** Movie icon formatting **/
+.movie {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.movie h3 {
+    margin: 10px 0 0 0;
+}
+
+.movie img {
+    transition: all 0.5s;
+}
+
+.movie img:hover {
+    transform: scale(1.2);
+}
+
+/** responsive design **/
+
+@media (min-width: 700px){
+    /*Larger than a phone*/
+    .homePage {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 135px 135px 135px 135px 135px auto;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1000px){
+    /*Larger than a phone*/
+    .homePage {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 135px 135px 135px auto;
+        max-width: 900px;
+        margin-top:17vh;
+        padding-top: 5px;
+        top:0;
+        grid-row-gap: 60px;
+    }
+}
