@@ -228,6 +228,10 @@ body{
   #childhood{
     background: linear-gradient( -45deg, #B80E36, rgb(117, 5, 31));
   }
+
+  #ooc{
+    background: linear-gradient( -45deg, rgb(80, 0, 0), rgb(150, 2, 2));
+  }
   
   .fade-img{
     margin-right: auto;

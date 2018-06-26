@@ -6,6 +6,17 @@ nav ul{
     background-color: rgba(241, 91, 39, 0.9);
 }
 
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+.fadeout {
+    background: linear-gradient(
+        rgba(241, 241, 241, 0) 0%,
+        rgb(241, 241, 241) 100%
+    )
+}
+
 hr.nav_hr{
      background-color: white;
      height: 1px;
@@ -19,9 +30,7 @@ nav a{
     fill: white;
 }
 
-body{
-    background: linear-gradient(251deg,rgb(255, 255, 255), #dbdbdb)
-}
+
 
 .splash{
     background-image: url("../Projects/PLAY/play_background-01.svg")
@@ -39,6 +48,11 @@ hr{
     width: 100%;
     display: block;
 }
+
+section{
+    margin:15px 0;
+}
+
 
 
 /*comment*/
