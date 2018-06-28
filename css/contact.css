@@ -1,0 +1,134 @@
+/* contact.css
+
+CSS for the contact page (contact.html) and the forms associated
+*/
+
+body {
+    background-color: #E8E8E8;
+}
+
+/** Contact card **/
+
+#contact {
+    height: auto;
+}
+
+#contact {
+    background: linear-gradient( 162deg, #00004A, #002061);
+    color: #FFF;
+    display: block;
+}
+
+.contact_text {
+    margin: 70px 40px;
+}
+
+.contact_text > h1 {
+    margin-top: 0;
+    font-size: 31px;
+}
+
+.contact_text > p {
+    line-height: 1.5em;
+}
+
+.contact_form {
+    margin: 0px 30px;
+    margin-bottom: 40px;
+}
+
+.contact_form input,
+.contact_form textarea,
+.contact_form button{
+    width: calc(100% - 10px);
+    padding: 0 5px;
+    height: 45px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: Roboto;
+    border-style: none;
+}
+
+.contact_form textarea {
+    height: 300px;
+    line-height: 1.3em;
+}
+
+.contact_form button {
+    width: calc(100% - 2px);
+    padding: 0px;
+    border: solid 1px #FFF;
+    display: block;
+    background-color:rgba(255, 255, 255, .2); 
+    color: #FFF;
+    font-weight: 700;
+    box-sizing: unset;
+    align-items: unset;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.contact_form button:hover {
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.limit_width{
+    max-width: 1100px;
+    margin: auto;
+}
+
+/********************** Responsive design starts here **********************/
+  
+/***** 750px + *****/
+@media (min-width: 750px) {
+
+    .contact_text > h1 {
+        font-size:65px;
+    }
+    
+    .contact_text > p {
+        font-size: 24px;
+    }
+
+    .contact_form form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .contact_form input,
+    .contact_form textarea,
+    .contact_form button{
+        grid-column: span 2;
+    }
+
+    .contact_form input[name="name"],
+    .contact_form input[name="email"] {
+        grid-column: span 1;
+    }
+
+
+
+}
+
+/***** 1400px + *****/
+@media (min-width: 1400px) {
+
+    #contact {
+        min-height: 80vh;
+        display: grid;
+    }
+
+    #contact .limit_width{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+    }
+
+    .contact_form {
+        margin-top: 70px;
+    }
+      
+}

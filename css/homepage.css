@@ -110,7 +110,7 @@ body{
 
   /*** card ***/
   
-  .content-card{
+  .content_card{
     display: grid;
     margin: 33px 0px 0px 0px;
     height: 650px;
@@ -250,11 +250,15 @@ body{
     .hide {
       display:none;
     }
+
+    /*#disk-jockey .img{
+    width: 200%;
+  }*/
   
   /********************** Responsive design starts here **********************/
   
-  /***** 700px + *****/
-  @media (min-width: 700px) {
+  /***** 750px + *****/
+  @media (min-width: 750px) {
 
     .logo{
       display: block;
@@ -295,13 +299,7 @@ body{
     #nav_menu {
       display: none;
     }
-  }
 
-  /***** 1000px + *****/
-  @media (min-width: 750px) {
-  
-    
-    
     .card-info{
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
@@ -332,18 +330,16 @@ body{
     display: block;
     margin: 40px 0;
     text-align: center;
-  }
-      .left{
+    }
+
+    .left{
       grid-column: 1;
       grid-row: 1;
     }
-  }
-  
-  #disk-jockey .img{
-    width: 200%;
-  }
+
+  }  
     
-  /***** 1600px+ *****/
+  /***** 1400px+ *****/
   @media (min-width: 1400px) {
     .container{
       display: grid;
@@ -351,6 +347,7 @@ body{
     }
     
     nav{
+      min-height: 100vh;
       height: 100%;
       z-index: 3;
       box-shadow: 10px 0px 12px rgba(0, 0, 0, .3);
@@ -378,7 +375,7 @@ body{
       float: none;
     }
     
-    .content-card{
+    .content_card{
       width: 95%;
       height: 800px;
       
@@ -388,7 +385,7 @@ body{
       width: 90%;
     }
     
-    .content-card:hover{
+    .content_card:hover{
       width: 98%;
     }
   }
