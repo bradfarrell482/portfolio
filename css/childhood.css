@@ -38,11 +38,13 @@ hr.nav_hr{
 /*** splash ***/
 
 .splash_overlay {
-    background: linear-gradient(#D9D9D9, #FFF);
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
 }
 .splash_content {
-    color: #000;
+    color: rgb(255, 255, 255);
 }
+
+
 
 /*** video ***/
 .vid {

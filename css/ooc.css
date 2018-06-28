@@ -188,10 +188,6 @@ hr.nav_hr{
 /*** 1000px+ ***/
 @media (min-width: 1000px){
 
-    /*.pgcontent p {
-        margin: auto;
-    }*/
-
     /** ooc grid 1 **/
     /*.ooc_grid_1 {
         grid-template-columns: 2fr 1fr;

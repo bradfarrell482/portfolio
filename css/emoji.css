@@ -42,7 +42,7 @@ hr.nav_hr{
 
 .splash_overlay {
     /*for browsers that do not support gradients*/
-    background: #FFF;
+    background: rgba(255, 255, 255, 0.295);
 
     background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .66), rgba(255, 255, 255, 0));
 }
@@ -141,8 +141,9 @@ video {
     /* sample phone grid */
     .sample_grid {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 3fr 4fr;
         grid-template-rows: auto auto;
+        grid-column-gap: 30px
     }
 
     .sample {

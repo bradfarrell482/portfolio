@@ -253,6 +253,10 @@ hr{
     cursor: pointer;
 }
 
+video::-webkit-media-controls-overlay-play-button {
+    display: none;
+  }
+
 @media (min-width: 750px) {
 
     body{
