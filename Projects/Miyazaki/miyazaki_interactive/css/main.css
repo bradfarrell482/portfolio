@@ -114,6 +114,10 @@ h3 {
 
 }
 
+body{
+    -ms-overflow-style: none
+}
+
 /** Hidden **/
 
 .hide {

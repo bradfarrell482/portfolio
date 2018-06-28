@@ -8,6 +8,15 @@ nav ul{
 
 body{
     background-color: rgb(241, 241, 241);
+    
+}
+
+.pgcontent{
+    color: #272260;
+}
+
+.intro{
+    max-height: 1900px;
 }
 
 .fadeout {
@@ -36,9 +45,8 @@ nav a{
     background-image: url("../Projects/PLAY/play_background-01.svg")
 }
 
-.article{
-    color: #272260;
-}
+
+
 
 hr{
     color: #272260

@@ -24,7 +24,7 @@ var galleries = [];
 
 //prepare gallery autoplay
 var cycle = true;
-var transition_time = 7000; //7 seconds total
+var transition_time = 5000; //5 seconds total
 
 //the set wait time for inactivity to resume cycles
 var wait_time = 10; //set to 10 sec for testing
