@@ -1,0 +1,46 @@
+
+
+.pgcontent{
+    background-color: black;
+    color: white;
+}
+
+.pgcontent p a{
+    color: rgb(223, 144, 255);
+}
+
+
+.splash{
+    background-image: url("../Resources/Desert-01.png"); 
+    background-attachment: local;
+    background-position: 50%;
+}
+
+.splash h1{
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 4em;
+    text-decoration: underline;
+}
+
+.button{ 
+    margin: 60px 20px 60px 0px;
+    border: 1px solid white;
+    border-radius: 0px;
+    max-width: 150px;
+    padding: 15px 30px;
+    transition: all .5s;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+  }
+  
+  .button:hover{
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+  }
+
+  .button {
+      color: black;
+      text-decoration: none;
+      font-weight: 700;
+  }
