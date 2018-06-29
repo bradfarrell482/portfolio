@@ -11,7 +11,7 @@ Also contains CSS for the nav, which is relevent on every page
 }
 
 body{
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
     margin: 0;
     font-family: Roboto;
     animation: fade_in 2s ease;
@@ -108,6 +108,36 @@ body{
 
   /****** END NAV ******/
 
+  /****** INDEX INTRO ******/
+  
+
+  #index_intro{
+    color: #acacac;
+    padding: 20px;
+    text-align: center;
+    margin: 30px auto;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  #index_intro hr{
+    width: 30vw;
+    max-width: 350px;
+    border: 1px solid #c0c0c0;
+    margin: 20px auto;
+
+  }
+
+  #index_intro span{
+    font-size: 35px;
+    color: rgb(112, 112, 112);
+  }
+
+
+/****** INDEX INTRO ******/
+
+
+
   /*** card ***/
   
   .content_card{
@@ -183,7 +213,13 @@ body{
      color: white;
      letter-spacing: 1px;
      font-weight: 700;
+     text-transform: uppercase;
+     margin: 0;
   }
+
+  .content_card p{
+    margin-top: 10px;
+ }
   /*** end Card ***/
   
   p{
@@ -301,6 +337,15 @@ body{
       display: none;
     }
 
+    #index_intro{
+      font-size: 30px;
+    }
+
+    #index_intro span{
+      font-size: 40px;
+      color: rgb(112, 112, 112);
+    }
+
     .card-info{
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
@@ -375,7 +420,16 @@ body{
       margin: 0px auto 0px auto;
       float: none;
     }
-    
+   
+    #index_intro{
+      font-size: 30px;
+    }
+
+    #index_intro span{
+      font-size: 48px;
+      color: rgb(112, 112, 112);
+    }
+
     .content_card{
       width: 95%;
       height: 800px;
