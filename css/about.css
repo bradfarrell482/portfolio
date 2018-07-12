@@ -1,37 +1,42 @@
 
 
 .pgcontent{
-    background-color: black;
+    background-color: rgb(24, 18, 37);
     color: white;
 }
 
 .pgcontent p a{
-    color: rgb(223, 144, 255);
+    color: rgb(223, 111, 37);
 }
 
 
 .splash{
-    background-image: url("../Resources/Desert-01.png"); 
-    background-attachment: local;
-    background-position: 50%;
+    background-image: url("../Resources/Rocket.jpg"); 
+    background-attachment: fixed;
+    background-position: 50% 00px;
 }
 
 .splash h1{
     font-weight: 900;
     letter-spacing: 3px;
     font-size: 4em;
-    text-decoration: underline;
+   
+}
+
+.splash_overlay{
+    background: linear-gradient( rgba(255, 0, 0, 0.233), rgba(24, 1, 46, 0.507) );
 }
 
 .button{ 
-    margin: 60px 20px 60px 0px;
+    margin: 20px 20px 0px 0px;
     border: 1px solid white;
     border-radius: 0px;
-    max-width: 150px;
+    width: 100px;
     padding: 15px 30px;
     transition: all .5s;
     background-color: rgba(255, 255, 255, .7);
     cursor: pointer;
+    display: inline-block;
   }
   
   .button:hover{
