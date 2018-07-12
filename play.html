@@ -14,6 +14,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/homepage.js"></script>
     <script src="js/project_page.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- 
+        PhotoSwipe Files
+
+        For more info on PhotoSwipe, visit photoswipe.com
+    -->
+
+    <link rel="stylesheet" href="photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="photoswipe/default-skin/default-skin.css">
+    <script src="photoswipe/photoswipe.min.js"></script>
+    <script src="photoswipe/photoswipe-ui-default.min.js"></script>
+
+    <!-- End PhotoSwipe -->
 </head>
 
 <body>
@@ -34,31 +48,43 @@
             </div>
 
             <div class="intro_block">
-                    <div class="article_container center_h">
-    
-                        <div class="article_text intro collapsed">
-                                <h1 class="centered">INTRODUCING PLAY</h1>
-                                <div class="article_text">
-                                    <p>PLAY is a platform to help parents balance their child’s digital activity with real-world play time. As our society gets progressively more digital every day, exposing children to technology at an early age can help prepare them for using tools that they will use for the rest of their lives. In addition, the multitude of learning programs and educational resources available to today’s children is astounding. But one thing is inevitable: tech is also a toy, and children LOVE to play.
-                                    </p>
-            
-                                    <p>Play time is extremely important for childhood development, and it teaches kids valuable lessons like sportsmanship, healthy exercise habits, and social skills. Time engaging with the real world does not lose its value in a digital age, and tablets and phones are not a good substitute for face-to-face interactions.</p>
-                                    
-                                    <p>I came up with the PLAY platform to answer the following question: “How can I make sure my child is spending enough time playing in real life while still exposing them to technology?” </p>
-            
-                                    <p>The slides below are an introduction to the PLAY platform and what it can do for parents. While the product does not exist, I took the opportunity to mock up the branding, product images, and general tone of the product. Still to come is a prototype of the mobile application. Stay tuned for that at a later date!</p>
-                                
-                                </div>
-                            </p>
-                        </div>
-                        <div class="fadeout" id="intro_fade"></div>
-    
-                        <img src="Resources/down_arrow.gif" class="drop_arrow toggle_expand" id="intro_arrow" target=".intro" fade_target="#intro_fade">
-    
-                    </div>
-                </div>
+                <div class="article_container center_h">
 
-<!--
+                    <div class="article_text intro collapsed">
+                        <h1 class="centered">INTRODUCING PLAY</h1>
+                        <div class="article_text">
+                            <p>PLAY is a platform to help parents balance their child’s digital activity with real-world play
+                                time. As our society gets progressively more digital every day, exposing children to technology
+                                at an early age can help prepare them for using tools that they will use for the rest of
+                                their lives. In addition, the multitude of learning programs and educational resources available
+                                to today’s children is astounding. But one thing is inevitable: tech is also a toy, and children
+                                LOVE to play.
+                            </p>
+
+                            <p>Play time is extremely important for childhood development, and it teaches kids valuable lessons
+                                like sportsmanship, healthy exercise habits, and social skills. Time engaging with the real
+                                world does not lose its value in a digital age, and tablets and phones are not a good substitute
+                                for face-to-face interactions.</p>
+
+                            <p>I came up with the PLAY platform to answer the following question: “How can I make sure my child
+                                is spending enough time playing in real life while still exposing them to technology?” </p>
+
+                            <p>The slides below are an introduction to the PLAY platform and what it can do for parents. While
+                                the product does not exist, I took the opportunity to mock up the branding, product images,
+                                and general tone of the product. Still to come is a prototype of the mobile application.
+                                Stay tuned for that at a later date!</p>
+
+                        </div>
+                        </p>
+                    </div>
+                    <div class="fadeout" id="intro_fade"></div>
+
+                    <img src="Resources/down_arrow.gif" class="drop_arrow toggle_expand" id="intro_arrow" target=".intro" fade_target="#intro_fade">
+
+                </div>
+            </div>
+
+            <!--
             <div class="article_container center_h">
                 <div class="article ">
                     <h1 class="centered">INTRODUCING PLAY</h1>
@@ -94,3 +120,91 @@
             <section class="module no_padding">
                 <img src="Projects//PLAY/download (5).png" alt="" class="deck">
             </section>
+
+            <section class="module" id="user_flow">
+                <div class="limit_width" id="flow_box">
+                    <img src="Projects//PLAY/play_app/PLAY Sitemap.svg" alt="" class="lightbox flow" lightbox_target=".flow" w="3840" h="2160">
+                </div>
+            </section>
+
+            <section class="module" id="prototype">
+                <iframe width="375" height="667" src="https://xd.adobe.com/embed/f83283d7-8253-418d-4f38-3ec7fb33b55f-8e03/" frameborder="0" allowfullscreen></iframe>
+            </section>
+
+
+
+
+
+
+            <!-- Photoswipe Elements-->
+
+            <!-- Root element of PhotoSwipe. Must have class pswp. -->
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                    <!-- Background of PhotoSwipe. 
+                 It's a separate element as animating opacity is faster than rgba(). -->
+                    <div class="pswp__bg"></div>
+    
+                    <!-- Slides wrapper with overflow:hidden. -->
+                    <div class="pswp__scroll-wrap">
+    
+                        <!-- Container that holds slides. 
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+                        <div class="pswp__container">
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                        </div>
+    
+                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                        <div class="pswp__ui pswp__ui--hidden">
+    
+                            <div class="pswp__top-bar">
+    
+                                <!--  Controls are self-explanatory. Order can be changed. -->
+    
+                                <div class="pswp__counter"></div>
+    
+                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+    
+                                <button class="pswp__button pswp__button--share" title="Share"></button>
+    
+                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+    
+                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+    
+                                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                                <!-- element will get class pswp__preloader--active when preloader is running -->
+                                <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                        <div class="pswp__preloader__cut">
+                                            <div class="pswp__preloader__donut"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                <div class="pswp__share-tooltip"></div>
+                            </div>
+    
+                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                            </button>
+    
+                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                            </button>
+    
+                            <div class="pswp__caption">
+                                <div class="pswp__caption__center"></div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <!-- End Photoswipe Elements-->
+
+            </body>
