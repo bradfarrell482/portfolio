@@ -1,0 +1,77 @@
+/*
+CSS file for cover (index.html) page
+*/
+
+.pgcontent{
+    color: #555555;
+    font-family: 'Roboto', sans-serif;
+}
+
+.splash {
+    width: 100%;
+    height: auto;
+    margin: 30px 0px;
+}
+
+.splash img {
+    display: block;
+    width: auto;
+    max-height: 500px;
+    margin: auto;
+}
+
+/* article */
+
+.centered{
+    text-align: center;
+}
+
+.article h1 {
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.article p {
+    font-size: 35px;
+    margin: 1em 0.5em;
+}
+
+hr {
+    border: none;
+    margin: 0 1em;
+    height: 2px;
+    background-color: #555555;
+}
+
+/* buttons */
+
+.enter_button_container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+button{
+    font-size: 30px;
+    display: unset;
+    margin: 40px auto;
+    border: 2px solid #555555;
+    border-radius: 0px;
+    padding: 25px 15%;
+    transition: all .5s;
+    background-color: rgba(255, 255, 255);
+    cursor: pointer;
+    margin-right: 25%;
+}
+  
+button:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+button.social {
+    margin-right: 0;
+    margin-left: 2%;
+    padding: 25px;
+}
