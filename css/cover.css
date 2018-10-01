@@ -5,6 +5,9 @@ CSS file for cover (index.html) page
 .pgcontent{
     color: #555555;
     font-family: 'Roboto', sans-serif;
+    max-width: 100vw;
+    margin: auto;
+    min-height: calc(100vh - 300px)
 }
 
 .splash {
@@ -16,30 +19,31 @@ CSS file for cover (index.html) page
 .splash img {
     display: block;
     width: auto;
+    max-width: 95%;
     max-height: 500px;
     margin: auto;
 }
 
 /* article */
 
-.centered{
+.article_container{
     text-align: center;
 }
 
 .article h1 {
-    font-size: 60px;
+    font-size: 39px;
     font-weight: 500;
-    margin: 0;
+    margin: 0 10px;
 }
 
 .article p {
-    font-size: 35px;
-    margin: 1em 0.5em;
+    font-size: 24px;
+    margin: 3px 10px 1em 10px;
 }
 
 hr {
     border: none;
-    margin: 0 1em;
+    margin: 0 10px;
     height: 2px;
     background-color: #555555;
 }
@@ -47,31 +51,75 @@ hr {
 /* buttons */
 
 .enter_button_container {
-    width: 90%;
-    margin: auto;
-    text-align: center;
+    width: calc(100% - 20px);
+    margin: auto 10px;
+    text-align: left;
 }
 
 button{
-    font-size: 30px;
-    display: unset;
+    font-size: 20px;
+    display: inline-block;
     margin: 40px auto;
     border: 2px solid #555555;
     border-radius: 0px;
-    padding: 25px 15%;
+    padding: 20px 15%;
     transition: all .5s;
     background-color: rgba(255, 255, 255);
     cursor: pointer;
-    margin-right: 25%;
 }
   
 button:hover{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(53, 168, 235, 0.3);
     border-radius: 10px;
 }
 
 button.social {
     margin-right: 0;
     margin-left: 2%;
-    padding: 25px;
+    padding: 20px;
+    float: right;
+}
+
+@media (min-width: 750px) {
+    .pgcontent{
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .pgcontent{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+    }
+
+    .splash img{
+        max-height: 85vh;
+        align-self: center;
+        display: block;
+    }
+
+    .center_h{
+        display: block;
+        margin: auto;
+    }
+
+    .article_container{
+        margin: auto 60px auto auto;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1400px) {
+    .pgcontent{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+    }
+
+    .article_container{
+        max-width: 514px;
+        margin: auto 50px;
+    }
 }
