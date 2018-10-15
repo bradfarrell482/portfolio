@@ -185,6 +185,11 @@ body{
     margin: 0 4px 10px 0;
   }
   
+.thumb_link{
+  display: block;
+  width: 100%;
+}
+
   .thumbnail{
     display: block;
     margin: 40px auto;
@@ -381,7 +386,7 @@ body{
     .thumbnail{
       margin: auto;
       max-width: 80%;
-      max-height: 80%;
+      max-height: 500px;
       bottom: 0px;
       position: relative; 
     }
@@ -456,6 +461,14 @@ body{
 
     .card-info{
       width: 90%;
+    }
+
+    .thumbnail{
+      margin: auto;
+      max-width: 80%;
+      max-height: 650px;
+      bottom: 0px;
+      position: relative; 
     }
     
     .content_card:hover{
