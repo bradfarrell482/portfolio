@@ -53,13 +53,13 @@ hr {
 .enter_button_container {
     width: calc(100% - 20px);
     margin: auto 10px;
-    text-align: left;
+    text-align: center;
 }
 
 button{
     font-size: 20px;
     display: inline-block;
-    margin: 40px auto;
+    margin: auto;
     border: 2px solid #555555;
     border-radius: 0px;
     padding: 20px 15%;
@@ -77,7 +77,7 @@ button.social {
     margin-right: 0;
     margin-left: 2%;
     padding: 20px;
-    float: right;
+    /*float: right;*/
 }
 
 /********************** Responsive design *******************/
@@ -112,6 +112,9 @@ button.social {
         margin: auto 60px auto auto;
         text-align: left;
     }
+
+    .enter_button_container {
+        text-align: left;
 }
 
 /* 1400px + */
