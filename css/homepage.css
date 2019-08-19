@@ -458,7 +458,7 @@ body{
       color: rgb(112, 112, 112);
     }
 
-    .pgcontent{
+    .pgcontent, .cards{
       grid-column: 2;
     }
 
