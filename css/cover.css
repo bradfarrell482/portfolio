@@ -56,6 +56,10 @@ hr {
     text-align: center;
 }
 
+.enter_button_container a {
+    text-decoration: none;
+}
+
 button{
     font-size: 20px;
     display: inline-block;
@@ -115,6 +119,7 @@ button.social {
 
     .enter_button_container {
         text-align: left;
+    }
 }
 
 /* 1400px + */
