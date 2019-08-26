@@ -1,5 +1,6 @@
 
 /* DEFAULT TEXT RULES */
+
 .pgcontent{
     color: grey;
     font-family: 'Roboto', sans-serif;
@@ -285,9 +286,9 @@ video::-webkit-media-controls-overlay-play-button {
 
    
 
-    .module_text h1{
-        
+    /**.module_text h1{    
     }
+    **/
     
     
 

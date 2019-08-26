@@ -1,0 +1,52 @@
+/********************
+**       Nav       **
+*********************/
+
+/** Nav color **/
+nav{
+    background-color: rgba(53, 52, 52, 1);
+}
+/** Separate color for list due to transparency **/
+nav ul{
+    background-color: rgba(53, 52, 52, 0.9);
+}
+
+/** BF logo color **/
+.logo {
+    fill: white;
+}
+
+/** Nav link colors **/
+nav a{
+    color: white;
+}
+
+/** nav underlines **/
+hr.nav_hr{
+    background-color: white;
+    height: 1px;
+}
+
+/********************
+**    HTML Body    **
+*********************/
+
+body{
+    background-color: rgba(248, 248, 248, 1)
+}
+
+/** Splash background **/
+
+.splash{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/** Module background **/
+.module{
+    background-color: white;
+}
+
+/** Headers **/
+h1 {
+    color: rgba(17, 168, 222, 1);
+}
