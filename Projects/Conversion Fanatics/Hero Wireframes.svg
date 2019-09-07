@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1194" height="595" viewBox="0 0 1194 595">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="581" height="124" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="287" height="62" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect width="623" height="52" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Hero_Wireframes" data-name="Hero Wireframes" transform="translate(-374 -499)">
+    <rect id="Rectangle_160" data-name="Rectangle 160" width="775" height="595" transform="translate(374 499)" fill="#f8f8f8"/>
+    <rect id="Rectangle_163" data-name="Rectangle 163" width="775" height="287" transform="translate(374 499)" fill="#e9e9e9"/>
+    <rect id="Rectangle_161" data-name="Rectangle 161" width="360" height="595" transform="translate(1208 499)" fill="#f8f8f8"/>
+    <rect id="Rectangle_167" data-name="Rectangle 167" width="360" height="517" transform="translate(1208 499)" fill="#e9e9e9"/>
+    <rect id="Rectangle_162" data-name="Rectangle 162" width="775" height="23" transform="translate(374 499)" fill="#dfdfdf"/>
+    <rect id="Rectangle_166" data-name="Rectangle 166" width="360" height="23" transform="translate(1208 499)" fill="#dfdfdf"/>
+    <rect id="Rectangle_164" data-name="Rectangle 164" width="281" height="189" transform="translate(471 560)" fill="#dfdfdf"/>
+    <rect id="Rectangle_168" data-name="Rectangle 168" width="281" height="189" transform="translate(1248 779)" fill="#dfdfdf"/>
+    <g id="Repeat_Grid_3" data-name="Repeat Grid 3" transform="translate(471 822)" clip-path="url(#clip-path)">
+      <g transform="translate(-588 -8171)">
+        <rect id="Rectangle_165" data-name="Rectangle 165" width="131" height="96" transform="translate(588 8171)" fill="#dfdfdf"/>
+        <text id="Title" transform="translate(643 8283)" fill="#707070" font-size="11" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Title</tspan></text>
+      </g>
+      <g transform="translate(-438 -8171)">
+        <rect id="Rectangle_165-2" data-name="Rectangle 165" width="131" height="96" transform="translate(588 8171)" fill="#dfdfdf"/>
+        <text id="Title-2" data-name="Title" transform="translate(643 8283)" fill="#707070" font-size="11" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Title</tspan></text>
+      </g>
+      <g transform="translate(-288 -8171)">
+        <rect id="Rectangle_165-3" data-name="Rectangle 165" width="131" height="96" transform="translate(588 8171)" fill="#dfdfdf"/>
+        <text id="Title-3" data-name="Title" transform="translate(643 8283)" fill="#707070" font-size="11" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Title</tspan></text>
+      </g>
+      <g transform="translate(-138 -8171)">
+        <rect id="Rectangle_165-4" data-name="Rectangle 165" width="131" height="96" transform="translate(588 8171)" fill="#dfdfdf"/>
+        <text id="Title-4" data-name="Title" transform="translate(643 8283)" fill="#707070" font-size="11" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Title</tspan></text>
+      </g>
+    </g>
+    <g id="Repeat_Grid_4" data-name="Repeat Grid 4" transform="translate(1248 1032)" clip-path="url(#clip-path-2)">
+      <g transform="translate(-588 -8171)">
+        <rect id="Rectangle_165-5" data-name="Rectangle 165" width="131" height="96" transform="translate(588 8171)" fill="#dfdfdf"/>
+        <text id="Title-5" data-name="Title" transform="translate(643 8283)" fill="#707070" font-size="11" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Title</tspan></text>
+      </g>
+      <g transform="translate(-438 -8171)">
+        <rect id="Rectangle_165-6" data-name="Rectangle 165" width="131" height="96" transform="translate(588 8171)" fill="#dfdfdf"/>
+        <text id="Title-6" data-name="Title" transform="translate(643 8283)" fill="#707070" font-size="11" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Title</tspan></text>
+      </g>
+    </g>
+    <text id="Product_Image" data-name="Product Image" transform="translate(558 660)" fill="#707070" font-size="16" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="0" y="0">Product Image</tspan></text>
+    <text id="Product_Image-2" data-name="Product Image" transform="translate(1335 879)" fill="#707070" font-size="16" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="0" y="0">Product Image</tspan></text>
+    <line id="Line_2" data-name="Line 2" x2="775" transform="translate(374.5 897.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="Fold" transform="translate(395 890)" fill="#707070" font-size="11" font-family="Roboto-ThinItalic, Roboto" font-weight="200" font-style="italic"><tspan x="0" y="0">Fold</tspan></text>
+    <text id="Fold-2" data-name="Fold" transform="translate(1094 890)" fill="#707070" font-size="11" font-family="Roboto-ThinItalic, Roboto" font-weight="200" font-style="italic"><tspan x="0" y="0">Fold</tspan></text>
+    <text id="Headline" transform="translate(795 609)" fill="#707070" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.137em"><tspan x="0" y="0">HEADLINE</tspan></text>
+    <text id="Headline-2" data-name="Headline" transform="translate(1388 590)" fill="#707070" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.137em"><tspan x="-50.871" y="0">HEADLINE</tspan></text>
+    <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed" transform="translate(795 623)" fill="#707070" font-size="11" font-family="Roboto-Regular, Roboto" letter-spacing="0.241em"><tspan x="0" y="10">LOREM IPSUM DOLOR SIT AMET, </tspan><tspan x="0" y="27">CONSETETUR SADIPSCING ELITR, SED</tspan></text>
+    <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed-2" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed" transform="translate(1250 604)" fill="#707070" font-size="11" font-family="Roboto-Regular, Roboto" letter-spacing="0.241em"><tspan x="23.073" y="10">LOREM IPSUM DOLOR SIT AMET, </tspan><tspan x="1.728" y="27">CONSETETUR SADIPSCING ELITR, SED</tspan></text>
+    <g id="Group_2" data-name="Group 2" transform="translate(795 668.384)">
+      <path id="Path_42" data-name="Path 42" d="M0,0H149.62V32.125H0Z" transform="translate(0 0)" fill="#7b7b7b"/>
+      <text id="COLLECTION_CTA" data-name="COLLECTION CTA" transform="translate(74.68 18.637)" fill="#fff" font-size="8" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-32.236" y="0">COLLECTION CTA</tspan></text>
+    </g>
+    <g id="Group_1140" data-name="Group 1140" transform="translate(1246.619 658.384)">
+      <path id="Path_42-2" data-name="Path 42" d="M0,0H282.38V32.125H0Z" transform="translate(0 0)" fill="#7b7b7b"/>
+      <text id="COLLECTION_CTA-2" data-name="COLLECTION CTA" transform="translate(140.859 18.637)" fill="#fff" font-size="8" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-32.236" y="0">COLLECTION CTA</tspan></text>
+    </g>
+    <g id="Group_7" data-name="Group 7" transform="translate(958.836 668.384)">
+      <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(0 0)" fill="none" stroke="#7b7b7b" stroke-width="3">
+        <rect width="86.655" height="32.125" stroke="none"/>
+        <rect x="1.5" y="1.5" width="83.655" height="29.125" fill="none"/>
+      </g>
+      <g id="Group_6" data-name="Group 6" transform="translate(17.753 7.067)">
+        <text id="VIDEO_CTA" data-name="VIDEO CTA" transform="translate(27 11.57)" fill="#7b7b7b" font-size="8" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.183em"><tspan x="-26.829" y="0">VIDEO CTA</tspan></text>
+      </g>
+    </g>
+    <g id="Group_1141" data-name="Group 1141" transform="translate(1247.326 699.384)">
+      <g id="Rectangle_5-2" data-name="Rectangle 5" transform="translate(0 0)" fill="none" stroke="#7b7b7b" stroke-width="3">
+        <rect width="281.674" height="32.125" stroke="none"/>
+        <rect x="1.5" y="1.5" width="278.674" height="29.125" fill="none"/>
+      </g>
+      <g id="Group_6-2" data-name="Group 6" transform="translate(113.771 10.637)">
+        <text id="VIDEO_CTA-2" data-name="VIDEO CTA" transform="translate(27 9)" fill="#7b7b7b" font-size="8" font-family="OpenSans-Bold, Open Sans" font-weight="700" letter-spacing="0.183em"><tspan x="-26.829" y="0">VIDEO CTA</tspan></text>
+      </g>
+    </g>
+    <g id="Repeat_Grid_5" data-name="Repeat Grid 5" transform="translate(451 990)" clip-path="url(#clip-path-3)">
+      <g transform="translate(-610 -8336)">
+        <rect id="Rectangle_169" data-name="Rectangle 169" width="108" height="34" transform="translate(610 8336)" fill="#ececec"/>
+        <text id="Logo" transform="translate(664 8356)" fill="#cfcfcf" font-size="12" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.137em"><tspan x="-15.925" y="0">Logo</tspan></text>
+      </g>
+      <g transform="translate(-482 -8336)">
+        <rect id="Rectangle_169-2" data-name="Rectangle 169" width="108" height="34" transform="translate(610 8336)" fill="#ececec"/>
+        <text id="Logo-2" data-name="Logo" transform="translate(664 8356)" fill="#cfcfcf" font-size="12" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.137em"><tspan x="-15.925" y="0">Logo</tspan></text>
+      </g>
+      <g transform="translate(-354 -8336)">
+        <rect id="Rectangle_169-3" data-name="Rectangle 169" width="108" height="34" transform="translate(610 8336)" fill="#ececec"/>
+        <text id="Logo-3" data-name="Logo" transform="translate(664 8356)" fill="#cfcfcf" font-size="12" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.137em"><tspan x="-15.925" y="0">Logo</tspan></text>
+      </g>
+      <g transform="translate(-226 -8336)">
+        <rect id="Rectangle_169-4" data-name="Rectangle 169" width="108" height="34" transform="translate(610 8336)" fill="#ececec"/>
+        <text id="Logo-4" data-name="Logo" transform="translate(664 8356)" fill="#cfcfcf" font-size="12" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.137em"><tspan x="-15.925" y="0">Logo</tspan></text>
+      </g>
+      <g transform="translate(-98 -8336)">
+        <rect id="Rectangle_169-5" data-name="Rectangle 169" width="108" height="34" transform="translate(610 8336)" fill="#ececec"/>
+        <text id="Logo-5" data-name="Logo" transform="translate(664 8356)" fill="#cfcfcf" font-size="12" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.137em"><tspan x="-15.925" y="0">Logo</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
