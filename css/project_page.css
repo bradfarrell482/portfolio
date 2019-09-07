@@ -38,11 +38,27 @@ hr{
     width: 100%;
     background-color: blue;
     background-size: cover;
-    height: 550px;
+    height: 100vw;
+    max-height: 550px;
     position: relative;
     transition: all .5s;
     background-attachment: fixed;
+    background-position: center center;
 }
+
+/*
+*Alex made some changes pertaining to background-size: contain, keeping them here as notes for future reference
+.splash{
+    width: 100%;
+    background-color: blue;
+    background-size: contain;
+    height: 550px;
+    background-repeat:no-repeat;
+    position: relative;
+    transition: all .5s;
+    background-attachment: fixed;
+    background-position: center center;
+}*/
 
 .splash_overlay{
     position: absolute;
@@ -62,6 +78,12 @@ hr{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/*For splash headers that aren't svg's or images*/
+.splash_content h1{
+    margin-bottom: 0;
+    font-size: 36px;
 }
 
 .splash_content p{
@@ -258,6 +280,17 @@ video::-webkit-media-controls-overlay-play-button {
   }
 
 @media (min-width: 750px) {
+    /** Text rules **/
+    .pgcontent h1{
+        font-size: 34px;
+    }
+
+    /** splash content **/
+    .splash_content h1 {
+        font-size: 56px;
+        position: center;
+        margin: auto auto;
+    }
 
     body{
         animation: fade_in 2s ease;
@@ -275,29 +308,15 @@ video::-webkit-media-controls-overlay-play-button {
         widows: 3;
     }
 
-    .pgcontent h1{
-        font-size: 34px;
-    }
-
     .intro_block{
         padding: 40px 50px;
     }
-
-   
-
-    /**.module_text h1{    
-    }
-    **/
-    
-    
 
     .module_text_sm h1{
         font-size: 40px;
         font-weight: bold;
         margin: 0 0 .3em 0;
     }
-    
-    
     
     .module{
         padding: 60px 50px 50px 50px;
@@ -307,15 +326,11 @@ video::-webkit-media-controls-overlay-play-button {
     .module_text{
         display: block;
         margin: 0px auto 60px auto;
-        
-        
     }
 
     .centered{
         text-align: center;
     }
-
-    
     
     .grid_2{
         display: grid;
@@ -408,12 +423,16 @@ video::-webkit-media-controls-overlay-play-button {
     
 }
 
-
-/*
-@media (min-width: 2200px) {
-.limit_width{
-    width:100%;
-    max-width: 2200px;
-    margin: auto;
-}
+/* Quick little addition for anchor links.
+If any anchor links are in a project page, try a smooth scroll to the item
 */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Media query to disable this in case users prone to motion sickness disable this*/
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}

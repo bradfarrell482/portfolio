@@ -2,6 +2,15 @@
 
 CSS for the homepage (index.html and also work.html) and the basic structure for the entire site.
 Also contains CSS for the nav, which is relevent on every page
+
+
+***
+Note:
+Originally, the work.html page was the home/index page for the site, meaning that homepage.css used to apply specifically to that page.
+However, we later changed that page to be what it is now and added a new index.html as a cover page leading people into the rest of the
+website. /BOTH/ of these pages are encapsulated in this homepage.css file. To avoid confusion, we may want to split this up or rename this
+file. For now, it ain't broke, so we're leaving it as is.
+***
 */
 
 /*** Body ***/

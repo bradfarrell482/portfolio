@@ -35,10 +35,25 @@ body{
     background-color: rgba(248, 248, 248, 1)
 }
 
+/********************
+**   Splash Items  **
+*********************/
+
 /** Splash background **/
 
 .splash{
     background-color: rgba(255, 255, 255, 1);
+    /* Use this next item to add background images to the splash*/
+    background-image: url("../Projects/Conversion\ Fanatics/CF\ Hero\ Image.png");
+}
+
+.splash_overlay {
+    /*Splash overlay color: appears over the image as a filter*/
+    background-color: rgba(0, 105, 159, .76);
+}
+
+.splash_content h1{
+    color: #FFF;
 }
 
 /** Module background **/
