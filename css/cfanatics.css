@@ -61,7 +61,46 @@ body{
     background-color: white;
 }
 
+/********************
+**      Text       **
+*********************/
+
 /** Headers **/
-h1 {
+h1, h2 {
     color: rgba(17, 168, 222, 1);
+}
+
+/** Margin for overview grid items **/
+#overview_grid {
+    margin-top: 40px;
+}
+#overview_grid p{
+    font-size: 14px;
+}
+
+/********************
+**      Grid       **
+*********************/
+
+/** Set the grid position for overview grid items **/
+
+#overview_grid #role {
+    grid-row: 1/3;
+}
+
+/****************************************************************************************************/
+
+/*****************************
+**        Responsive        **
+******************************/
+
+@media (min-width: 750px) {
+
+    /*****
+    GRID
+    *****/
+    #overview_grid #role {
+        grid-row: auto;
+    }
+
 }
