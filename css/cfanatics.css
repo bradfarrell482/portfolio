@@ -44,7 +44,7 @@ body{
 .splash{
     background-color: rgba(255, 255, 255, 1);
     /* Use this next item to add background images to the splash*/
-    background-image: url("../Projects/Conversion\ Fanatics/CF\ Hero\ Image.png");
+    background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
 }
 
 .splash_overlay {
@@ -66,16 +66,14 @@ body{
 *********************/
 
 /** Headers **/
-h1, h2 {
+h1, h2, h3 {
     color: rgba(17, 168, 222, 1);
+    text-transform: uppercase;
 }
 
 /** Margin for overview grid items **/
 #overview_grid {
     margin-top: 40px;
-}
-#overview_grid p{
-    font-size: 14px;
 }
 
 /********************
@@ -87,6 +85,181 @@ h1, h2 {
 #overview_grid #role {
     grid-row: 1/3;
 }
+
+/**********************
+** Page Specific CSS **
+***********************/
+
+#process_svg {
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
+/** Case study button CSS **/
+
+/* Css applying to all case studies */
+#case_studies {
+    max-width: 1100px;
+}
+
+#case_studies .grid_3 {
+    margin-top: 50px;
+}
+
+.case_study_content h1, .case_study_content h2{
+    color: #FFF;
+    margin:auto;
+}
+
+.case_study_content h1 {
+    text-transform: none;
+    margin-bottom: 20px;
+}
+
+.case_study_content {
+    padding: 30px 40px;
+    padding-bottom: 0;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+.case_study {
+    max-width: 350px;
+}
+
+.case_study a{
+    font-size:22px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: rgba(96, 0, 178, .7);
+    width: 80%;
+    background-color: rgba(255, 255, 255, .7);
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    padding: 15px;
+    text-align: center;
+}
+
+.case_study .main_img{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center center;
+    background-size: cover;
+}
+
+.case_study .overlay {
+    width: 100%;
+    height: 250px;
+}
+
+.case_study p1{
+    margin: .5em;
+    margin-top: 15px;
+}
+
+/** Css for first case study: Hero study **/
+#hero_study {
+    background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
+}
+
+#hero_study .overlay {
+    background-color: rgba(96, 0, 178, .76);
+}
+
+#hero_study a {
+    color: rgba(96, 0, 178, .76);
+}
+
+/** Css for first case study: Sorting study **/
+#sorting_study {
+    background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
+}
+
+#sorting_study .overlay {
+    background-color: rgba(30, 151, 153, .76);
+}
+
+#sorting_study a {
+    color: rgba(30, 151, 153, .76);
+}
+
+/** Css for first case study: Trust study **/
+#trust_study {
+    background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
+}
+
+#trust_study .overlay {
+    background-color: rgba(178, 1, 67, .76);
+}
+
+#trust_study a {
+    color: rgba(178, 1, 67, .76);
+}
+
+/** END CASE STUDY CSS **/
+
+/** before elements for the icons on process chart text 
+followed by each individual item's style/link
+**/
+
+.icon_header:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+#analysis:before {
+    background: url("../Projects/Conversion_Fanatics/icon_analysis.svg") no-repeat;
+    width: 23px;
+    height: 23px;
+    transform: translateY(-2px);
+}
+#analysis {
+    color:#E66294;
+}
+
+#research:before {
+    background: url("../Projects/Conversion_Fanatics/icon_research.svg") no-repeat;
+    transform: translateY(1px);
+}
+#research {
+    color:#A70000;
+}
+
+#ideation:before {
+    background: url("../Projects/Conversion_Fanatics/icon_ideation.svg") no-repeat;
+    transform: translateY(-5px);
+}
+#ideation {
+    color:#FF9C39;
+}
+
+#creation:before {
+    background: url("../Projects/Conversion_Fanatics/icon_creation.svg") no-repeat;
+}
+#creation {
+    color: #259FB0;
+}
+
+#validation:before {
+    background: url("../Projects/Conversion_Fanatics/icon_validation.svg") no-repeat;
+}
+#validation {
+    color:#6B189A;
+}
+
+#iteration:before {
+    background: url("../Projects/Conversion_Fanatics/icon_iteration.svg") no-repeat;
+}
+#iteration { 
+    color:#6D6D6D;
+}
+
+/** END .ICON_HEADER CSS **/
 
 /****************************************************************************************************/
 
@@ -101,6 +274,23 @@ h1, h2 {
     *****/
     #overview_grid #role {
         grid-row: auto;
+    }
+
+    #case_studies .grid_3 {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    /*****
+    GRID
+    *****/
+
+    #case_studies .grid_3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
     }
 
 }
