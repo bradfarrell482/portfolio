@@ -22,6 +22,11 @@ h1{
     font-size: 30px;
 }
 
+h2{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
 hr{
     color: black;
    border-style: solid;
@@ -104,7 +109,7 @@ hr{
 .article_container{
     margin: 50px 0px;
     display: block;
-    max-width: 750px;
+    max-width: 830px;
 }
 
 .article{
@@ -112,9 +117,11 @@ hr{
     margin: 50px 20px;
 }
 
-/*.article p{
+.article .callout {
+    color: #000;
     font-size: 20px;
-}*/
+    margin-block-end: 2em;
+}
 
 .intro_block{
     padding: 40px 20px;
@@ -192,8 +199,6 @@ hr{
     grid-gap: 15px;
     grid-row-gap: 40px; 
     width: 100%;
-
-
 }
 
 .grid_3{
@@ -220,8 +225,13 @@ hr{
     width: 100%;
 }
 
-
-
+.grid_m2_d3{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    width: 100%;
+}
 
 
 /* SPECIAL CLASSES */
@@ -308,6 +318,10 @@ video::-webkit-media-controls-overlay-play-button {
         widows: 3;
     }
 
+    .article .callout {
+        font-size: 32px;
+    }
+
     .intro_block{
         padding: 40px 50px;
     }
@@ -332,6 +346,9 @@ video::-webkit-media-controls-overlay-play-button {
         text-align: center;
     }
     
+    /************
+    GRID FOR 750PX+
+    *************/
     .grid_2{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -361,23 +378,27 @@ video::-webkit-media-controls-overlay-play-button {
         width: 100%;
     }
 
+    .grid_m2_d3{
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        width: 100%;
+    }
+
     .module {
         opacity: 0;
         transform: translate(-60px, 0px); 
      
         transition: transform 1.5s ease, opacity 1s;
-      }
-
-  
-      
+    }
+ 
     .visible {
         opacity: 1 !important;
         transform: translate(0, 0); 
-      }
+    }
 
-    
-
-      .no_padding {
+    .no_padding {
         padding: 0;
     }
 
@@ -387,7 +408,6 @@ video::-webkit-media-controls-overlay-play-button {
 @media (min-width: 1000px) {
     .module{
         padding: 75px;
-    
     }
 
     .splash{
@@ -404,11 +424,11 @@ video::-webkit-media-controls-overlay-play-button {
         grid-gap: 15px;
     }
 
-    .article{
+    /*.article{
         padding: 20px 50px;
-    }
+    }*/
 
-    .article_text {
+    .article_text, .callout {
         max-width: 750px;
     }
 
