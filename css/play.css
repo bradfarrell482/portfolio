@@ -1,3 +1,7 @@
+/**************************
+**       Nav Items       **
+***************************/
+
 nav{
     background-color: rgb(241, 91, 39);
 }
@@ -5,6 +9,23 @@ nav{
 nav ul{
     background-color: rgba(241, 91, 39, 0.9);
 }
+
+hr.nav_hr{
+    background-color: white;
+    height: 1px;
+}
+
+nav a{
+   color: white;
+}
+
+.logo {
+   fill: white;
+}
+
+/**************************
+**     Body styling      **
+***************************/
 
 body{
     background-color: rgb(241, 241, 241);
@@ -25,20 +46,6 @@ body{
         rgb(241, 241, 241) 100%
     )
 }
-
-hr.nav_hr{
-     background-color: white;
-     height: 1px;
-}
-
-nav a{
-    color: white;
-}
-
-.logo {
-    fill: white;
-}
-
 
 
 .splash{
@@ -179,7 +186,3 @@ ol{
         grid-row: 1;
     }
 }
-
-
-
-/*comment*/

@@ -1,5 +1,6 @@
-body{
-    background: linear-gradient(251deg,#EA9C37, #875414)
+html, body, .intro_block{
+    /*background: linear-gradient(251deg,#EA9C37, #875414);*/
+    background-color: #c0771e;
 }
 
 .button{
@@ -34,7 +35,7 @@ body{
     margin: 40px 0px;
 }
 
-splash_img{
+.splash_img{
     max-width: 1000px;
 }
 
@@ -52,13 +53,12 @@ splash_img{
 
 .intro_block{
     color: black;
-    background-color: rgb(212, 139, 44);
 }
 
     .fadeout {
         background: linear-gradient(
             rgba(212, 139, 44, 0) 0%,
-            rgb(212, 139, 44) 100%
+            rgb(192, 119, 30) 100%
         )
 }
 
