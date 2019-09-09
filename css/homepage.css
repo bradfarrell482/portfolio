@@ -276,7 +276,10 @@ body{
   #emoji .thumbnail{
     width: 90%;
   }
-  
+
+  #cfanatics{
+    background: linear-gradient( 280deg, #1E9799, rgb(20, 106, 107));
+  }
   
   #play{
     background: linear-gradient( 280deg, #FA420A, #FFCE09);
