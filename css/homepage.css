@@ -387,7 +387,6 @@ body{
     }
     
     .text-block{
-      margin: auto;
       text-align: left;
       max-width: 480px;
     }
