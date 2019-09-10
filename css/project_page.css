@@ -368,7 +368,6 @@ video::-webkit-media-controls-overlay-play-button {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
-     
     }
 
     .grid_3{
