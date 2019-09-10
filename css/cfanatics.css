@@ -104,6 +104,7 @@ h1, h2, h3 {
 
 #case_studies .grid_3 {
     margin-top: 50px;
+    margin-bottom: 50px; 
 }
 
 .case_study_content h1, .case_study_content h2{
