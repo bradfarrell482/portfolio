@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--<script src="js/homepage.js"></script>-->
     <script src="/js/project_page.js"></script>
+
 </head>
 
 <body>
@@ -35,10 +36,11 @@
             </div>
 
             <div class="article_container center_h">
-                <div class="article ">
+                <div class="article">
                     <h1 class="">Problem</h1>
                     <div class="article_text">
-                        <p>A client who sells premium, high-priced furniture is not getting a 
+                        <p>
+                            A client who sells premium, high-priced furniture is not getting a 
                             large sale volume despite having a decent amount of qualified traffic. 
                             They are having the most success with lower-priced items, but cannot lower 
                             prices in order to make sales due to production and delivery costs. 
@@ -48,7 +50,8 @@
                     </div>
                     <h1 class="">Research</h1>
                     <div class="article_text">
-                        <p>The initial examination of the site did not show many functional issues with the 
+                        <p>
+                            The initial examination of the site did not show many functional issues with the 
                             funnel. The site was very clean, had clear calls to action, and a straight-forward 
                             purchase-process and pricing structure. We had no "emergency" fixes such as broken 
                             links or loading errors. 
@@ -98,9 +101,218 @@
                 </div>
             </div>
 
-            <div class="limit_width">
+            <div id="hero_heatmap_grid" class="limit_width">
+                <div class="article_container">
+                    <div class="article">
+                        <div class="article_text center_h">
+                            <h1>Key Observations</h1>
+                            <p>
+                                With this data in mind, we performed a user-journey where we evaluated the whole sales funnel. We looked at the experience for users who landed organically on the homepage vs those who landed vis paid-traffic on the desk PDP. Our goal was to surmise reasons why users are taking these actions.
+                            </p>
+                            <p>
+                                What we found is that the homepage used a lifestyle image with no real value propositions or demo of the product itself. The image also had multiple focal points including the desk, a lighting fixture, and a model. The only CTA would bring users to the collections page.
+                            </p>
+                            <p>
+                                Only users who scrolled lower would see links directly to product pages, but again with no more context other than simple product names.
+                            </p>
+                            <p>
+                                While looking at product pages we again observed users were not scrolling and that many were leaving the page immediately on the desk and other high-priced items while they stayed longer on the shelf and other less-expensive items that were being purchased more often.
+                            </p>
+                            <p>
+                                From this we hypothesized that the price on the desk may be causing users to bounce before they read the unique benefits of the product or see useful info.
+                            </p>
+                            <p>
+                                We also noticed that some products had some fantastic video content buried below the fold where users were not seeing it. These videos showed off the items and their unique value in an engaging way.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <div id="hero_map_toggle" class="center_h">
+                    <a id="click_map" class="active" src="/Projects/Conversion_Fanatics/case_studies/case_study_hero/click_heatmap.png">Click</a>
+                    <a id="scroll_map" class="inactive" src="/Projects/Conversion_Fanatics/case_studies/case_study_hero/scroll_heatmap.png">Scroll</a>
+
+                    <!-- Inline script: handle toggle for heatmaps -->
+                    <script>
+                        $('#hero_map_toggle a').click(function () {
+                            //if already active, do nothing
+                            if ($(this).hasClass("active")) {return false;}
+            
+                            //get info
+                            var img = $(this).attr("src");
+                            var link1 = $("#hero_map_toggle a.active");
+                            var gal = $("#heatmap_img img");
+                            var link2 = $("#hero_map_toggle a.inactive");
+            
+                            //fadeout
+                            $(gal).css("opacity", "0");
+            
+                            setTimeout(function () {
+                                //change the gallery img
+                                $(gal).attr("src", img);
+
+                                //change the attributes
+                                $(link1).removeClass('active').addClass('inactive');
+                                $(link2).removeClass('inactive').addClass('active');
+
+                                //fadein
+                                $(gal).css("opacity", "1");
+                            }, 500);
+
+                        });
+                    </script>
+
+                </div>
+
+                <div id="heatmap_img" class="limit_width">
+                    <img class="center_h" src="/Projects/Conversion_Fanatics/case_studies/case_study_hero/click_heatmap.png" alt="A heatmap of the click data and scroll data (toggled with the links above)">
+                </div>
             </div>
+
+            <div class="article_container center_h">
+                <div class="article">
+                    <h1 class="">Ideation</h1>
+                    <div class="article_text">
+                        <p>
+                            Since this was a new client and we had not yet had time to gather as much qualitative user feedback as we would like for more complex tests, we decided to start by trying to capitalize on the homepage funnel where less traffic was being directed. From the observations we made in the research phase, we surmised that many users were not getting immediate access to engaging information about the product offerings. Since users were not likely to scroll on either the homepage or product pages, many users were missing key info before being shown a premium price tag.
+                        </p>
+                        <p>
+                            To account for this behavior, I began looking for ways to optimize the area above the fold on the homepage. This meant the hero image would need to be our primary focus. The key changes for the hypothesis were as follows:
+                        </p>
+
+                        <ol>
+                            <li>Reduce the vertical height of the hero to bring more product thumbnails above the fold.</li>
+                            <li>Select a new image that had a single focal point featuring a product.</li>
+                            <li>Include a call-to-action that would play one of the videos that shows off the product.</li>
+                        </ol>
+
+                        <p>
+                            While there were other changes we would like to make, in order for the A/B test to give us clear data, we needed to keep the area of change limited in scope.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="limit_width">
+                <img class="center_h" src="case_study_hero/hero_option_1.png" alt="Wire frames of the proposed hero image changes. Left: the desktop view. Right: the mobile/tablet view.">
+            </div>
+
+            <div class="article_container center_h">
+                <div class="article">
+                    <h1 class="">Design</h1>
+                    <div class="article_text">
+                        <p>
+                            I presented a few options for the new hero to the client, and built out the following two for approval. There were two directions/psychologies we wanted to explore, but we only had enough traffic to test one at a time.
+                        </p>
+                        <p>
+                            The first hero would be completely product focused. I wanted to explore an image that would show multiple products in a stand-alone light to show off the breadth of the brand. I designed a version that would dynamically rotate between items. In selecting a video, for this one I wanted to show the self; the best seller with a conservative price. The idea was to give users an introductory product where they could see benefits and explore more expensive products now armed with the knowledge that the furniture features versatile elements that justified the price tag.
+                        </p>
+                        <p>
+                            The second option would keep the lifestyle composition of the first image, but with fewer extra focal points. I used photoshop to extend the edges of an image to make it fit in this format. This version would feature the highest priced item in the video in order to encourage more sales of that specific item rather than booting sales of an already decently-selling item. 
+                        </p>
+                        <p>
+                            Our team felt both options would get us insight into audience motivation, so we left it to the client to decide whish they would like to run first.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <div id="hero_mockups" class="limit_width grid_2 mockups">
+                    <div>
+                        <img src="case_study_hero/hero_option_1.png" alt="Mock ups of the suggested hero images. Image contains single item that can rotate different products.">
+                        <h3 class="centered">Option 1: Dynamic Products</h3>
+                        <p1 class="centered">
+                            This hero would rotate between product images to show a broad selection of items. The video would show the popular "shelf" as an introduction to the versatility of the product lines to encourage further exploration of features and value propositions
+                        </p1>
+                    </div>
+                    <div>
+                        <img src="case_study_hero/hero_option_2.png" alt="Mock up of the suggested hero images. Image contains group of products shown together in lifestyle setting.">
+                        <h3 class="centered">Option 2: Isolated Lifestyle Image</h3>
+                        <p1 class="centered">
+                            This option shows a setup of multiple products in more of a "lifestyle" shot. The extra elements from the original are removed and the video features the most premium object with the highest price point.
+                        </p1>
+                    </div>
+                </div>
+            </section>
+
+            <div class="article_container center_h">
+                <div class="article">
+                    <h1 class="">Development & Testing</h1>
+                    <div class="article_text">
+                        <p>
+                            Because the client was primarily interested in trying to sell more of the desk, they chose to approve the lifestyle image (option 2) as the first test on the site. Their business goal was to focus on the higher-ticket items, and the desk already had ads ready to go with the desk as a focus. 
+                        </p>
+                        <p>
+                            I finalized the design and used Adobe XD to hand off assets to our team's developer. We worked together to make the layout responsive for all devices with an emphasis on the most common screen resolutions provided by Google analytics. 
+                        </p>
+                        <p>
+                            We used Convert Experiences to bucket 50% of users who landed on the homepage into seeing out new hero. We tracked metrics across the funnel including product views, add-to-cart actions, purchases, bounce rate, and more. We wanted a wide-coverage of metrics to see exactly how users behaved. 
+                        </p>
+                        <p>
+                            Though we ran the new hero on all devices, we knew that most large-purchases are made on desktop, so we put our primary focus there due to the nature of the hero-option selected by the client. The test ran for two weeks with no edits to traffic allocation or down-funnel experiences.
+                        </p>
+                    </div>
+
+                    <h1 class="">Results</h1>
+                    <div class="article_text">
+                        <p>
+                            Out of respect for the client's privacy, I cannot give detailed metrics into specific numbers or revenue, but I can share the lift and loss numbers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="limit_width"> <!-- where the images go and the %'s-->
+                <div class="lift_n_loss">
+                    <div class="lift">
+                        <h2>Completed Orders</h2>
+                        <h1>+44%</h1>
+                    </div>
+                    <div class="lift">
+                        <h2>Revenue Per Visitor</h2>
+                        <h1>+128%</h1>
+                    </div>
+                    <div class="loss">
+                        <h2>Viewed Collections</h2>
+                        <h1>-6%</h1>
+                    </div>
+                    <div class="lift">
+                        <h2>Add to Carts</h2>
+                        <h1>+12%</h1>
+                    </div>
+                </div>
+
+                <img src="case_study_hero/rev_graph.png" alt="Graph depicting the change in revenue based on the tests being run.">
+
+            </div> 
+
+            <div class="article_container center_h">
+                    <div class="article">
+                        <!-- COntinuation from "Results"-->
+                        <div class="article_text">
+                            <p>
+                                The above results are for desktop only, but as an interesting observation the mobile experience took a small hit to conversion rate and revenue. This was actually somewhat expected and not too surprising. The reason is that while users do not tend to mind spending around $100 for the desk on mobile, many migrated to the PC to complete desk purchases since those require a bigger commitment and barrier to entry. 
+                            </p>
+                            <p>
+                                Since we emphasized a high-ticket item on both devices for this test, the mobile experience suffered, but the overall revenue and conversion rate across all platforms was up.
+                            </p>
+                            <p>
+                                Google analytics confirms that purchases and increased revenue were largely due to a large increase in desk purchases. Since the price was higher, revenue per visitor was increasing drastically faster than the conversion rate. Users also seemed to spend less time bouncing between products and comparison shopping on the site and more quickly made their selections with the new hero, which was reflected in a lower view count on the collections pages and product pages. Users were getting the information they were looking for earlier in the funnel, so those who moved forward were more qualified leads. 
+                            </p>
+                        </div>
+    
+                        <h1 class="">Next Steps</h1>
+                        <div class="article_text">
+                            <p>
+                                Our recommendation to the client is to run this hero on the home page on desktop and allow us to iterate on it in a new test. This version is to become the new control, while we keep the original design the control on mobile. We will keep option 1 on the table to see if it performs better than this version, but will also keep business objectives in mind and may adjust accordingly.
+                            </p>
+                            <p>
+                                The client has already begun pushing more traffic to the home page to capitalize on this design. I have begun setting up new polls and heatmaps to record the new baseline and user feedback, and we will use this information to inform tests on other pages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
 
         <!-- Page content end-->

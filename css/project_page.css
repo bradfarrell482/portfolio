@@ -256,12 +256,12 @@ p1{
 
 .limit_width{
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .center_h{
     display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .center_v{
@@ -443,10 +443,6 @@ video::-webkit-media-controls-overlay-play-button {
     /*.article{
         padding: 20px 50px;
     }*/
-
-    .article_text, .callout {
-        max-width: 750px;
-    }
 
     .article_text_2 p{
         columns: 2;

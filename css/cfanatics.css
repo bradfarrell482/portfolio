@@ -126,6 +126,8 @@ h1, h2, h3 {
 
 .case_study {
     max-width: 350px;
+    margin-top: 0;
+    margin-bottom: auto;
 }
 
 .case_study a{
@@ -176,7 +178,7 @@ h1, h2, h3 {
     color: rgba(96, 0, 178, .76);
 }
 
-/** Css for first case study: Sorting study **/
+/** Css for second case study: Sorting study **/
 #sorting_study {
     background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
 }
@@ -189,7 +191,7 @@ h1, h2, h3 {
     color: rgba(30, 151, 153, .76);
 }
 
-/** Css for first case study: Trust study **/
+/** Css for third case study: Trust study **/
 #trust_study {
     background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
 }

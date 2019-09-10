@@ -23,17 +23,89 @@ p {
     color: #000;
 }
 
+ol {
+    margin: 32px 12px;
+}
+
+li {
+    font-size: 16px;
+    color: #740f0f;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
 /********************
 **      Splash     **
 *********************/
 
 .splash{
-    background-color: #740f0f;
     max-height: 400px;
+}
+
+.splash_overlay {
+    background-color: #740f0f;
 }
 
 .splash h1 {
     color: #fff;
+}
+
+/********************
+**      Mockups    **
+*********************/
+
+/*
+    Mock ups consists of a section element that shows some mockup items.
+    For now, just some basic text rules apply here, as well as a section format
+*/
+
+/* section */
+section {
+    background: #E5E5E5;
+    padding: 65px 0;
+}
+
+.mockups h3 {
+    color: #707070;
+    text-transform: none;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+/*************************
+**    LIFT 'N' LOSS     **
+*************************/
+
+/**
+    .lift_n_loss is the class being used for lift and loss numbers being shown in a case study
+    .lift_n_loss will be used as a grid for the sets of numbers, while individual sections will have the
+    classes .lift and .loss to dictate their colors
+
+    ***This grid will be m2_d4 (2 columns on mobile, 4 columns on desktop)
+**/
+
+.lift_n_loss {
+    display:grid;
+    margin:auto;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-row-gap: 30px;
+    max-width: 500px;
+}
+
+.lift_n_loss h1, .lift_n_loss h2 {
+    margin-top:5px;
+    text-transform: none;
+}
+
+.lift_n_loss .lift h1{
+    color: #409D4C;
+}
+
+.lift_n_loss .loss h1{
+    color: #DB3838;
 }
 
 /********************
@@ -49,7 +121,7 @@ p {
 /* card text */
 
 .card h2, h3 {
-    font-size: 16;
+    font-size: 16px;
 }
 
 .card h3 {
@@ -74,6 +146,11 @@ p {
     margin-bottom: 30px;
 }
 
+/***** images *****/
+img {
+    max-width: 100%;
+}
+
 /********************
 **     Grid        **
 *********************/
@@ -89,7 +166,14 @@ p {
 **       RESPONSIVE     **
 *************************/
 
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    /** modifications for lift_n_loss **/
+    .lift_n_loss {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: none;
+    }
+
+}
 
 @media (min-width: 1000px) {}
 
