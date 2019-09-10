@@ -1,0 +1,101 @@
+/***********************
+**   case_study.css   **
+************************/
+
+/*
+    This will be the default styling for all case study pages which builds upon 
+    the existing css of the website. This will have tweaks and any new organizational 
+    items/classes relevant to case studies. Then each case study will have it's own css
+    to dictate any colors or specific items they require.
+*/
+
+/********************
+**      Text       **
+*********************/
+
+/** Headers **/
+h1, h2, h3 {
+    color: #740f0f;
+    text-transform: uppercase;
+}
+
+p {
+    color: #000;
+}
+
+/********************
+**      Splash     **
+*********************/
+
+.splash{
+    background-color: #740f0f;
+    max-height: 400px;
+}
+
+.splash h1 {
+    color: #fff;
+}
+
+/********************
+**     Cards       **
+*********************/
+
+/*
+    The .card class is a new type we're going to use for text that will have a 
+    background a shadow element behind it. These cards may be put into a grid and
+    then stacked horizontally.
+*/
+
+/* card text */
+
+.card h2, h3 {
+    font-size: 16;
+}
+
+.card h3 {
+    color: #707070;
+    text-transform: none;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.card p {
+    color: #707070;
+}
+
+/* card style */
+.card {
+    max-width: 570px;
+    box-shadow: 0px 3px 19px #00000029;
+    padding: 10px 32px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/********************
+**     Grid        **
+*********************/
+
+/** slight change to grid needed to function with our cards **/
+.card_grid {
+    grid-gap: 50px;
+    margin: 0 15px;
+    width: calc(100% - 30px);
+}
+
+/*************************
+**       RESPONSIVE     **
+*************************/
+
+@media (min-width: 750px) {}
+
+@media (min-width: 1000px) {}
+
+@media (min-width: 1100px) {
+    /* added this additional media query for this special case involving .limit_width */
+    .card_grid {
+        margin: 0 auto;
+    }
+}
