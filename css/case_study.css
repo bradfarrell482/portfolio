@@ -34,6 +34,19 @@ li {
     font-weight: bold;
 }
 
+a.pdf_link {
+    display: block;
+    margin: auto;
+    margin-top: 32px;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    background: linear-gradient(270deg, rgb(13, 12, 97), rgb(16, 14, 139));
+    width: 100px;
+    border-radius: 59px;
+}
+
 /********************
 **      Splash     **
 *********************/
