@@ -1,0 +1,202 @@
+/***********************
+**   case_study.css   **
+************************/
+
+/*
+    This will be the default styling for all case study pages which builds upon 
+    the existing css of the website. This will have tweaks and any new organizational 
+    items/classes relevant to case studies. Then each case study will have it's own css
+    to dictate any colors or specific items they require.
+*/
+
+/********************
+**      Text       **
+*********************/
+
+/** Headers **/
+.case_study_container h1,
+.case_study_container h2, 
+.case_study_container h3 {
+    color: #740f0f;
+    text-transform: uppercase;
+}
+
+.case_study_container p {
+    color: #000;
+}
+
+.case_study_container ol {
+    margin: 32px 12px;
+}
+
+.case_study_container li {
+    font-size: 16px;
+    color: #740f0f;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.case_study_container a.pdf_link {
+    display: block;
+    margin: auto;
+    margin-top: 32px;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    background: linear-gradient(270deg, rgb(13, 12, 97), rgb(16, 14, 139));
+    width: 100px;
+    border-radius: 59px;
+}
+
+/********************
+**      Splash     **
+*********************/
+
+.case_study_container .splash{
+    max-height: 400px;
+}
+
+.case_study_container .splash_overlay {
+    background-color: #740f0f;
+}
+
+.case_study_container .splash h1 {
+    color: #fff;
+}
+
+/********************
+**      Mockups    **
+*********************/
+
+/*
+    Mock ups consists of a section element that shows some mockup items.
+    For now, just some basic text rules apply here, as well as a section format
+*/
+
+/* section */
+.case_study_container section {
+    background: #E5E5E5;
+    padding: 65px 0;
+}
+
+.case_study_container .mockups h3 {
+    color: #707070;
+    text-transform: none;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+/*************************
+**    LIFT 'N' LOSS     **
+*************************/
+
+/**
+    .lift_n_loss is the class being used for lift and loss numbers being shown in a case study
+    .lift_n_loss will be used as a grid for the sets of numbers, while individual sections will have the
+    classes .lift and .loss to dictate their colors
+
+    ***This grid will be m2_d4 (2 columns on mobile, 4 columns on desktop)
+**/
+
+.case_study_container .lift_n_loss {
+    display:grid;
+    margin:auto;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-row-gap: 30px;
+    max-width: 500px;
+}
+
+.case_study_container .lift_n_loss h1, 
+.case_study_container .lift_n_loss h2 {
+    margin-top:5px;
+    text-transform: none;
+}
+
+.case_study_container .lift_n_loss .lift h1{
+    color: #409D4C;
+}
+
+.case_study_container .lift_n_loss .loss h1{
+    color: #DB3838;
+}
+
+/********************
+**     Cards       **
+*********************/
+
+/*
+    The .card class is a new type we're going to use for text that will have a 
+    background a shadow element behind it. These cards may be put into a grid and
+    then stacked horizontally.
+*/
+
+/* card text */
+
+.case_study_container .card h2, 
+.case_study_container .card h3 {
+    font-size: 16px;
+}
+
+.case_study_container .card h3 {
+    color: #707070;
+    text-transform: none;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.case_study_container .card p {
+    color: #707070;
+}
+
+/* card style */
+.case_study_container .card {
+    max-width: 570px;
+    box-shadow: 0px 3px 19px #00000029;
+    padding: 10px 32px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/***** images *****/
+.case_study_container img {
+    max-width: 100%;
+}
+
+/********************
+**     Grid        **
+*********************/
+
+/** slight change to grid needed to function with our cards **/
+.case_study_container .card_grid {
+    grid-gap: 50px;
+    margin: 0 15px;
+    width: calc(100% - 30px);
+}
+
+/*************************
+**       RESPONSIVE     **
+*************************/
+
+@media (min-width: 750px) {
+    /** modifications for lift_n_loss **/
+    .case_study_container .lift_n_loss {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: none;
+    }
+
+}
+
+@media (min-width: 1000px) {}
+
+@media (min-width: 1100px) {
+    /* added this additional media query for this special case involving .limit_width */
+    .case_study_container .card_grid {
+        margin: 0 auto;
+    }
+}
