@@ -209,10 +209,10 @@ body{
   }
   
   .text-block{
-    display: block;
-    margin: 0px auto 0px auto;
+    display: inline-block;
+    margin: 0;
     padding: 20px 40px;
-    text-align: center;
+    text-align: left;
     max-width: 600px;
   }
   
@@ -387,6 +387,7 @@ body{
       transition: all 1s;
       align-items: center;
       justify-items: center;
+      text-align: center;
     }
     
     .text-block{

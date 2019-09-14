@@ -9,6 +9,11 @@
     to dictate any colors or specific items they require.
 */
 
+/** Scroll bar **/
+#case_study_module::-webkit-scrollbar { 
+    display: none; 
+}
+
 /********************
 **      Text       **
 *********************/
@@ -164,6 +169,11 @@ img {
     max-width: 100%;
 }
 
+img, svg, img.center_h {
+    margin: 0 40px; 
+    max-width: calc(100% - 80px);
+}
+
 /********************
 **     Grid        **
 *********************/
@@ -184,6 +194,12 @@ img {
     .lift_n_loss {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         max-width: none;
+    }
+
+    /* mods for image margins */
+    img, svg, img.center_h {
+        margin: 0 10px; 
+        max-width: calc(100% - 20px);
     }
 
 }

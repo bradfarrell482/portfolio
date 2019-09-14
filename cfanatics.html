@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/project_page.css">
     <link rel="stylesheet" href="css/cfanatics.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jquery for scroll-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha256-rByPlHULObEjJ6XQxW/flG2r+22R5dKiAoef+aXWfik=" crossorigin="anonymous" />
+
+
     <script src="js/homepage.js"></script>
     <script src="js/project_page.js"></script>
 </head>
@@ -144,7 +149,7 @@
                                     <div class="case_study_content"> <!-- Case study content -->
                                         <h2>Top Funnel:</h2>
                                         <h1>Benefit-Driven Hero Image</h1>
-                                        <a class="center_h" src="/Projects/Conversion_Fanatics/case_studies/case_study_hero.html" 
+                                        <a class="center_h" src="/Projects/Conversion_Fanatics/case_studies/case_study_hero.html"
                                         >
                                         <!-- onClick='
                                         $("#case_study_module").attr("src", "/Projects/Conversion_Fanatics/case_studies/case_study_hero.html");
@@ -207,12 +212,18 @@
                         ifrm.style.visibility = 'visible';
                     }
 
+                    $(window).resize( function() {
+                        console.log("RESIZE TIME!");
+                        setIframeHeight("case_study_module");
+                    });
+
                     function getDocHeight(doc) {
                         doc = doc || document;
                         // stackoverflow.com/questions/1145850/
                         var body = doc.body, html = doc.documentElement;
                         var height = Math.max( body.scrollHeight, body.offsetHeight, 
                             html.clientHeight, html.scrollHeight, html.offsetHeight );
+                        console.log("Height: "+height)
                         return height;
                     }
                     
@@ -230,6 +241,16 @@
                         $(".case_study a").removeClass("active");
                         $(".case_study_section").addClass("active");
                         $(this).addClass("active");
+
+                        //scroll to the article
+                        $("html, body").animate(
+                            {scrollTop: ($("#case_study_module").first().offset().top)-15},
+                            1000,
+                            "easeInOutQuad"
+                        );
+
+                        //make sure the anchor link doesn't do its default behavior
+                        return false;
 
                     });
                     

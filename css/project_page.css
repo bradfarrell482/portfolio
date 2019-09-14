@@ -477,14 +477,7 @@ video::-webkit-media-controls-overlay-play-button {
     
 }
 
-/* Quick little addition for anchor links.
-If any anchor links are in a project page, try a smooth scroll to the item
-*/
-html {
-	scroll-behavior: smooth;
-}
-
-/* Media query to disable this in case users prone to motion sickness disable this*/
+/* Media query to disable smooth scrolling in case users prone to motion sickness disable this*/
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
