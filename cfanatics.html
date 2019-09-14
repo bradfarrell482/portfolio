@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/project_page.css">
     <link rel="stylesheet" href="css/cfanatics.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jquery for scroll-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha256-rByPlHULObEjJ6XQxW/flG2r+22R5dKiAoef+aXWfik=" crossorigin="anonymous" />
+
+
     <script src="js/homepage.js"></script>
     <script src="js/project_page.js"></script>
 </head>
@@ -128,54 +133,132 @@
                 
             </section>
 
-            <section class="article_container center_h" id="case_studies">
-                <h1 class="centered">Sample Case Studies</h1>
-                <div class="grid_3 center_h">
-                    <div class="case_study center_h">
-                        <div id="hero_study" class="main_img"> <!-- Main image div -->
-                            <div class="overlay"> <!-- image overlay/filter div-->
-                                <div class="case_study_content"> <!-- Case study content -->
-                                    <h2>Top Funnel:</h2>
-                                    <h1>Benefit-Driven Hero Image</h1>
-                                    <a class="center_h" href="/Projects/Conversion_Fanatics/case_studies/Case_Study_Page.pdf" target="_blank">
-                                        Open in new tab
-                                    </a>
+            <section class="" id="case_studies">
+                <!-- Script for case study links. Inline for now, to be removed when more case study pages are made-->
+                <!-- <script>
+                    $(document).ready(function () {
+                        $("#case_study_module").load("/Projects/Conversion_Fanatics/case_studies/case_study_hero.html .pgcontent");
+                    });
+                </script> -->
+                <div class="limit_width center_h">
+                    <h1 class="centered">Sample Case Studies</h1>
+                    <div class="grid_3 center_h">
+                        <div class="case_study center_h">
+                            <div id="hero_study" class="main_img"> <!-- Main image div -->
+                                <div class="overlay"> <!-- image overlay/filter div-->
+                                    <div class="case_study_content"> <!-- Case study content -->
+                                        <h2>Top Funnel:</h2>
+                                        <h1>Benefit-Driven Hero Image</h1>
+                                        <a class="center_h" src="/Projects/Conversion_Fanatics/case_studies/case_study_hero.html"
+                                        >
+                                        <!-- onClick='
+                                        $("#case_study_module").attr("src", "/Projects/Conversion_Fanatics/case_studies/case_study_hero.html");
+                                        $(".case_study_section").addClass("active");
+                                        '-->
+                                            Case Study
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+                            <p1 class="centered">See how giving the right introduction to a website can make a lasting impressions and raise&nbsp;revenue.</p1>
                         </div>
-                        <p1 class="centered">See how giving the right introduction to a website can make a lasting impressions and raise&nbsp;revenue.</p1>
-                    </div>
 
-                    <div class="case_study center_h">
-                        <div id="sorting_study" class="main_img"> <!-- Main image div -->
-                            <div class="overlay"> <!-- image overlay/filter div-->
-                                <div class="case_study_content"> <!-- Case study content -->
-                                    <h2>Mid Funnel:</h2>
-                                    <h1>Product&nbsp;Sorting and Filtering</h1>
-                                    <a class="center_h coming_soon" href="#" onClick="return false;">
-                                        Coming Soon
-                                    </a>
+                        <div class="case_study center_h">
+                            <div id="sorting_study" class="main_img"> <!-- Main image div -->
+                                <div class="overlay"> <!-- image overlay/filter div-->
+                                    <div class="case_study_content"> <!-- Case study content -->
+                                        <h2>Mid Funnel:</h2>
+                                        <h1>Product&nbsp;Sorting and Filtering</h1>
+                                        <a class="center_h coming_soon" src="#">
+                                            Coming Soon
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+                            <p1 class="centered">This case study is under construction. Please check back soon.</p1>
                         </div>
-                        <p1 class="centered">This case study is under construction. Please check back soon.</p1>
+                        
+                        <div class="case_study center_h">
+                            <div id="trust_study" class="main_img"> <!-- Main image div -->
+                                <div class="overlay"> <!-- image overlay/filter div-->
+                                    <div class="case_study_content"> <!-- Case study content -->
+                                        <h2>End Funnel:</h2>
+                                        <h1>Cart Trust and Payment</h1>
+                                        <a class="center_h coming_soon" src="#">
+                                            Coming Soon
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p1 class="centered">This case study is under construction. Please check back soon.</p1>
+                        </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="case_study_section">
+
+                <!-- Script for iFrame shenanigans-->
+                <script type="application/javascript">
+
+                    function setIframeHeight(id) {
+                        var ifrm = document.getElementById(id);
+                        var doc = ifrm.contentDocument? ifrm.contentDocument: 
+                            ifrm.contentWindow.document;
+                        ifrm.style.visibility = 'hidden';
+                        ifrm.style.height = "10px"; // reset to minimal height ...
+                        // IE opt. for bing/msn needs a bit added or scrollbar appears
+                        ifrm.style.height = getDocHeight( doc ) + 4 + "px";
+                        ifrm.style.visibility = 'visible';
+                    }
+
+                    $(window).resize( function() {
+                        console.log("RESIZE TIME!");
+                        setIframeHeight("case_study_module");
+                    });
+
+                    function getDocHeight(doc) {
+                        doc = doc || document;
+                        // stackoverflow.com/questions/1145850/
+                        var body = doc.body, html = doc.documentElement;
+                        var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                            html.clientHeight, html.scrollHeight, html.offsetHeight );
+                        console.log("Height: "+height)
+                        return height;
+                    }
                     
-                    <div class="case_study center_h">
-                        <div id="trust_study" class="main_img"> <!-- Main image div -->
-                            <div class="overlay"> <!-- image overlay/filter div-->
-                                <div class="case_study_content"> <!-- Case study content -->
-                                    <h2>End Funnel:</h2>
-                                    <h1>Cart Trust and Payment</h1>
-                                    <a class="center_h coming_soon" href="#" onClick="return false;">
-                                        Coming Soon
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <p1 class="centered">This case study is under construction. Please check back soon.</p1>
-                    </div>
-                </div>  
+
+                    $(".case_study a").click(function () {
+                        //check if currently active or not available link
+                        if ($(this).hasClass("active")||$(this).hasClass("coming_soon")) {
+                            return false;
+                        }
+                        //add src to iframe and load it up
+                        var case_study = $(this).attr("src");
+
+                        $("#case_study_module").attr("src", case_study);
+
+                        $(".case_study a").removeClass("active");
+                        $(".case_study_section").addClass("active");
+                        $(this).addClass("active");
+
+                        //scroll to the article
+                        $("html, body").animate(
+                            {scrollTop: ($("#case_study_module").first().offset().top)-15},
+                            1000,
+                            "easeInOutQuad"
+                        );
+
+                        //make sure the anchor link doesn't do its default behavior
+                        return false;
+
+                    });
+                    
+                </script>
+
+                <!--  CASE STUDY LOADS IN HERE -->
+
+                <iframe id="case_study_module" class="center_h" src="" onresize="setIframeHeight(this.id)" onload="setIframeHeight(this.id)"></iframe>
             </section>
 
             <section class="module">

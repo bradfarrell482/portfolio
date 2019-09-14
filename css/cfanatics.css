@@ -4,26 +4,26 @@
 
 /** Nav color **/
 nav{
-    background-color: rgba(53, 52, 52, 1);
+    background-color: rgba(53, 52, 52, 1) !important;
 }
 /** Separate color for list due to transparency **/
 nav ul{
-    background-color: rgba(53, 52, 52, 0.9);
+    background-color: rgba(53, 52, 52, 0.9) !important;
 }
 
 /** BF logo color **/
 .logo {
-    fill: white;
+    fill: white ;
 }
 
 /** Nav link colors **/
 nav a{
-    color: white;
+    color: white !important;
 }
 
 /** nav underlines **/
 hr.nav_hr{
-    background-color: white;
+    background-color: white !important;
     height: 1px;
 }
 
@@ -99,7 +99,9 @@ h1, h2, h3 {
 
 /* Css applying to all case studies */
 #case_studies {
-    max-width: 1100px;
+    width: 100%;
+    background: #F5F6F7;
+    padding: 30px 0;
 }
 
 #case_studies .grid_3 {
@@ -126,6 +128,8 @@ h1, h2, h3 {
 
 .case_study {
     max-width: 350px;
+    margin-top: 0;
+    margin-bottom: auto;
 }
 
 .case_study a{
@@ -139,6 +143,10 @@ h1, h2, h3 {
     border-radius: 30px;
     padding: 15px;
     text-align: center;
+}
+
+.case_study a:hover {
+    cursor: pointer;
 }
 
 .case_study a.coming_soon {
@@ -176,7 +184,7 @@ h1, h2, h3 {
     color: rgba(96, 0, 178, .76);
 }
 
-/** Css for first case study: Sorting study **/
+/** Css for second case study: Sorting study **/
 #sorting_study {
     background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
 }
@@ -189,7 +197,7 @@ h1, h2, h3 {
     color: rgba(30, 151, 153, .76);
 }
 
-/** Css for first case study: Trust study **/
+/** Css for third case study: Trust study **/
 #trust_study {
     background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
 }

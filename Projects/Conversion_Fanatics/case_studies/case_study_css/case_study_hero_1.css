@@ -12,10 +12,10 @@
 *********************/
 
 /** Headers **/
-h1, 
-h2, 
-h3, 
-li {
+.case_study_container h1, 
+.case_study_container h2, 
+.case_study_container h3, 
+.case_study_container li {
     color: #6100B3;
 }
 
@@ -23,7 +23,7 @@ li {
 **      Splash     **
 *********************/
 
-.splash_overlay {
+.case_study_container .splash_overlay {
     background: linear-gradient( 270deg, #380351, #6200B7);;
 }
 
@@ -37,18 +37,18 @@ li {
 **/
 
 /** grid **/
-#hero_mockups {
+.case_study_container #hero_mockups {
     grid-column-gap: 40px;
 }
 
-#hero_heatmap_grid {
+.case_study_container #hero_heatmap_grid {
     display: grid;
     margin: auto;
     grid-template-columns: 1fr;
     margin-top: 25px;
 }
 
-#hero_map_toggle {
+.case_study_container #hero_map_toggle {
     display:grid;
     margin:auto;
     grid-template-columns: 1fr 1fr;
@@ -56,15 +56,15 @@ li {
 
 /** special case for article **/
 
-#hero_heatmap_grid .article_container, 
-#hero_heatmap_grid .article_container .article, 
-#hero_heatmap_grid .article_container h1{
+.case_study_container #hero_heatmap_grid .article_container, 
+.case_study_container #hero_heatmap_grid .article_container .article, 
+.case_study_container #hero_heatmap_grid .article_container h1{
         margin-top: 0;
         padding-top:0;
 }
 
 /** links **/
-#hero_map_toggle a {
+.case_study_container #hero_map_toggle a {
     margin-top:30px;
     margin-bottom:30px;
     display: block;
@@ -74,27 +74,27 @@ li {
     font-size: 16px;
 }
 
-#hero_map_toggle a:hover {
+.case_study_container #hero_map_toggle a:hover {
     cursor: pointer;
 }
 
-#hero_map_toggle a.active {
+.case_study_container #hero_map_toggle a.active {
     background: #6100B3;
     color: #FFF;
 }
 
-a#click_map {
+.case_study_container a#click_map {
     border-radius: 59px 0 0 59px;
     margin-right: 0px;
 }
 
-a#scroll_map {
+.case_study_container a#scroll_map {
     border-radius: 0 59px 59px 0;
     margin-left: 0px;
 }
 
 /** img **/
-#heatmap_img img{
+.case_study_container #heatmap_img img{
     transition: opacity 0.5s;
 }
 
@@ -107,18 +107,18 @@ a#scroll_map {
 
 @media (min-width: 1000px) {
     /** grid change for heatmap section **/
-    #hero_heatmap_grid {
+    .case_study_container #hero_heatmap_grid {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 50px;
     }
 
-    #hero_heatmap_grid .article_container {
+    .case_study_container #hero_heatmap_grid .article_container {
         grid-column: 2;
         grid-row: 2;
         padding: 0 10px;
     }
 
-    #heatmap_img {
+    .case_study_container #heatmap_img {
         grid-row: 2;
     }
 }

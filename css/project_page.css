@@ -202,6 +202,28 @@ p1{
     max-width: 1000px;
 }
 
+/** CASE STUDY CSS **/
+
+#case_study_module {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 0;
+}
+
+.case_study_section.active{
+    background: #F5F6F7;
+    padding: 30px 0 60px 0;
+}
+
+.case_study_section.active #case_study_module {
+    box-shadow: 0px 3px 18px #0000003B;
+    height: 1000px;
+}
+
+iframe {
+    border-style: none;
+    width: 100%;
+}
 
 
 /* GRID TEMPLATES CSS */
@@ -256,12 +278,12 @@ p1{
 
 .limit_width{
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .center_h{
     display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .center_v{
@@ -444,10 +466,6 @@ video::-webkit-media-controls-overlay-play-button {
         padding: 20px 50px;
     }*/
 
-    .article_text, .callout {
-        max-width: 750px;
-    }
-
     .article_text_2 p{
         columns: 2;
         column-gap: 30px;
@@ -459,14 +477,7 @@ video::-webkit-media-controls-overlay-play-button {
     
 }
 
-/* Quick little addition for anchor links.
-If any anchor links are in a project page, try a smooth scroll to the item
-*/
-html {
-	scroll-behavior: smooth;
-}
-
-/* Media query to disable this in case users prone to motion sickness disable this*/
+/* Media query to disable smooth scrolling in case users prone to motion sickness disable this*/
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;

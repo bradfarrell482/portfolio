@@ -9,37 +9,34 @@
     to dictate any colors or specific items they require.
 */
 
-/** Scroll bar **/
-#case_study_module::-webkit-scrollbar { 
-    display: none; 
-}
-
 /********************
 **      Text       **
 *********************/
 
 /** Headers **/
-h1, h2, h3 {
+.case_study_container h1,
+.case_study_container h2, 
+.case_study_container h3 {
     color: #740f0f;
     text-transform: uppercase;
 }
 
-p {
+.case_study_container p {
     color: #000;
 }
 
-ol {
+.case_study_container ol {
     margin: 32px 12px;
 }
 
-li {
+.case_study_container li {
     font-size: 16px;
     color: #740f0f;
     margin: 1em 0;
     font-weight: bold;
 }
 
-a.pdf_link {
+.case_study_container a.pdf_link {
     display: block;
     margin: auto;
     margin-top: 32px;
@@ -56,15 +53,15 @@ a.pdf_link {
 **      Splash     **
 *********************/
 
-.splash{
+.case_study_container .splash{
     max-height: 400px;
 }
 
-.splash_overlay {
+.case_study_container .splash_overlay {
     background-color: #740f0f;
 }
 
-.splash h1 {
+.case_study_container .splash h1 {
     color: #fff;
 }
 
@@ -78,12 +75,12 @@ a.pdf_link {
 */
 
 /* section */
-section {
+.case_study_container section {
     background: #E5E5E5;
     padding: 65px 0;
 }
 
-.mockups h3 {
+.case_study_container .mockups h3 {
     color: #707070;
     text-transform: none;
     margin-top: 1em;
@@ -103,7 +100,7 @@ section {
     ***This grid will be m2_d4 (2 columns on mobile, 4 columns on desktop)
 **/
 
-.lift_n_loss {
+.case_study_container .lift_n_loss {
     display:grid;
     margin:auto;
     margin-bottom: 50px;
@@ -113,16 +110,17 @@ section {
     max-width: 500px;
 }
 
-.lift_n_loss h1, .lift_n_loss h2 {
+.case_study_container .lift_n_loss h1, 
+.case_study_container .lift_n_loss h2 {
     margin-top:5px;
     text-transform: none;
 }
 
-.lift_n_loss .lift h1{
+.case_study_container .lift_n_loss .lift h1{
     color: #409D4C;
 }
 
-.lift_n_loss .loss h1{
+.case_study_container .lift_n_loss .loss h1{
     color: #DB3838;
 }
 
@@ -138,23 +136,24 @@ section {
 
 /* card text */
 
-.card h2, h3 {
+.case_study_container .card h2, 
+.case_study_container .card h3 {
     font-size: 16px;
 }
 
-.card h3 {
+.case_study_container .card h3 {
     color: #707070;
     text-transform: none;
     margin-top: .5em;
     margin-bottom: 1em;
 }
 
-.card p {
+.case_study_container .card p {
     color: #707070;
 }
 
 /* card style */
-.card {
+.case_study_container .card {
     max-width: 570px;
     box-shadow: 0px 3px 19px #00000029;
     padding: 10px 32px;
@@ -165,13 +164,8 @@ section {
 }
 
 /***** images *****/
-img {
+.case_study_container img {
     max-width: 100%;
-}
-
-img, svg, img.center_h {
-    margin: 0 40px; 
-    max-width: calc(100% - 80px);
 }
 
 /********************
@@ -179,7 +173,7 @@ img, svg, img.center_h {
 *********************/
 
 /** slight change to grid needed to function with our cards **/
-.card_grid {
+.case_study_container .card_grid {
     grid-gap: 50px;
     margin: 0 15px;
     width: calc(100% - 30px);
@@ -191,15 +185,9 @@ img, svg, img.center_h {
 
 @media (min-width: 750px) {
     /** modifications for lift_n_loss **/
-    .lift_n_loss {
+    .case_study_container .lift_n_loss {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         max-width: none;
-    }
-
-    /* mods for image margins */
-    img, svg, img.center_h {
-        margin: 0 10px; 
-        max-width: calc(100% - 20px);
     }
 
 }
@@ -208,7 +196,7 @@ img, svg, img.center_h {
 
 @media (min-width: 1100px) {
     /* added this additional media query for this special case involving .limit_width */
-    .card_grid {
+    .case_study_container .card_grid {
         margin: 0 auto;
     }
 }
