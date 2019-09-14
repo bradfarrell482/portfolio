@@ -98,6 +98,13 @@ a#scroll_map {
     transition: opacity 0.5s;
 }
 
+/** Hero images special case **/
+/* add drop shadow so the img stands out a bit more from the background */
+
+#hero_mockups img {
+    box-shadow: 0px 2px 10px #00000029;
+}
+
 
 /*************************
 **       RESPONSIVE     **
