@@ -132,7 +132,7 @@ h1, h2, h3 {
     margin-bottom: auto;
 }
 
-.case_study a{
+.case_study a, #return_to_studies{
     font-size:22px;
     margin-bottom: 30px;
     text-decoration: none;
@@ -169,6 +169,20 @@ h1, h2, h3 {
 .case_study p1{
     margin: .5em;
     margin-top: 15px;
+}
+
+/** return to studies link **/
+/*this builds off of the links for the case studies, so there's some overrides here*/
+#return_to_studies.inactive{
+    display: none;
+}
+#return_to_studies.active{
+    display: block;
+    margin-top: 60px;
+    color: #FFF;
+    width: 30%;
+    background-color: rgba(17, 168, 222, 1);
+    min-width: 240px;
 }
 
 /** Css for first case study: Hero study **/

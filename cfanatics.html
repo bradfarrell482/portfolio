@@ -226,6 +226,14 @@
                         console.log("Height: "+height)
                         return height;
                     }
+
+                    function smoothScroll(id) {
+                        $("html, body").animate(
+                            {scrollTop: ($(id).first().offset().top)-15},
+                            1000,
+                            "easeInOutQuad"
+                        );
+                    }
                     
 
                     $(".case_study a").click(function () {
@@ -240,14 +248,11 @@
 
                         $(".case_study a").removeClass("active");
                         $(".case_study_section").addClass("active");
+                        $("#return_to_studies").addClass("active").removeClass("inactive");
                         $(this).addClass("active");
 
                         //scroll to the article
-                        $("html, body").animate(
-                            {scrollTop: ($("#case_study_module").first().offset().top)-15},
-                            1000,
-                            "easeInOutQuad"
-                        );
+                        smoothScroll("#case_study_module");
 
                         //make sure the anchor link doesn't do its default behavior
                         return false;
@@ -259,6 +264,9 @@
                 <!--  CASE STUDY LOADS IN HERE -->
 
                 <iframe id="case_study_module" class="center_h" src="" onresize="setIframeHeight(this.id)" onload="setIframeHeight(this.id)"></iframe>
+
+                <!-- Link to return to the top of the study/ case study links-->
+                <a id="return_to_studies" class="center_h inactive" src="#case_studies" onClick="smoothScroll('#case_studies');">Return to Case Studies</a>
             </section>
 
             <section class="module">
