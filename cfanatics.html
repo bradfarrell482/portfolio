@@ -112,22 +112,22 @@
                     
                     <div>
                         <h2 id="ideation" class="icon_header">Ideation</h2>
-                            <p1>I work with a project manager to perform the initial site and business analysis. We conduct client calls and perform a cursory user-journey to identify points of friction and&nbsp;opportunities.</p1>
+                            <p1>The project manager and I create a test plan that addresses pain points for our audiences. Due to the nature of testing, we keep individual improvements small and self-contained but ensure they add up to address the big-picture.</p1>
                     </div>
                     
                     <div>
                         <h2 id="creation" class="icon_header">Creation</h2>
-                            <p1>I work with a project manager to perform the initial site and business analysis. We conduct client calls and perform a cursory user-journey to identify points of friction and&nbsp;opportunities.</p1>
+                            <p1>I create wireframes, mockups, and interactive prototypes to communicate recommended changes to clients. I then work with the developer to ensure designs are properly translated and QA’d before testing.</p1>
                     </div>
                     
                     <div>
                         <h2 id="validation" class="icon_header">Validation</h2>
-                            <p1>I work with a project manager to perform the initial site and business analysis. We conduct client calls and perform a cursory user-journey to identify points of friction and&nbsp;opportunities.</p1>
+                            <p1>Most designs are run against the control as A/B tests. We use a hypothesis statements to guide what metrics to track in a CRO suite. We then run the test to collect quantitative data and repeat polls, heatmaps and recordings on the new design for qualitative data.</p1>
                     </div>
                     
                     <div>
                         <h2 id="iteration" class="icon_header">Iteration</h2>
-                            <p1>I work with a project manager to perform the initial site and business analysis. We conduct client calls and perform a cursory user-journey to identify points of friction and&nbsp;opportunities.</p1>
+                            <p1>Armed with new data, we go back through the ideation phase and determine if we want to iterate. Whether a test wins or loses, we usually learn something new about the site’s audience and aim to improve upon our results.</p1>
                     </div>
                 </div>
                 
@@ -226,6 +226,14 @@
                         console.log("Height: "+height)
                         return height;
                     }
+
+                    function smoothScroll(id) {
+                        $("html, body").animate(
+                            {scrollTop: ($(id).first().offset().top)-15},
+                            1000,
+                            "easeInOutQuad"
+                        );
+                    }
                     
 
                     $(".case_study a").click(function () {
@@ -240,14 +248,11 @@
 
                         $(".case_study a").removeClass("active");
                         $(".case_study_section").addClass("active");
+                        $("#return_to_studies").addClass("active").removeClass("inactive");
                         $(this).addClass("active");
 
                         //scroll to the article
-                        $("html, body").animate(
-                            {scrollTop: ($("#case_study_module").first().offset().top)-15},
-                            1000,
-                            "easeInOutQuad"
-                        );
+                        smoothScroll("#case_study_module");
 
                         //make sure the anchor link doesn't do its default behavior
                         return false;
@@ -259,6 +264,9 @@
                 <!--  CASE STUDY LOADS IN HERE -->
 
                 <iframe id="case_study_module" class="center_h" src="" onresize="setIframeHeight(this.id)" onload="setIframeHeight(this.id)"></iframe>
+
+                <!-- Link to return to the top of the study/ case study links-->
+                <a id="return_to_studies" class="center_h inactive" src="#case_studies" onClick="smoothScroll('#case_studies');">Return to Case Studies</a>
             </section>
 
             <section class="module">
