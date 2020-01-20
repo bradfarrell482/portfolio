@@ -19,6 +19,11 @@
 
     <script src="js/homepage.js"></script>
     <script src="js/project_page.js"></script>
+    <script>
+        jQuery(function(){
+           jQuery('#study_1').click();
+        });
+        </script>
 </head>
 
 <body>
@@ -149,7 +154,7 @@
                                     <div class="case_study_content"> <!-- Case study content -->
                                         <h2>Top Funnel:</h2>
                                         <h1>Benefit-Driven Hero Image</h1>
-                                        <a class="center_h" src="/Projects/Conversion_Fanatics/case_studies/case_study_hero.html"
+                                        <a class="center_h" id="study_1" src="/Projects/Conversion_Fanatics/case_studies/case_study_hero.html"
                                         >
                                         <!-- onClick='
                                         $("#case_study_module").attr("src", "/Projects/Conversion_Fanatics/case_studies/case_study_hero.html");
@@ -252,7 +257,7 @@
                         $(this).addClass("active");
 
                         //scroll to the article
-                        smoothScroll("#case_study_module");
+                        //smoothScroll("#case_study_module");//
 
                         //make sure the anchor link doesn't do its default behavior
                         return false;
