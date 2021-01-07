@@ -5,7 +5,7 @@ should actually be called nav.js, since it specifically loads/manages the naviga
 */
 
 $(document).ready(function(){
-    $("#nav").load("nav.html");
+    $("#nav").load("/nav.html");
 });
 
 function toggleNav() {

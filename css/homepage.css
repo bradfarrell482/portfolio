@@ -58,6 +58,7 @@ body{
   nav li{
     width:100%;
     font-size: 24px;
+    font-weight: 400;
   }
   
   nav a{

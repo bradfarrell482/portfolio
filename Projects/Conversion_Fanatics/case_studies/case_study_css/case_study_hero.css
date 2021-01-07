@@ -6,7 +6,9 @@
     This is the specific styling required for the hero case study in cfanatics.
     Colors, and other specific layouts will be designed here.
 */
-
+#intro{
+    background-color: rgba(248, 248, 248, 1);
+}
 /********************
 **      Text       **
 *********************/
@@ -26,6 +28,18 @@ li {
 .splash_overlay {
     background: linear-gradient( 270deg, #380351, #6200B7);;
 }
+
+
+/********************
+**    Diagram     **
+*********************/
+
+#process_svg{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
 
 /********************
 **    HeatMaps     **
@@ -106,6 +120,70 @@ a#scroll_map {
 }
 
 
+
+/** before elements for the icons on process chart text 
+followed by each individual item's style/link
+**/
+
+.icon_header:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+#analysis:before {
+    background: url("../case_study_hero/icon_analysis.svg") no-repeat;
+    width: 23px;
+    height: 23px;
+    transform: translateY(-2px);
+}
+#analysis {
+    color:#E66294;
+}
+
+#research:before {
+    background: url("../case_study_hero/icon_research.svg") no-repeat;
+    transform: translateY(1px);
+}
+#research {
+    color:#A70000;
+}
+
+#ideation:before {
+    background: url("../case_study_hero/icon_ideation.svg") no-repeat;
+    transform: translateY(-5px);
+}
+#ideation {
+    color:#FF9C39;
+}
+
+#creation:before {
+    background: url("../case_study_hero/icon_creation.svg") no-repeat;
+}
+#creation {
+    color: #259FB0;
+}
+
+#validation:before {
+    background: url("../case_study_hero/icon_validation.svg") no-repeat;
+}
+#validation {
+    color:#6B189A;
+}
+
+#iteration:before {
+    background: url("../case_study_hero/icon_iteration.svg") no-repeat;
+}
+#iteration { 
+    color:#6D6D6D;
+}
+
+/** END .ICON_HEADER CSS **/
+
+
 /*************************
 **       RESPONSIVE     **
 *************************/
@@ -127,6 +205,11 @@ a#scroll_map {
 
     #heatmap_img {
         grid-row: 2;
+    }
+
+    #process_svg{
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 }
 
