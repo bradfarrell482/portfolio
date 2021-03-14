@@ -185,6 +185,18 @@ img, svg, img.center_h {
     width: calc(100% - 30px);
 }
 
+/********************
+**     Other Elements        **
+*********************/
+hr {
+    height:1px; 
+    border:none; 
+    color:rgba(0, 0, 0, 0.37); 
+    background-color:rgba(0, 0, 0, 0.185);
+    width: 100%
+}
+
+
 /*************************
 **       RESPONSIVE     **
 *************************/
