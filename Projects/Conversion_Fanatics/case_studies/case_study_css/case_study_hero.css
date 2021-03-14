@@ -21,13 +21,26 @@ h3 {
 }
 
 li {
-    color: #666
+    color: rgb(82, 82, 82)
 }
 
 .card {
     background-color: rgba(255, 255, 255, 0.466);
 }
 
+/********************
+**      Layout     **
+*********************/
+
+section {
+    background-color: #eceaff;
+    border-top: solid 7px #6200B7 ;
+    border-bottom: solid 7px #6200B7 ;
+}
+
+.article{
+    margin: 10px 0px 10px 0px;
+}
 /********************
 **      Splash     **
 *********************/
@@ -188,9 +201,7 @@ followed by each individual item's style/link
     color:#6D6D6D;
 }
 
-section {
-    background-color: #eceaff;
-}
+
 
 /** END .ICON_HEADER CSS **/
 
@@ -224,4 +235,12 @@ section {
     }
 }
 
-@media (min-width: 1100px) {}
+@media (min-width: 1100px) {
+    #process_svg {
+        transform: scale(1.2);
+}
+
+    #process_callouts{
+        width: 140%;
+        margin-left: -20%;
+    }
