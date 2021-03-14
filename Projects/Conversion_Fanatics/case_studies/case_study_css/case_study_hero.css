@@ -147,7 +147,6 @@ followed by each individual item's style/link
 
 .icon_header:before {
     content: "";
-    display: inline-block;
     width: 25px;
     height: 25px;
     float: left;
@@ -244,3 +243,5 @@ followed by each individual item's style/link
         width: 140%;
         margin-left: -20%;
     }
+
+}
