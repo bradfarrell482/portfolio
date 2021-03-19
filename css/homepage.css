@@ -279,7 +279,7 @@ body{
   }
 
   #cfanatics{
-    background: linear-gradient( 280deg, #380351, #6200B7);
+    background: linear-gradient( 280deg, #529900, #abc40b);
   }
   
   #play{
@@ -475,11 +475,11 @@ body{
       grid-column: 2;
     }
 
-    .content_card{
+    /*.content_card{
       width: 95%;
       height: 800px;
       
-    }
+    }*/
 
     .card-info{
       width: 90%;

@@ -6,7 +6,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160869479-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-160869479-1');
@@ -19,21 +19,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="bradfarrelldesign.com/Resources/initials_logo.png">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/homepage.css">
+  <link rel="stylesheet" href="css/work.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/homepage.js"></script>
 
   <!-- Hotjar Tracking Code for  -->
   <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1728103,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1728103, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
   <!-- END HOTJAR -->
 </head>
@@ -45,51 +47,59 @@
 
 
     <div class="cards">
+      <header class="content_card" id="intro_header">
+        <img id="portrait" src="Resources/portrait.png">
+        <div id="welcome">
+          <h1>Hi, I'm Brad</h1>
+        <p>
+          I'm a UX and visual designer in Austin, Texas. This site is a small collection of my work across advertising, marketing, and interaction design.
+        </p>
+      </div>
+      </header>
 
-
-       <!-- <h1 id="index_intro"><span><hr>Hi, I'm Brad Farrell</span>
+      <!-- <h1 id="index_intro"><span><hr>Hi, I'm Brad Farrell</span>
           <br>
           I'm a graphic, web, and interaction <br> designer living in Austin, Texas<hr>
         </h1>-->
 
-        <div class="content_card" id="cfanatics">
-          <div class="card-info">
-            <a href="Projects/Conversion_Fanatics/case_studies/case_study_hero.html" class="thumb_link"><img src="Projects/Conversion_Fanatics/CF-thumbnail.svg" class="thumbnail "></a>
-            <div class="text-block left">
-              <h1>UX for Conversion Rate Optimization</h1>
-              <p>Using research and user experience ideologies to enhance businesses' earning power</p>
-              <ul class="project_tags">
-                <li>ux/ui design</li>
-                <li>case study</li>
-                <li>web</li>
-                <li>cro</li>
-                  
-                </ul>
-              <a class="card-button" href="case_study_hero.html">See More</a>
-            </div>
+      <div class="content_card" id="cfanatics">
+        <div class="card-info">
+          <a href="Projects/Conversion_Fanatics/case_studies/case_study_hero.html" class="thumb_link"><img
+              src="Projects/Conversion_Fanatics/CF-thumbnail.svg" class="thumbnail "></a>
+          <div class="text-block left">
+            <h1>Homepage CRO Case Study</h1>
+            <p>Using research and user experience ideologies to enhance businesses' earning power</p>
+            <ul class="project_tags">
+              <li>ux/ui design</li>
+              <li>case study</li>
+              <li>web</li>
+              <li>cro</li>
+            </ul>
+            <a class="card-button" href="case_study_hero.html">See More</a>
           </div>
         </div>
+      </div>
 
 
-        <div class="content_card" id="play">
-          <div class="card-info">
-            <a href="play.html" class="thumb_link"><img src="Projects/PLAY/Play-App.png" class="thumbnail "></a>
-            <div class="text-block">
-              <h1>PLAY </h1>
-              <p>Flipping the script on technology to encourage healthy&nbspplaytime</p>
-              <ul class="project_tags">
-                <li>ux/ui design</li>
-                <li>case study</li>
-                <li>product design</li>
-                  <li>branding</li>
-                  <li>illustration</li>
-                  <li>web</li>
-                  
-                </ul>
-              <a class="card-button" href="play.html">See More</a>
-            </div>
+      <div class="content_card" id="play">
+        <div class="card-info">
+          <a href="play.html" class="thumb_link"><img src="Projects/PLAY/Play-App.png" class="thumbnail "></a>
+          <div class="text-block">
+            <h1>PLAY App Design </h1>
+            <p>Flipping the script on technology to encourage healthy&nbspplaytime</p>
+            <ul class="project_tags">
+              <li>ux/ui design</li>
+              <li>case study</li>
+              <li>product design</li>
+              <li>branding</li>
+              <li>illustration</li>
+              <li>web</li>
+
+            </ul>
+            <a class="card-button" href="play.html">See More</a>
           </div>
         </div>
+      </div>
 
       <div class="content_card" id="scout">
         <div class="card-info">
@@ -104,24 +114,25 @@
               <li>web</li>
               <li>marketing</li>
             </ul>
-            <a class="card-button" href= "scout.html">See More</a>
+            <a class="card-button" href="scout.html">See More</a>
           </div>
         </div>
       </div>
 
       <div class="content_card" id="miyazaki">
         <div class="card-info">
-          <a href="miyazaki.html" class="thumb_link"><img src="Projects/Miyazaki/icons/Totoro.svg" style= "width: 100%" class="thumbnail "></a>
+          <a href="miyazaki.html" class="thumb_link"><img src="Projects/Miyazaki/icons/Totoro.svg" style="width: 100%"
+              class="thumbnail "></a>
           <div class="text-block">
             <h1>Miyazaki Film Festival</h1>
             <p>Crafting an engaging experience with the power of text&nbspand&nbsptypography</p>
             <ul class="project_tags">
-                <li>branding</li>
-                <li>illustration</li>
-                <li>web</li>
-                <li>interactive</li>
-                <li>print</li> 
-              </ul>
+              <li>branding</li>
+              <li>illustration</li>
+              <li>web</li>
+              <li>interactive</li>
+              <li>print</li>
+            </ul>
             <a class="card-button" href="miyazaki.html">See More</a>
           </div>
         </div>
@@ -129,15 +140,16 @@
 
       <div class="content_card" id="ooc">
         <div class="card-info ">
-          <a href="ooc.html" class="thumb_link"><img src="Projects/Out of Context/ooc_logo_white-01.svg" class="thumbnail "></a>
+          <a href="ooc.html" class="thumb_link"><img src="Projects/Out of Context/ooc_logo_white-01.svg"
+              class="thumbnail "></a>
           <div class="text-block left ">
             <h1>Curated Art Book</h1>
             <p>Showing that art can be connected with some simple&nbspframing</p>
             <ul class="project_tags">
-                <li>publication</li>
-                <li>print</li> 
-                
-              </ul>
+              <li>publication</li>
+              <li>print</li>
+
+            </ul>
             <a class="card-button" href="ooc.html">See More</a>
           </div>
         </div>
@@ -150,10 +162,10 @@
             <h1>Disk Jockey Posters</h1>
             <p>Pumping a little light and color into your music</p>
             <ul class="project_tags">
-                <li>branding</li>
-                <li>print</li> 
-                <li>in-progress</li>
-              </ul>
+              <li>branding</li>
+              <li>print</li>
+              <li>in-progress</li>
+            </ul>
             <a class="card-button" href="dj.html">See More</a>
           </div>
         </div>
@@ -161,8 +173,8 @@
 
 
 
+<!--
 
-     
       <div class="content_card" id="emoji">
         <div class="card-info">
           <a href="emoji.html" class="thumb_link"><img src="Projects/Emojis/emojis-11.svg" class="thumbnail "></a>
@@ -170,32 +182,33 @@
             <h1>Custom 'Emoji' Icons</h1>
             <p>Taking a new look at those little pictures we use instead&nbspof&nbspwords</p>
             <ul class="project_tags">
-                <li>illustration</li>
-              </ul>
+              <li>illustration</li>
+            </ul>
             <a class="card-button" href="emoji.html">See More</a>
           </div>
         </div>
       </div>
 
       <div class="content_card" id="childhood">
-          <div class="card-info">
-            <a href="childhood.html" class="thumb_link"><img src="Projects/Childhood Is Calling/Water+Ad+Landscape.jpg" class="thumbnail "></a>
-            <div class="text-block ">
-              <h1>Childhood Is Calling</h1>
-              <p>Reminding kids and parents that tech can't be a substitute&nbspfor&nbspchildhood</p>
-              <ul class="project_tags">
-                  <li>PSA</li>
-                  <li>video</li>
-                  <li>ad-campaign</li>
-                </ul>
-              <a class="card-button" href="childhood.html">See More</a>
-            </div>
+        <div class="card-info">
+          <a href="childhood.html" class="thumb_link"><img src="Projects/Childhood Is Calling/Water+Ad+Landscape.jpg"
+              class="thumbnail "></a>
+          <div class="text-block ">
+            <h1>Childhood Is Calling</h1>
+            <p>Reminding kids and parents that tech can't be a substitute&nbspfor&nbspchildhood</p>
+            <ul class="project_tags">
+              <li>PSA</li>
+              <li>video</li>
+              <li>ad-campaign</li>
+            </ul>
+            <a class="card-button" href="childhood.html">See More</a>
           </div>
         </div>
-  
-      
-  
-      
+      </div>
+
+-->
+
+
 
 
 
