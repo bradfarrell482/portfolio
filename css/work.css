@@ -21,13 +21,14 @@
 }
 
 #portrait{
-    margin: 20px auto;
-    width: 150px;
+    display: block;
     height: 150px;
+    margin: 20px auto;
     background-color: rgb(255, 255, 255);
-    border-radius: 100%;
-    transition: all 1s;
-    filter: brightness(120%);
+    transition: all 1s; 
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    opacity: .8;
 }
 
 
@@ -51,9 +52,8 @@
         margin: auto auto auto 30px;
     }
     #portrait{
-        margin: auto 10px auto auto;
-        width: 200px;
-    height: 200px;
+        margin: auto 40px auto auto;
+        height: 300px;
     }
 
 
