@@ -1,0 +1,87 @@
+body {
+    background-image: url("/Resources/LPBackground.png");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 200%;
+  background-color: black;
+    color: white;
+}
+
+#greeting {
+    text-align: center;
+}
+
+.landingBlock {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+button {
+    display: inline-block;
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+    color: white;
+    letter-spacing: .05em;
+    font-weight: 500;
+    background: transparent linear-gradient(180deg, #EC3F9B 0%, #8E007B 100%) 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    border: none;
+    transition: .21s linear;
+}
+
+button:hover{
+    transform: scale(1.03);
+}
+
+h1{
+    font-size: 34px;
+    margin-block-end: 0px;
+}
+
+h1 span{
+    font-weight: 100;
+}
+
+p {
+    font-size: 16px;
+    margin-block-start: 0px;
+    font-weight: 200;
+}
+
+.social{
+    width: calc(18%);
+    background: #00000050;
+    border: 2px solid white;
+    float: right;
+}
+
+
+video{
+    margin-top: 20px;
+}
+
+@media (min-width: 750px) {
+
+    body{
+        background-size: 100%;
+    }
+
+    h1{
+        font-size: 65px;
+    }
+
+    p{
+        font-size:33px
+    }
+
+    button{
+        height: 62px;
+        font-size: 24px;
+        margin-top: 35px;
+    } 
+
+}
