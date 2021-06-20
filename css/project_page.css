@@ -65,6 +65,7 @@ p1{
 
 #next_proj img, #next_proj span {
     display: none;
+    margin: 0;
 }
 
 #next_proj p {
