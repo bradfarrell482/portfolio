@@ -1,0 +1,28 @@
+{
+    "projects":[
+        {
+            "name": "case_study_hero.html",
+            "img": "/Resources/initials_logo.jpg"
+        },
+        {
+            "name": "play.html",
+            "img": "/Resources/initials_logo.jpg"
+        },
+        {
+            "name": "scout.html",
+            "img": "/Resources/initials_logo.jpg"
+        },
+        {
+            "name": "miyazaki.html",
+            "img": "/Resources/initials_logo.jpg"
+        },
+        {
+            "name": "ooc.html",
+            "img": "/Resources/initials_logo.jpg"
+        },
+        {
+            "name": "dj.html",
+            "img": "/Resources/initials_logo.jpg"
+        }
+    ]
+}
