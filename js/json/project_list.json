@@ -1,0 +1,28 @@
+{
+    "projects":[
+        {
+            "name": "case_study_hero.html",
+            "img": "Resources/thumbnails/cro_thumnail.png"
+        },
+        {
+            "name": "play.html",
+            "img": "Resources/thumbnails/play_thumbnail.png"
+        },
+        {
+            "name": "scout.html",
+            "img": "Resources/thumbnails/scout_thumb.png"
+        },
+        {
+            "name": "miyazaki.html",
+            "img": "Resources/thumbnails/miazaki_thumbnail.png"
+        },
+        {
+            "name": "ooc.html",
+            "img": "Resources/thumbnails/ooc_thumbnail.png"
+        },
+        {
+            "name": "dj.html",
+            "img": "Resources/thumbnails/dj_thumb.png"
+        }
+    ]
+}

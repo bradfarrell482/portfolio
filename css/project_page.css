@@ -48,8 +48,35 @@ p1{
     widows: 3;
 }
 
+/** NEXT PROJECT LINK (MOBILE) **/
 
+#next_proj {
+    position: fixed;
+    z-index: 10;
+    right: 7%;
+    top: 93%;
+    width: 75px;
+    height: 33px;
+    background-color: rgba(0, 0, 0, .49);
+    border-radius: 20px;
+    border: none;
+    padding: 0;
+}
 
+#next_proj img, #next_proj span {
+    display: none;
+    margin: 0;
+}
+
+#next_proj p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 7px 0;
+    margin: 0;
+    font-weight: bold;
+    color: #FFF;
+}
 
 /* SPLASH IMAGE CSS */
 
@@ -384,10 +411,50 @@ video::-webkit-media-controls-overlay-play-button {
     .centered{
         text-align: center;
     }
+
+    /** 750PX+ NEXT PROJECT SETTINGS**/
+    #next_proj {
+        width: 250px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, .90);
+        border-radius: 0px;
+        /* grid */
+        display: grid;
+        grid-template-columns: 75px 1fr;
+        opacity: .65;
+    }
+
+    #next_proj:hover {
+        opacity: 1;
+    }
+    
+    #next_proj img{
+        display:block;
+    }
+
+    #next_proj span {
+        display: inline;
+    }
+
+    #next_proj img {
+        width: 90px;
+        height: 60px;
+    }
+    
+    #next_proj p {
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        text-align: center;
+        padding: 22px 0;
+        margin: 0;
+    }
+    /** End next project**/
+
     
     /************
     GRID FOR 750PX+
     *************/
+
     .grid_2{
         display: grid;
         grid-template-columns: 1fr 1fr;
