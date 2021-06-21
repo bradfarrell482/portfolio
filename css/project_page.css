@@ -414,7 +414,7 @@ video::-webkit-media-controls-overlay-play-button {
 
     /** 750PX+ NEXT PROJECT SETTINGS**/
     #next_proj {
-        width: 195px;
+        width: 250px;
         height: 60px;
         background-color: rgba(0, 0, 0, .90);
         border-radius: 0px;
@@ -437,8 +437,8 @@ video::-webkit-media-controls-overlay-play-button {
     }
 
     #next_proj img {
-        max-width: 75px;
-        max-height: 60px;
+        width: 90px;
+        height: 60px;
     }
     
     #next_proj p {
