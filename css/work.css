@@ -39,6 +39,13 @@
     position:relative;
 }
 
+.card-info a {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
 .card-button{
     bottom: 0;
     width: 100%;
@@ -87,6 +94,49 @@ header a {
     margin: 20px 20px; 
 }
 
+#skills{
+    background: transparent linear-gradient(180deg, #005561 0%, #001113 100%) 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: Roboto;
+    color: #FFFFFF;
+    padding: 80px 20px;
+}
+
+.value{
+    margin: 0 auto 40px auto;
+    max-width: 400px;
+}
+
+#skills h2{
+    font-weight:300;
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+#skills p{
+    font: normal normal 300 20px/24px Roboto;
+    letter-spacing: 1.32px;
+    margin: 10px auto;
+}
+
+.value-props{
+    display: grid;
+}
+
+.value{
+    display:grid;
+    grid-template-rows: 120px;
+}
+
+.value-icon{
+    transform: scale(.9);
+    margin: auto;
+}
+
+#project-links{
+    padding: 30px 0;
+}
+
 @media (min-width: 750px) {
 
     #intro_header{
@@ -120,7 +170,7 @@ header a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 30px;
-        max-width: 1300px;
+        max-width: 1000px;
         margin: auto;
         perspective: 5000px;
         padding: 0px 20px;
@@ -142,6 +192,13 @@ header a {
       
     }
 
+    .value-props{
+        margin: auto;
+        max-width: 90vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+
 
     .card-button {
         position: absolute;
@@ -158,12 +215,7 @@ header a {
     }
    
 
-    .card-info a {
-        display: block;
-        font-size: 24px;
-        font-weight: 500;
-        letter-spacing: 2px;
-    }
+    
     .card-info h1, p, ul {
         margin: 0;
     }
@@ -172,5 +224,9 @@ header a {
 @media (min-width: 1500px) {
     .cards {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cards{
+        max-width: 1450px;
     }
 }
