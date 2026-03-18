@@ -1,51 +1,51 @@
-
-
-.pgcontent{
-    background-color: rgb(24, 18, 37);
-    color: white;
+.pgcontent {
+  background: linear-gradient(rgb(0, 0, 0), rgba(24, 1, 46));
+  color: white;
 }
 
-.pgcontent p a{
-    color: rgb(223, 111, 37);
+.pgcontent p a {
+  color: rgb(223, 111, 37);
 }
 
-
-.splash{
-    background-image: url("../Resources/Rocket.jpg"); 
-    background-attachment: fixed;
-    background-position: 50% 00px;
+.splash {
+  background-image: url("../Resources/Rocket.jpg");
+  background-attachment: fixed;
+  background-position: 50% 00px;
 }
 
-.splash h1{
-    font-weight: 900;
-    letter-spacing: 3px;
-    font-size: 4em;
-   
+.splash h1 {
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 4em;
 }
 
-.splash_overlay{
-    background: linear-gradient( rgba(255, 0, 0, 0.233), rgba(24, 1, 46, 0.507) );
+.splash_overlay {
+  background: linear-gradient(rgba(255, 0, 0, 0.233), rgba(24, 1, 46, 0.507));
 }
 
-.button{ 
-    margin: 20px 20px 0px 0px;
-    border: 1px solid white;
-    border-radius: 0px;
-    width: 100px;
-    padding: 15px 30px;
-    transition: all .5s;
-    background-color: rgba(255, 255, 255, .7);
-    cursor: pointer;
-    display: inline-block;
-  }
-  
-  .button:hover{
-    background-color: rgba(255, 255, 255, .8);
-    border-radius: 10px;
-  }
+.button {
+  margin: 20px 20px 0px 0px;
+  border: 1px solid white;
+  border-radius: 0px;
+  width: 100px;
+  padding: 15px 30px;
+  transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  display: inline-block;
+}
 
-  .button {
-      color: black;
-      text-decoration: none;
-      font-weight: 700;
-  }
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.button {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#about h2 {
+  margin-top: 3rem;
+}

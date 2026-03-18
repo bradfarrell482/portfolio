@@ -1,7 +1,7 @@
 /* homepage.css
 
 CSS for the homepage (index.html and also work.html) and the basic structure for the entire site.
-Also contains CSS for the nav, which is relevent on every page
+Also contains CSS for the nav, which is relevant on every page
 
 
 ***
@@ -13,387 +13,427 @@ file. For now, it ain't broke, so we're leaving it as is.
 ***
 */
 
-html {scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+}
 
 /*** Body ***/
-.container{
+.container {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-body{
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    font-family: Roboto;
-    animation: fade_in 2s ease;
-  }
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: Roboto;
+  animation: fade_in 2s ease;
+}
+
+:root {
+  --font-size-sm: 16px;
+  --font-size-md: 20px;
+  --font-size-lg: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.8rem;
+}
+
+p {
+  font-size: var(--font-size-md);
+  line-height: 1.8rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0rem;
+}
 
 @keyframes fade_in {
-    0% {opacity: 0;}
-    20%{opacity: 0;}
-    100% {opacity: 1;}
- } 
-  
-  /****** Nav ******/
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-  nav{
-    position: relative;
-    background-color: #fff;
-    min-height: 95px;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, .3);
-    z-index: 100; 
-    margin: auto; 
-    width: 100%;  
-  }
-  
-  nav ul{
-    width: 100%;
-    list-style-type: none;
-    margin: 0px auto;   
-    text-align: center;
-    background-color: rgba(255,255,255, 0.85);
-    z-index: 3;
-    transform: all 1s;
-    padding: 10px 0;
-  }
-  
-  nav li{
-    width:100%;
-    font-size: 24px;
-    font-weight: 400;
-  }
-  
-  nav a{
-    text-decoration: none;
-    color: #333;
-    margin: 0 30px;
+/****** Nav ******/
+
+nav {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  margin: auto;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+nav ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0px auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 3;
+  transform: all 1s;
+  padding: 10px 0;
+}
+
+nav li {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 30px;
+}
+
+.dropdown {
+  position: absolute;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  top: 95px;
+  margin: 0;
+  height: 0px;
+  transition: all 0.5s ease;
+}
+
+/*slide animation for nav*/
+.slideDown {
+  height: 223px;
+}
+
+/* nav hr */
+hr.nav_hr {
+  background-color: #000;
+  border-style: none;
+  width: 95%;
+  height: 2px;
+  opacity: 0.3;
+  margin: 10px;
+}
+
+/* menu button*/
+#nav_menu {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  font-size: 30px;
+  padding: 5px;
+}
+
+#nav_menu:hover {
+  cursor: pointer;
+}
+
+.logo {
+  left: 50px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: 12px 0 12px 12px;
+}
+
+/****** END NAV ******/
+
+/****** INDEX INTRO ******/
+
+#index_intro {
+  color: #acacac;
+  padding: 20px;
+  text-align: center;
+  margin: 30px auto;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#index_intro hr {
+  width: 30vw;
+  max-width: 350px;
+  border: 1px solid #c0c0c0;
+  margin: 20px auto;
+}
+
+#index_intro span {
+  font-size: 35px;
+  color: rgb(112, 112, 112);
+}
+
+/****** INDEX INTRO ******/
+
+/*** card ***/
+
+.content_card {
+  display: block;
+  margin: 33px 0px 0px 0px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 3px 6px #00000029;
+  transition: all 0.7s ease;
+  align-items: center;
+  justify-items: center;
+}
+
+.card-info {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+  justify-self: center;
+  align-self: center;
+}
+
+.card-info a {
+}
+
+.project_tags {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.project_tags li {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 0.8em;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 0 4px 10px 0;
+}
+
+.content_card h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.content_card p {
+  margin-top: 10px;
+}
+/*** end Card ***/
+
+.fade-img {
+  margin-right: auto;
+  opacity: 0.1;
+  display: block;
+  width: 100%;
+  min-width: 1200px;
+  object-fit: contain;
+}
+
+/*** show/hide ***/
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/*#disk-jockey .img{
+    width: 200%;
+  }*/
+
+/********************** Responsive design starts here **********************/
+
+/***** 750px + *****/
+@media (min-width: 750px) {
+  #navcontent {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    max-width: 1440px;
   }
 
-  .dropdown{
-    position: absolute;
+  .logo {
+    margin: 0;
+  }
+
+  .dropdown {
+    position: static;
     display: block;
-    width: 100%;
-    overflow: hidden;    
-    top: 95px;
-    margin:0;
-    height: 0px;
-    transition: all 0.5s ease;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    top: auto;
+    margin: 0;
+    transition: none;
   }
 
-  /*slide animation for nav*/
-  .slideDown {
-    height: 223px;
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    background-color: transparent;
+  }
+
+  nav li {
+    display: inline-block;
+    width: auto;
+    margin: 0 0 0 32px;
+  }
+
+  nav a {
+    display: block;
+    margin: 0;
   }
 
   /* nav hr */
   hr.nav_hr {
-    background-color: #000;
-    border-style: none;
-    width: 95%;
-    height: 2px;
-    opacity: 0.3;
-    margin: 10px;
+    display: none;
   }
 
   /* menu button*/
   #nav_menu {
-    display: inline-block;
-    float: right;
-    position: relative;
+    display: none;
+  }
+
+  #index_intro {
     font-size: 30px;
-    right: 10px;
-    top: 30px;
-    padding: 5px;
   }
 
-  #nav_menu:hover {
-    cursor: pointer;
+  #index_intro span {
+    font-size: 40px;
+    color: rgb(112, 112, 112);
   }
-  
-  .logo{
-    left: 50px;
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    margin: 10px;
+  .content_card {
+    display: grid;
   }
 
-  /****** END NAV ******/
-
-  /****** INDEX INTRO ******/
-  
-
-  #index_intro{
-    color: #acacac;
-    padding: 20px;
+  .card-info {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 1200px;
+    align-items: center;
+    justify-items: center;
     text-align: center;
-    margin: 30px auto;
-    font-weight: 500;
-    font-size: 20px;
   }
 
-  #index_intro hr{
-    width: 30vw;
-    max-width: 350px;
-    border: 1px solid #c0c0c0;
+  .text-block {
+    text-align: left;
+    max-width: 480px;
+  }
+
+  .left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+/***** 1400px+ *****/
+@media (min-width: 1400px) {
+  .container {
+    display: block;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  /* 
+  nav {
+    width: 250px;
+    height: 100vh;
+    z-index: 3;
+    box-shadow: 10px 0px 12px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    position: fixed;
+    grid-column: 1;
+  }
+
+  .logo {
+    display: block;
+    max-width: 250px;
+    padding-top: 40px;
+
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 0px auto 0px auto;
+    float: none;
+  }
+
+  #navcontent {
+    position: fixed;
+    top: 30px;
+  }
+
+  .dropdown {
+    margin: auto;
+    position: unset;
+    transition: all 0s;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  nav ul {
+    float: none;
+  }
+
+  nav li {
+    float: none;
+    display: block;
     margin: 20px auto;
-
   }
 
-  #index_intro span{
-    font-size: 35px;
+  .logo {
+  }
+  .dropdown {
+    margin: auto;
+    position: unset;
+    transition: all 0s;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0);
+  } */
+
+  #index_intro {
+    font-size: 30px;
+  }
+
+  #index_intro span {
+    font-size: 48px;
     color: rgb(112, 112, 112);
   }
 
-
-/****** INDEX INTRO ******/
-
-
-
-  /*** card ***/
-  
-  .content_card{
-    display: block;
-    margin: 33px 0px 0px 0px;
-    overflow: hidden;
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 3px 6px #00000029;
-    transition: all .7s ease;
-    align-items: center;
-    justify-items: center;
-    
-  }
-  
-  .card-info{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    z-index:2;
-    overflow: hidden;
-    justify-self: center;
-    align-self: center;
+  .pgcontent,
+  .cards {
+    grid-column: 2;
   }
 
-  .card-info a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-
-  .project_tags{
-    margin: 20px 0 0 0;
-    padding: 0;
-  }
-
-  .project_tags li{
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 6px 12px;
-    font-size: .8em;
-    background-color: rgba(0,0,0,.1);
-    display: inline-block;
-    margin: 0 4px 10px 0;
-  }
-  
-  
-  
-  
-  
-  
-   .content_card h1{
-     font-size: 35px;
-     letter-spacing: 1px;
-     font-weight: 700;
-     text-transform: uppercase;
-     margin: 0;
-  }
-
-  .content_card p{
-    margin-top: 10px;
- }
-  /*** end Card ***/
-  
-  p{
-    font-size: 20px;
-  
-    
-  }
-  
-  
-  
-  .fade-img{
-    margin-right: auto;
-    opacity: .1;
-    display: block;
-    width: 100%;
-    min-width: 1200px;
-    object-fit: contain;
-  }
-
-    /*** show/hide ***/
-    .show {
-      display: block;
-    }
-  
-    .hide {
-      display:none;
-    }
-
-    /*#disk-jockey .img{
-    width: 200%;
-  }*/
-  
-  /********************** Responsive design starts here **********************/
-  
-  /***** 750px + *****/
-  @media (min-width: 750px) {
-
-    .logo{
-      display: block;
-      max-width: 250px;
-      height: 150px;
-      width: auto;
-      margin: 0px auto 30px;
-      padding-top: 40px;
-    }
-
-    nav{
-      min-height: 300px;
-    }
-
-    .dropdown{
-      width: 100%;
-      margin: auto;
-      position: unset;
-      transition: all 0s;
-      height: auto;
-      background-color: rgba(255,255,255, 0);
-      
-    }
-    
-    nav li{
-      display: inline;
-      margin: 0 3%;
-    }
-
-    nav a { margin:0;}
-  
-    /* nav hr */
-    hr.nav_hr {
-      display: none;
-    }
-  
-    /* menu button*/
-    #nav_menu {
-      display: none;
-    }
-
-    #index_intro{
-      font-size: 30px;
-    }
-
-    #index_intro span{
-      font-size: 40px;
-      color: rgb(112, 112, 112);
-    }
-    .content_card{
-      display: grid;
-    }
-
-    .card-info{
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      max-width: 1200px;
-      align-items: center;
-      justify-items: center;
-      text-align: center;
-    }
-    
-    .text-block{
-      text-align: left;
-      max-width: 480px;
-    }
-    
-  
-    
-
-    .left{
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-  }  
-    
-  /***** 1400px+ *****/
-  @media (min-width: 1400px) {
-    .container{
-      display: grid;
-      grid-template-columns: 250px 1fr;
-      height: 100vh;
-    }
-    
-    nav{
-      width: 250px;
-      height: 100vh;
-      z-index: 3;
-      box-shadow: 10px 0px 12px rgba(0, 0, 0, .3);
-      margin: 0;
-      position: fixed;
-      grid-column: 1;
-    }
-    
-    #navcontent{
-      position: fixed;
-      top: 30px;
-    }
-
-    nav ul{
-      float: none;
-    }
-    
-    nav li{
-    float: none;
-    display: block;
-    margin: 20px auto;    
-  }
-
-    .logo{
-      display: block;
-      width: 70%;
-      height: auto;
-      margin: 0px auto 0px auto;
-      float: none;
-    }
-   
-    #index_intro{
-      font-size: 30px;
-    }
-
-    #index_intro span{
-      font-size: 48px;
-      color: rgb(112, 112, 112);
-    }
-
-    .pgcontent, .cards{
-      grid-column: 2;
-    }
-
-    /*.content_card{
+  /*.content_card{
       width: 95%;
       height: 800px;
       
     }*/
 
-    .card-info{
-      width: 90%;
-    }
+  .card-info {
+    width: 90%;
+  }
+}
 
-    
+/***** internet explorer nonsense *****/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .container {
+    display: block;
   }
-  
-  /***** internet explorer nonsense *****/
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
-    .container{
-      display: block;
-    }
-  }
+}

@@ -6,26 +6,26 @@
     This is the specific styling required for the hero case study in cfanatics.
     Colors, and other specific layouts will be designed here.
 */
-#intro{
-    background-color: rgba(248, 248, 248, 1);
+#intro {
+  background-color: rgba(248, 248, 248, 1);
 }
 /********************
 **      Color      **
 *********************/
 
 /** Headers **/
-h1, 
-h2, 
+h1,
+h2,
 h3 {
-    color: #6100B3;
+  color: #6100b3;
 }
 
 li {
-    color: rgb(82, 82, 82)
+  color: rgb(82, 82, 82);
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.466);
+  background-color: rgba(255, 255, 255, 0.466);
 }
 
 /********************
@@ -33,33 +33,30 @@ li {
 *********************/
 
 section {
-    background-color: #eceaff;
-    border-top: solid 7px #6200B7 ;
-    border-bottom: solid 7px #6200B7 ;
+  background-color: #eceaff;
+  border-top: solid 7px #6200b7;
+  border-bottom: solid 7px #6200b7;
 }
 
-.article{
-    margin: 10px 0px 10px 0px;
+.article {
+  margin: 10px 0px 10px 0px;
 }
 /********************
 **      Splash     **
 *********************/
 
 .splash_overlay {
-    background: linear-gradient( 270deg, #380351, #6200B7);;
+  background: linear-gradient(270deg, #380351, #6200b7);
 }
-
 
 /********************
 **    Diagram     **
 *********************/
 
-#process_svg{
-    margin-top: 20px;
-    margin-bottom: 20px;
+#process_svg {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-
 
 /********************
 **    HeatMaps     **
@@ -72,176 +69,171 @@ section {
 
 /** grid **/
 #hero_mockups {
-    grid-column-gap: 40px;
+  grid-column-gap: 40px;
 }
 
 #hero_heatmap_grid {
-    display: grid;
-    margin: auto;
-    grid-template-columns: 1fr;
-    margin-top: 25px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr;
+  margin-top: 25px;
 }
 
 #hero_map_toggle {
-    display:grid;
-    margin:auto;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
 }
 
 /** special case for article **/
 
-#hero_heatmap_grid .article_container, 
-#hero_heatmap_grid .article_container .article, 
-#hero_heatmap_grid .article_container h1{
-        margin-top: 0;
-        padding-top:0;
+#hero_heatmap_grid .article_container,
+#hero_heatmap_grid .article_container .article,
+#hero_heatmap_grid .article_container h1 {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /** links **/
 #hero_map_toggle a {
-    margin-top:30px;
-    margin-bottom:30px;
-    display: block;
-    padding: 10px 32px;
-    background: #C7C7C7;
-    color: #000;
-    font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  padding: 10px 32px;
+  background: #c7c7c7;
+  color: #000;
+  font-size: 16px;
 }
 
 #hero_map_toggle a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #hero_map_toggle a.active {
-    background: #6100B3;
-    color: #FFF;
+  background: #6100b3;
+  color: #fff;
 }
 
 a#click_map {
-    border-radius: 59px 0 0 59px;
-    margin-right: 0px;
+  border-radius: 59px 0 0 59px;
+  margin-right: 0px;
 }
 
 a#scroll_map {
-    border-radius: 0 59px 59px 0;
-    margin-left: 0px;
+  border-radius: 0 59px 59px 0;
+  margin-left: 0px;
 }
 
 /** img **/
-#heatmap_img img{
-    transition: opacity 0.5s;
+#heatmap_img img {
+  transition: opacity 0.5s;
 }
 
 /** Hero images special case **/
 /* add drop shadow so the img stands out a bit more from the background */
 
 #hero_mockups img {
-    box-shadow: 0px 2px 10px #00000029;
+  box-shadow: 0px 2px 10px #00000029;
 }
-
-
 
 /** before elements for the icons on process chart text 
 followed by each individual item's style/link
 **/
 
 .icon_header:before {
-    content: "";
-    width: 25px;
-    height: 25px;
-    float: left;
-    margin: 0 6px 0 0;
+  content: "";
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 6px 0 0;
 }
 
 #analysis:before {
-    background: url("../case_study_hero/icon_analysis.svg") no-repeat;
-    width: 23px;
-    height: 23px;
-    transform: translateY(-2px);
+  background: url("../case_study_hero/icon_analysis.svg") no-repeat;
+  width: 23px;
+  height: 23px;
+  transform: translateY(-2px);
 }
 #analysis {
-    color:#E66294;
+  color: #e66294;
 }
 
 #research:before {
-    background: url("../case_study_hero/icon_research.svg") no-repeat;
-    transform: translateY(1px);
+  background: url("../case_study_hero/icon_research.svg") no-repeat;
+  transform: translateY(1px);
 }
 #research {
-    color:#A70000;
+  color: #a70000;
 }
 
 #ideation:before {
-    background: url("../case_study_hero/icon_ideation.svg") no-repeat;
-    transform: translateY(-5px);
+  background: url("../case_study_hero/icon_ideation.svg") no-repeat;
+  transform: translateY(-5px);
 }
 #ideation {
-    color:#FF9C39;
+  color: #ff9c39;
 }
 
 #creation:before {
-    background: url("../case_study_hero/icon_creation.svg") no-repeat;
+  background: url("../case_study_hero/icon_creation.svg") no-repeat;
 }
 #creation {
-    color: #259FB0;
+  color: #259fb0;
 }
 
 #validation:before {
-    background: url("../case_study_hero/icon_validation.svg") no-repeat;
+  background: url("../case_study_hero/icon_validation.svg") no-repeat;
 }
 #validation {
-    color:#6B189A;
+  color: #6b189a;
 }
 
 #iteration:before {
-    background: url("../case_study_hero/icon_iteration.svg") no-repeat;
+  background: url("../case_study_hero/icon_iteration.svg") no-repeat;
 }
-#iteration { 
-    color:#6D6D6D;
+#iteration {
+  color: #6d6d6d;
 }
-
-
 
 /** END .ICON_HEADER CSS **/
-
 
 /*************************
 **       RESPONSIVE     **
 *************************/
 
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+}
 
 @media (min-width: 1000px) {
-    /** grid change for heatmap section **/
-    #hero_heatmap_grid {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 50px;
-    }
+  /** grid change for heatmap section **/
+  #hero_heatmap_grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+  }
 
-    #hero_heatmap_grid .article_container {
-        grid-column: 2;
-        grid-row: 2;
-        padding: 0 10px;
-    }
+  #hero_heatmap_grid .article_container {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 0 10px;
+  }
 
-    #heatmap_img {
-        grid-row: 2;
-    }
+  #heatmap_img {
+    grid-row: 2;
+  }
 
-    #process_svg{
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
+  #process_svg {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
-@media (min-width: 1100px) {
-    #process_svg {
-        transform: scale(1.2);
-}
+@media (min-width: 1150px) {
+  #process_svg {
+    transform: scale(1.2);
+  }
 
-    #process_callouts{
-        width: 140%;
-        margin-left: -20%;
-    }
-
+  #process_callouts {
+    width: 140%;
+    margin-left: -20%;
+  }
 }

@@ -3,36 +3,36 @@
 *********************/
 
 /** Nav color **/
-nav{
-    background-color: rgba(53, 52, 52, 1) !important;
+nav {
+  background-color: rgba(53, 52, 52, 1) !important;
 }
 /** Separate color for list due to transparency **/
-nav ul{
-    background-color: rgba(53, 52, 52, 0.9) !important;
+nav ul {
+  background-color: rgba(53, 52, 52, 0.9) !important;
 }
 
 /** BF logo color **/
 .logo {
-    fill: white ;
+  fill: white;
 }
 
 /** Nav link colors **/
-nav a{
-    color: white !important;
+nav a {
+  color: white !important;
 }
 
 /** nav underlines **/
-hr.nav_hr{
-    background-color: white !important;
-    height: 1px;
+hr.nav_hr {
+  background-color: white !important;
+  height: 1px;
 }
 
 /********************
 **    HTML Body    **
 *********************/
 
-body{
-    background-color: rgba(248, 248, 248, 1)
+body {
+  background-color: rgba(248, 248, 248, 1);
 }
 
 /********************
@@ -41,24 +41,24 @@ body{
 
 /** Splash background **/
 
-.splash{
-    background-color: rgba(255, 255, 255, 1);
-    /* Use this next item to add background images to the splash*/
-    background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
+.splash {
+  background-color: rgba(255, 255, 255, 1);
+  /* Use this next item to add background images to the splash*/
+  background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
 }
 
 .splash_overlay {
-    /*Splash overlay color: appears over the image as a filter*/
-    background-color: rgba(0, 105, 159, .76);
+  /*Splash overlay color: appears over the image as a filter*/
+  background-color: rgba(0, 105, 159, 0.76);
 }
 
-.splash_content h1{
-    color: #FFF;
+.splash_content h1 {
+  color: #fff;
 }
 
 /** Module background **/
-.module{
-    background-color: white;
+.module {
+  background-color: white;
 }
 
 /********************
@@ -66,14 +66,16 @@ body{
 *********************/
 
 /** Headers **/
-h1, h2, h3 {
-    color: rgba(17, 168, 222, 1);
-    text-transform: uppercase;
+h1,
+h2,
+h3 {
+  color: rgba(17, 168, 222, 1);
+  text-transform: uppercase;
 }
 
 /** Margin for overview grid items **/
 #overview_grid {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 /********************
@@ -83,7 +85,7 @@ h1, h2, h3 {
 /** Set the grid position for overview grid items **/
 
 #overview_grid #role {
-    grid-row: 1/3;
+  grid-row: 1/3;
 }
 
 /**********************
@@ -91,144 +93,146 @@ h1, h2, h3 {
 ***********************/
 
 #process_svg {
-    margin-top: 50px;
-    margin-bottom: 50px; 
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /** Case study button CSS **/
 
 /* Css applying to all case studies */
 #case_studies {
-    width: 100%;
-    background: #F5F6F7;
-    padding: 30px 0;
+  width: 100%;
+  background: #f5f6f7;
+  padding: 30px 0;
 }
 
 #case_studies .grid_3 {
-    margin-top: 50px;
-    margin-bottom: 50px; 
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.case_study_content h1, .case_study_content h2{
-    color: #FFF;
-    margin:auto;
+.case_study_content h1,
+.case_study_content h2 {
+  color: #fff;
+  margin: auto;
 }
 
 .case_study_content h1 {
-    text-transform: none;
-    margin-bottom: 20px;
+  text-transform: none;
+  margin-bottom: 20px;
 }
 
 .case_study_content {
-    padding: 30px 40px;
-    padding-bottom: 0;
-    max-width: 350px;
-    overflow: hidden;
+  padding: 30px 40px;
+  padding-bottom: 0;
+  max-width: 350px;
+  overflow: hidden;
 }
 
 .case_study {
-    max-width: 350px;
-    margin-top: 0;
-    margin-bottom: auto;
+  max-width: 350px;
+  margin-top: 0;
+  margin-bottom: auto;
 }
 
-.case_study a, #return_to_studies{
-    font-size:22px;
-    margin-bottom: 30px;
-    text-decoration: none;
-    color: rgba(96, 0, 178, .7);
-    width: 80%;
-    background-color: rgba(255, 255, 255, 1);
-    border: 3px solid rgba(255, 255, 255, 0);
-    border-radius: 30px;
-    padding: 15px;
-    text-align: center;
-    cursor: pointer;
-    transition: .5s;
+.case_study a,
+#return_to_studies {
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: rgba(96, 0, 178, 0.7);
+  width: 80%;
+  background-color: rgba(255, 255, 255, 1);
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.case_study a, #return_to_studies:hover{
-    transform: scale(1.1);
-    
+.case_study a,
+#return_to_studies:hover {
+  transform: scale(1.1);
 }
 
 .case_study a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .case_study a.coming_soon {
-    background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.case_study .main_img{
-    width: 100%;
-    height: 250px;
-    background-color: rgba(255, 255, 255, 1);
-    background-position: center center;
-    background-size: cover;
+.case_study .main_img {
+  width: 100%;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 1);
+  background-position: center center;
+  background-size: cover;
 }
 
 .case_study .overlay {
-    width: 100%;
-    height: 250px;
+  width: 100%;
+  height: 250px;
 }
 
-.case_study p1{
-    margin: .5em;
-    margin-top: 15px;
+.case_study p1 {
+  margin: 0.5em;
+  margin-top: 15px;
 }
 
 /** return to studies link **/
 /*this builds off of the links for the case studies, so there's some overrides here*/
-#return_to_studies.inactive{
-    display: none;
+#return_to_studies.inactive {
+  display: none;
 }
-#return_to_studies.active{
-    display: block;
-    margin-top: 60px;
-    color: #FFF;
-    width: 30%;
-    background-color: rgba(17, 168, 222, 1);
-    min-width: 240px;
+#return_to_studies.active {
+  display: block;
+  margin-top: 60px;
+  color: #fff;
+  width: 30%;
+  background-color: rgba(17, 168, 222, 1);
+  min-width: 240px;
 }
 
 /** Css for first case study: Hero study **/
 #hero_study {
-    background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
+  background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
 }
 
 #hero_study .overlay {
-    background-color: rgba(96, 0, 178, .76);
+  background-color: rgba(96, 0, 178, 0.76);
 }
 
 #hero_study a {
-    color: rgba(96, 0, 178, .76);
+  color: rgba(96, 0, 178, 0.76);
 }
 
 /** Css for second case study: Sorting study **/
 #sorting_study {
-    background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
+  background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
 }
 
 #sorting_study .overlay {
-    background-color: rgba(30, 151, 153, .76);
+  background-color: rgba(30, 151, 153, 0.76);
 }
 
 #sorting_study a {
-    color: rgba(30, 151, 153, .76);
+  color: rgba(30, 151, 153, 0.76);
 }
 
 /** Css for third case study: Trust study **/
 #trust_study {
-    background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
+  background-image: url("../Projects/Conversion_Fanatics/CF_Hero_Image.png");
 }
 
 #trust_study .overlay {
-    background-color: rgba(178, 1, 67, .76);
+  background-color: rgba(178, 1, 67, 0.76);
 }
 
 #trust_study a {
-    color: rgba(178, 1, 67, .76);
+  color: rgba(178, 1, 67, 0.76);
 }
 
 /** END CASE STUDY CSS **/
@@ -238,59 +242,61 @@ followed by each individual item's style/link
 **/
 
 .icon_header:before {
-    content: "";
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    float: left;
-    margin: 0 6px 0 0;
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 6px 0 0;
 }
 
 #analysis:before {
-    background: url("../Projects/Conversion_Fanatics/icon_analysis.svg") no-repeat;
-    width: 23px;
-    height: 23px;
-    transform: translateY(-2px);
+  background: url("../Projects/Conversion_Fanatics/icon_analysis.svg") no-repeat;
+  width: 23px;
+  height: 23px;
+  transform: translateY(-2px);
 }
 #analysis {
-    color:#E66294;
+  color: #e66294;
 }
 
 #research:before {
-    background: url("../Projects/Conversion_Fanatics/icon_research.svg") no-repeat;
-    transform: translateY(1px);
+  background: url("../Projects/Conversion_Fanatics/icon_research.svg") no-repeat;
+  transform: translateY(1px);
 }
 #research {
-    color:#A70000;
+  color: #a70000;
 }
 
 #ideation:before {
-    background: url("../Projects/Conversion_Fanatics/icon_ideation.svg") no-repeat;
-    transform: translateY(-5px);
+  background: url("../Projects/Conversion_Fanatics/icon_ideation.svg") no-repeat;
+  transform: translateY(-5px);
 }
 #ideation {
-    color:#FF9C39;
+  color: #ff9c39;
 }
 
 #creation:before {
-    background: url("../Projects/Conversion_Fanatics/icon_creation.svg") no-repeat;
+  background: url("../Projects/Conversion_Fanatics/icon_creation.svg") no-repeat;
 }
 #creation {
-    color: #259FB0;
+  color: #259fb0;
 }
 
 #validation:before {
-    background: url("../Projects/Conversion_Fanatics/icon_validation.svg") no-repeat;
+  background: url("../Projects/Conversion_Fanatics/icon_validation.svg")
+    no-repeat;
 }
 #validation {
-    color:#6B189A;
+  color: #6b189a;
 }
 
 #iteration:before {
-    background: url("../Projects/Conversion_Fanatics/icon_iteration.svg") no-repeat;
+  background: url("../Projects/Conversion_Fanatics/icon_iteration.svg")
+    no-repeat;
 }
-#iteration { 
-    color:#6D6D6D;
+#iteration {
+  color: #6d6d6d;
 }
 
 /** END .ICON_HEADER CSS **/
@@ -302,29 +308,25 @@ followed by each individual item's style/link
 ******************************/
 
 @media (min-width: 750px) {
-
-    /*****
+  /*****
     GRID
     *****/
-    #overview_grid #role {
-        grid-row: auto;
-    }
+  #overview_grid #role {
+    grid-row: auto;
+  }
 
-    #case_studies .grid_3 {
-        grid-template-columns: 1fr;
-    }
-
+  #case_studies .grid_3 {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 1000px) {
-
-    /*****
+  /*****
     GRID
     *****/
 
-    #case_studies .grid_3 {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 25px;
-    }
-
+  #case_studies .grid_3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+  }
 }
